@@ -162,5 +162,5 @@ cython_debug/
 # Custom
 *.db
 *.csv
-py-umls*
-data/
+data/*
+.DS_Store
