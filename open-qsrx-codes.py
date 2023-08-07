@@ -210,7 +210,7 @@ def rxcui_chooser(df, col):
     df = df.drop_duplicates(subset = 'NDC', keep = 'first')
     return df
 
-# Fixes RXCUI ambiguity
+# Helps fix RXCUI ambiguity and fill in missing data
 def fix_ambiguity(df, name):
     rxcui_two_counts = df['RXCUI2'].value_counts().to_dict()
     rxcui_two_counts["nan"] = 0
@@ -223,6 +223,18 @@ def fix_ambiguity(df, name):
     df = pd.merge(df, df_unique[['Code Dosage', name, 'RXCUI2', 'RXCUI2_Counts']], on=['Code Dosage', name], 
                   how='left')
     return df
+
+# Ensures end case ambiguous RXCUI with a last digit of 9 are properly adjusted
+def rxcui_nine(row):
+    if row['RXCUI'][-1] == "9" and (int(row['RXCUI'][:-1]) + 1) != int(row['RXCUI2'][:-1]):
+        return row['RXCUI']
+    return row['RXCUI2']
+
+# Ensures ambiguous RXCUI within a range of 10 can be accounted for
+def rxcui_two(rxcui):
+    if rxcui != "nan":
+        rxcui = rxcui[:-1]
+    return rxcui
 
 def main(filename, log_level):
     # Set up logging level
@@ -296,6 +308,22 @@ def main(filename, log_level):
     ndc_data['RXCUI2'] = ndc_data['RXCUI']
     ndc_data['Code Dosage'] = ndc_data['DOSAGEFORMNAME2'] + ndc_data['ACTIVE_NUMERATOR_STRENGTH']
     logging.info("Clean up complete")
+
+    # Handling RXCUI ambiguity
+    logging.info("Handling RXCUI ambiguity...")
+    ndc_data['New Code'] = ndc_data['RXCUI2'] + ndc_data['Code Dosage']
+    ndc_data = ndc_data.drop_duplicates(keep='first')
+    ndc_data = rxcui_chooser(ndc_data, 'New Code')
+    ndc_data_update = fix_ambiguity(ndc_data, 'PROPRIETARYNAME')
+    ndc_data_update = fix_ambiguity(ndc_data_update, 'SUBSTANCENAME')
+    ndc_data.reset_index(drop=True, inplace=True)
+    ndc_data_update.reset_index(drop=True, inplace=True)
+    fix_mask = (ndc_data['RXCUI'].str[-1] == '9') | (ndc_data['RXCUI'] == "nan")
+    ndc_data.loc[fix_mask] = ndc_data_update.loc[fix_mask]
+    ndc_data['RXCUI2'] = ndc_data.apply(rxcui_nine, axis=1)
+    ndc_data['RXCUI2'] = ndc_data['RXCUI2'].apply(rxcui_two)
+    ndc_data['New Code'] = ndc_data['RXCUI2'] + ndc_data['Code Dosage']
+    logging.info("Handling complete")
 
 
 # Parse command-line arguments and run main
