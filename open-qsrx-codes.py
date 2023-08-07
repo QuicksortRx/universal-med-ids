@@ -417,6 +417,9 @@ def main(filename, log_level):
         query_sbd = "SELECT RXCUI, STR FROM RXNCONSO WHERE SAB = 'RXNORM' AND TTY = 'SBD'"
         rxnconso_sbd = pd.read_sql_query(query_sbd, 'sqlite:///data/rxnorm.db')
         rxnconso_sbd = rxnconso_sbd.rename(columns={'RXCUI': 'RXCUI2', 'STR': 'Description'})
+        query_scd = "SELECT RXCUI, STR FROM RXNCONSO WHERE SAB = 'RXNORM' AND TTY = 'SCD'"
+        rxnconso_scd = pd.read_sql_query(query_scd, 'sqlite:///rxnorm.db')
+        rxnconso_scd = rxnconso_scd.rename(columns={'STR': 'Description'})
     except:
         logging.error("Querying unsuccessful, ensure the full 'rxnorm.db' is still in the data subdirectory")
         raise
