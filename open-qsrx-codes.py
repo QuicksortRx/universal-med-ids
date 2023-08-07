@@ -488,7 +488,7 @@ def main(filename, log_level):
     logging.info("Creating the output CSV")
     qsrx_data = ndc_data[['NDC', 'New Code', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
     qsrx_data = qsrx_data.sort_values(by=['Dosage Route','New Code'])
-    qsrx_data = qsrx_data.loc(qsrx_data['Dosage Route'] == "INJECTABLE")
+    qsrx_data = qsrx_data.loc[qsrx_data['Dosage Route'] == "INJECTABLE"]
     qsrx_data.to_csv(filename)
     logging.info('{filename} has been successfully created')
 
