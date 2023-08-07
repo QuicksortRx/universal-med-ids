@@ -260,6 +260,50 @@ def replace_df(row):
         result = result.replace(row['DF'], row['Dosage Form'])
     return result
 
+# Enforces that the Dosage Routes are viable classes
+def use_dfg(row):
+    dfg_list = ['BUCCAL', 'CHEWABLE', 'DENTAL', 'DISINTEGRATING ORAL', 'DRUG IMPLANT', 'GRANULE', 'INHALANT', 
+                'INJECTABLE', 'INTRAPERITONEAL', 'INTRATRACHEAL', 'IRRIGATION', 'LOZENGE', 'MEDICATED PAD OR TAPE',
+                'MOUTHWASH', 'MUCOSAL', 'NASAL', 'OPHTHALMIC', 'ORAL', 'ORAL CREAM', 'ORAL FILM', 'ORAL FOAM', 
+                'ORAL GEL', 'ORAL LIQUID', 'ORAL OINTMENT', 'ORAL PASTE', 'ORAL POWDER', 'ORAL SPRAY', 'OTIC', 
+                'PASTE', 'PELLET', 'PILL', 'PYELOCALYCEAL', 'RECTAL', 'SHAMPOO', 'SOAP', 'SUBLINGUAL', 
+                'TOOTHPASTE', 'TOPICAL', 'TRANSDERMAL', 'URETHRAL', 'VAGINAL']
+    if row['DFG'] != "nan" and row['Dosage Route'] not in dfg_list:
+        row['Dosage Route'] = row['DFG']
+    return row['Dosage Route']
+
+# Inputs code specifiers to prevent clashing codes due to lack of precision
+def use_df(row):
+    specifier = ""
+    dose_list = ["AMPULE", "SYRINGE"]
+    dosage_form_list = ["Auto-Injector"]
+    if row['DOSE'] in dose_list:
+        specifier = row['DOSE']
+    if row['Dosage Form'] in dosage_form_list:
+        specifier += row['Dosage Form']
+    return row['RXCUI2'] + row['Dosage Route'] + row['ACTIVE_NUMERATOR_STRENGTH'] + specifier
+
+# Standardizes the formatting of the 'API Measure' column
+def api_measure_std(unit):
+    unit = unit.upper()
+    unit = unit.replace("/;", ";")
+    if unit[-1] == '/':
+        unit = unit[:-1]
+    return unit
+
+# Makes descriptions for NDCs not found in RxNorm
+def make_desc(row):
+    np_name = row['NONPROPRIETARYNAME'].lower()
+    num = row['ACTIVE_NUMERATOR_STRENGTH']
+    unit = row['API Measure']
+    d_f = row['Dosage Form']
+    p_name = row['PROPRIETARYNAME'].title()
+    if p_name.lower() == np_name:
+        p_name = ""
+    else:
+        p_name = " [" + p_name + "]"
+    return np_name + " " + num + " " + unit + " " + str(d_f) + p_name
+
 def main(filename, log_level):
     # Set up logging level
     numeric_level = getattr(logging, log_level.upper(), None)
@@ -380,7 +424,7 @@ def main(filename, log_level):
     logging.info("Querying complete")
 
     # Merging the refinement data from RxNorm together
-    logging.info("Merging the refinment data from RxNorm together...")
+    logging.info("Merging the refinement data from RxNorm together...")
     logging.debug("Gather all useful columns...")
     rxnorm_ndc = ndc_data[['NDC', 'RXCUI', 'DOSE']].copy()
     rxnorm_ndc = pd.merge(rxnorm_ndc, rxnrel_d, on='RXCUI', how='left')
@@ -422,7 +466,28 @@ def main(filename, log_level):
     logging.debug("Done")
     logging.info("Merging complete")
 
-    
+    # Merging the refinement data with the NDC data
+    logging.info("Merging the refinement data with the NDC data...")
+    ndc_data = pd.merge(ndc_data, rxnorm_ndc, on='NDC', how='left')
+    ndc_data['Dosage Route'] = ndc_data['DOSAGEFORMNAME2']
+    ndc_data['Dosage Route'] = ndc_data.apply(use_dfg, axis=1)
+    ndc_data['New Code'] = ndc_data.apply(use_df, axis=1)
+    ndc_data['API Measure'] = ndc_data['ACTIVE_INGRED_UNIT'].apply(api_measure_std)
+    ndc_data_desc = ndc_data.copy()
+    ndc_data_desc['Description'] = ndc_data_desc.apply(make_desc, axis=1) 
+    ndc_data.reset_index(drop=True, inplace=True)
+    ndc_data_desc.reset_index(drop=True, inplace=True)
+    no_desc_mask = (ndc_data['Description'] == "nan")
+    ndc_data.loc[no_desc_mask] = ndc_data_desc.loc[no_desc_mask]
+    logging.info("Merging complete")
+
+    # Creating the output CSV
+    logging.info("Creating the output CSV")
+    qsrx_data = ndc_data[['NDC', 'New Code', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
+    qsrx_data = qsrx_data.sort_values(by=['Dosage Route','New Code'])
+    qsrx_data = qsrx_data.loc(qsrx_data['Dosage Route'] == "INJECTABLE")
+    qsrx_data.to_csv(filename)
+    logging.info('{filename} has been successfully created')
 
 # Parse command-line arguments and run main
 if __name__ == "__main__":
