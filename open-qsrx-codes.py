@@ -236,6 +236,30 @@ def rxcui_two(rxcui):
         rxcui = rxcui[:-1]
     return rxcui
 
+# Standardizes the formatting of the 'DFG' column
+def dfg_std(dfg):
+    if dfg.find(" Product") > -1:
+        dfg = dfg[:-8]
+    if dfg != "nan":
+        dfg = dfg.upper()
+    return dfg
+
+# Standardizees the formatting for the 'Dosage Form' column
+def dosage_form_std(row):
+    df_list = ["Injectable Solution", "Injectable Suspension", "Injection"]
+    if row['DF'] in df_list or row['DF'] == "nan":
+        return row['DOSE'].title()
+    return row['DF']
+
+# Helps specifies the descriptions given by RxNorm further by replacing the attribute found in the 'DF' column
+def replace_df(row):
+    result = row['Description']
+    if result == "nan":
+        return "nan"
+    elif row['DF'] != row['Dosage Form']:
+        result = result.replace(row['DF'], row['Dosage Form'])
+    return result
+
 def main(filename, log_level):
     # Set up logging level
     numeric_level = getattr(logging, log_level.upper(), None)
@@ -247,23 +271,23 @@ def main(filename, log_level):
     logging.info("Converting the NDC-inclusive data to pandas DataFrames...")
     logging.debug("Retrieving 'package.csv'...")
     try:
-        fda_package = pd.read_csv('package.csv')
+        fda_package = pd.read_csv('data/package.csv')
     except:
-        logging.error("'package.csv' not found, ensure it is in the directory and named the same")
+        logging.error("'package.csv' not found, ensure it is in the data subdirectory and named the same")
         raise
     logging.debug("Done")
     logging.debug("Retrieving 'product.csv'...")
     try: 
-        fda_product = pd.read_csv('product.csv')
+        fda_product = pd.read_csv('data/product.csv')
     except:
-        logging.error("'product.csv' not found, ensure it is in the directory and named the same")
+        logging.error("'product.csv' not found, ensure it is in the data subdirectory and named the same")
         raise
     logging.debug("Done")
-    logging.debug("Retrieivng the NDC table from rxnorm.db...")
+    logging.debug("Retrieving the NDC table from rxnorm.db...")
     try:
-        rxnorm_rxcui = pd.read_sql_table('NDC', 'sqlite:///rxnorm.db')
+        rxnorm_rxcui = pd.read_sql_table('NDC', 'sqlite:///data/rxnorm.db')
     except:
-        logging.error("'rxnorm.db' not found, ensure it is in the directory and named the same")
+        logging.error("'rxnorm.db' not found, ensure it is in the data subdirectory and named the same")
         raise
     logging.debug("Done")
     logging.info("Data retrieval successful")
@@ -325,6 +349,80 @@ def main(filename, log_level):
     ndc_data['New Code'] = ndc_data['RXCUI2'] + ndc_data['Code Dosage']
     logging.info("Handling complete")
 
+    # Querying other data from RxNorm to refine the codes and displayed information
+    logging.info("Querying refinenment data from RxNorm...")
+    logging.debug("Querying the RXNREL and RXNCONSO tables from RxNorm...")
+    try:
+        query_d = "SELECT RXCUI1, RXCUI2 FROM RXNREL WHERE SAB = 'RXNORM' AND RELA = 'dose_form_of'"
+        rxnrel_d = pd.read_sql_query(query_d, 'sqlite:///data/rxnorm.db')
+        rxnrel_d = rxnrel_d.rename(columns={'RXCUI1': 'RXCUI'})
+        query_df = "SELECT RXCUI, STR FROM RXNCONSO WHERE SAB = 'RXNORM' AND TTY = 'DF'"
+        rxnconso_df = pd.read_sql_query(query_df, 'sqlite:///data/rxnorm.db')
+        rxnconso_df = rxnconso_df.rename(columns={'RXCUI': 'RXCUI2', 'STR': 'DF'})
+        query_i = "SELECT RXCUI1, RXCUI2 FROM RXNREL WHERE SAB = 'RXNORM' AND RELA = 'inverse_isa'"
+        rxnrel_i = pd.read_sql_query(query_i, 'sqlite:///data/rxnorm.db')
+        query_dfg = "SELECT RXCUI, STR FROM RXNCONSO WHERE SAB = 'RXNORM' AND TTY = 'DFG'"
+        rxnconso_dfg = pd.read_sql_query(query_dfg, 'sqlite:///data/rxnorm.db')
+        rxnconso_dfg = rxnconso_dfg.rename(columns={'RXCUI': 'RXCUI2', 'STR': 'DFG'})
+        query_t = "SELECT RXCUI1, RXCUI2 FROM RXNREL WHERE SAB = 'RXNORM' AND RELA = 'tradename_of'"
+        rxnrel_t = pd.read_sql_query(query_t, 'sqlite:///data/rxnorm.db')
+        rxnrel_t = rxnrel_t.rename(columns={'RXCUI1': 'RXCUI'})
+        query_sbd = "SELECT RXCUI, STR FROM RXNCONSO WHERE SAB = 'RXNORM' AND TTY = 'SBD'"
+        rxnconso_sbd = pd.read_sql_query(query_sbd, 'sqlite:///data/rxnorm.db')
+        rxnconso_sbd = rxnconso_sbd.rename(columns={'RXCUI': 'RXCUI2', 'STR': 'Description'})
+        query_sbd = "SELECT RXCUI, STR FROM RXNCONSO WHERE SAB = 'RXNORM' AND TTY = 'SBD'"
+        rxnconso_sbd = pd.read_sql_query(query_sbd, 'sqlite:///data/rxnorm.db')
+        rxnconso_sbd = rxnconso_sbd.rename(columns={'RXCUI': 'RXCUI2', 'STR': 'Description'})
+    except:
+        logging.error("Querying unsuccessful, ensure the full 'rxnorm.db' is still in the data subdirectory")
+        raise
+    logging.debug("Done")
+    logging.info("Querying complete")
+
+    # Merging the refinement data from RxNorm together
+    logging.info("Merging the refinment data from RxNorm together...")
+    logging.debug("Gather all useful columns...")
+    rxnorm_ndc = ndc_data[['NDC', 'RXCUI', 'DOSE']].copy()
+    rxnorm_ndc = pd.merge(rxnorm_ndc, rxnrel_d, on='RXCUI', how='left')
+    rxnorm_ndc = pd.merge(rxnorm_ndc, rxnconso_df, on='RXCUI2', how='left')
+    rxnorm_ndc = rxnorm_ndc.rename(columns={'RXCUI2': 'RXCUI1'})
+    rxnorm_ndc = pd.merge(rxnorm_ndc, rxnrel_i, on='RXCUI1', how='left')
+    rxnorm_ndc = pd.merge(rxnorm_ndc, rxnconso_dfg, on='RXCUI2', how='left')
+    rxnorm_ndc = rxnorm_ndc.astype(str)
+    rxnorm_ndc['DFG'] = rxnorm_ndc['DFG'].apply(dfg_std)
+    rxnorm_ndc = rxnorm_ndc[['NDC', 'RXCUI', 'DOSE', 'DF', 'DFG']]
+    rxnorm_ndc = rxnorm_ndc.drop_duplicates(subset='NDC', keep='first')
+    rxnorm_ndc = pd.merge(rxnorm_ndc, rxnrel_t, on='RXCUI', how='left')
+    rxnorm_ndc = pd.merge(rxnorm_ndc, rxnconso_sbd, on='RXCUI2', how='left')
+    rxnorm_ndc = rxnorm_ndc[['NDC', 'RXCUI', 'DOSE', 'DF', 'DFG', 'Description']]
+    rxnorm_ndc = rxnorm_ndc.drop_duplicates(subset='NDC', keep='first')
+    logging.debug("Done")
+    logging.debug("Retrieving the description for SBD RXCUI...")
+    rxnconso_sbd = rxnconso_sbd.rename(columns={'RXCUI2': 'RXCUI'})
+    rxnorm_sbd = pd.merge(rxnorm_ndc[['NDC', 'RXCUI', 'DOSE', 'DF', 'DFG']].copy(), rxnconso_sbd, on='RXCUI', how='left')
+    rxnorm_sbd = rxnorm_sbd.drop_duplicates(subset='NDC', keep='first')
+    rxnorm_ndc.reset_index(drop=True, inplace=True)
+    rxnorm_sbd.reset_index(drop=True, inplace=True)
+    nan_mask = rxnorm_ndc['Description'].isna()
+    rxnorm_ndc.loc[nan_mask] = rxnorm_sbd.loc[nan_mask]
+    logging.debug("Done")
+    logging.debug("Retrieving the description for true SCD RXCUI...")
+    rxnorm_scd = pd.merge(rxnorm_ndc[['NDC', 'RXCUI', 'DOSE', 'DF', 'DFG']].copy(), rxnconso_scd, on='RXCUI', how='left')
+    rxnorm_scd = rxnorm_scd.drop_duplicates(subset='NDC', keep='first')
+    rxnorm_ndc.reset_index(drop=True, inplace=True)
+    rxnorm_scd.reset_index(drop=True, inplace=True)
+    nan_mask = rxnorm_ndc['Description'].isna()
+    rxnorm_ndc.loc[nan_mask] = rxnorm_scd.loc[nan_mask]
+    logging.debug("Done")
+    logging.debug("Finalizing formatting...")
+    rxnorm_ndc = rxnorm_ndc.astype(str)
+    rxnorm_ndc['Dosage Form'] = rxnorm_ndc.apply(dosage_form_std, axis = 1)
+    rxnorm_ndc['Description'] = rxnorm_ndc.apply(replace_df, axis = 1)
+    rxnorm_ndc = rxnorm_ndc[['NDC', 'DF', 'DFG', 'Description', 'Dosage Form']]
+    logging.debug("Done")
+    logging.info("Merging complete")
+
+    
 
 # Parse command-line arguments and run main
 if __name__ == "__main__":
