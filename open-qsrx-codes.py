@@ -549,13 +549,13 @@ def main(filename, log_level):
 
     # Creating the output CSV
     logging.info("Creating the output CSV")
-    qsrx_data = ndc_data[['NDC', 'New Code', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
-    qsrx_data = qsrx_data.sort_values(by=['Dosage Route','New Code'])
+    qsrx_data = ndc_data[['NDC', 'QUMI Code', 'Package Count', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
+    qsrx_data = qsrx_data.sort_values(by=['Dosage Route','QUMI Code'])
     qsrx_data.replace("nan", np.nan, inplace=True)
     output_list = ["INJECTABLE", "INTRATRACHEAL", "IRRIGATION"]
     qsrx_data = qsrx_data[qsrx_data['Dosage Route'].isin(output_list)]
     qsrx_data.to_csv(filename, index=False)
-    logging.info('{filename} has been successfully created')
+    logging.info(f'{filename} has been successfully created')
 
 # Parse command-line arguments and run main
 if __name__ == "__main__":
