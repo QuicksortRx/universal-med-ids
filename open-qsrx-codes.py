@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import hashlib
 import logging
 import numpy as np
 import pandas as pd
@@ -201,6 +202,41 @@ def route_to_dosage(row):
     else:
         return row['DOSAGEFORMNAME2']
 
+# Extract the parts of the package description to calculate the package count
+def extract_parts(description):
+    sections = description.split(" / ")
+    pattern = r"(\d+(\.\d+)?)\s*([^\d\(\)]*)\s*in\s*(\d+)\s*([^\d\(\)]*)"
+    remove_parentheses_pattern = r'\([^)]*\)'
+    results = []
+    for section in sections:
+        section_without_parentheses = re.sub(remove_parentheses_pattern, '', section)
+        match = re.match(pattern, section_without_parentheses)
+        if match:
+            results.append([match.group(1), match.group(3).strip(), match.group(4), match.group(5).strip()])
+    return results
+
+# Caclulates the package count from the package description
+def package_count(desc):
+    viable_units=["mL", "L", "g", "mg"]
+    desc_parts = extract_parts(desc)
+    count = 1
+    try:
+        word = desc_parts[0][3]
+    except:
+        return count
+    i = 0
+    while i < len(desc_parts):
+        if desc_parts[i][3] == word and desc_parts[i][1] not in viable_units:
+            try:
+                count *= int(desc_parts[i][0])
+            except:
+                break
+            word = desc_parts[i][1]
+        else:
+            break
+        i += 1
+    return str(count)
+
 # Strategically eliminates duplicate NDC rows with different RXCUI
 def rxcui_chooser(df, col):
     col_counts = df[col].value_counts().to_dict()
@@ -304,6 +340,31 @@ def make_desc(row):
         p_name = " [" + p_name + "]"
     return np_name + " " + num + " " + unit + " " + str(d_f) + p_name
 
+# Gets an unsigned shake_256 integer from the long formed code
+def shakehash_generic_code(generic_code_plus):
+    hash = hashlib.shake_256()
+    hash.update(generic_code_plus.encode('utf-8'))
+    return hash.hexdigest(5)
+
+# Encodes using the unsigned shake_256 integer
+def encode_custom_alphanumeric(gcp_hex):
+    pc_alphabet_purged = '0123456789abcdefghjkmnpqrstvwxyz'
+    pc_al_rem_len = len(pc_alphabet_purged)
+    gcp_int = int(gcp_hex, 16)
+    result = ''
+    while gcp_int:
+        result = pc_alphabet_purged[gcp_int % pc_al_rem_len] + result
+        gcp_int = gcp_int // pc_al_rem_len
+    if not result:
+        result = pc_alphabet_purged[0]
+    return result[:7]
+
+# Makes a short code from the long code
+def get_qsrx_code_from_gcp(generic_code_plus):
+    gcp_hex = shakehash_generic_code(generic_code_plus)
+    result = encode_custom_alphanumeric(gcp_hex)
+    return result
+
 def main(filename, log_level):
     # Set up logging level
     numeric_level = getattr(logging, log_level.upper(), None)
@@ -375,6 +436,7 @@ def main(filename, log_level):
     ndc_data = ndc_data.astype(str)
     ndc_data['RXCUI2'] = ndc_data['RXCUI']
     ndc_data['Code Dosage'] = ndc_data['DOSAGEFORMNAME2'] + ndc_data['ACTIVE_NUMERATOR_STRENGTH']
+    ndc_data['Package Count'] = ndc_data['PACKAGEDESCRIPTION'].apply(package_count)
     logging.info("Clean up complete")
 
     # Handling RXCUI ambiguity
@@ -482,14 +544,17 @@ def main(filename, log_level):
     ndc_data_desc.reset_index(drop=True, inplace=True)
     no_desc_mask = (ndc_data['Description'] == "nan")
     ndc_data.loc[no_desc_mask] = ndc_data_desc.loc[no_desc_mask]
+    ndc_data['QUMI Code'] = ndc_data['New Code'].apply(get_qsrx_code_from_gcp)
     logging.info("Merging complete")
 
     # Creating the output CSV
     logging.info("Creating the output CSV")
     qsrx_data = ndc_data[['NDC', 'New Code', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
     qsrx_data = qsrx_data.sort_values(by=['Dosage Route','New Code'])
-    qsrx_data = qsrx_data.loc[qsrx_data['Dosage Route'] == "INJECTABLE"]
-    qsrx_data.to_csv(filename)
+    qsrx_data.replace("nan", np.nan, inplace=True)
+    output_list = ["INJECTABLE", "INTRATRACHEAL", "IRRIGATION"]
+    qsrx_data = qsrx_data[qsrx_data['Dosage Route'].isin(output_list)]
+    qsrx_data.to_csv(filename, index=False)
     logging.info('{filename} has been successfully created')
 
 # Parse command-line arguments and run main
