@@ -59,6 +59,7 @@ Two different vancomycin types with two different QUMI codes.
 
 ![Example Data](example.png)
 
+[Click here to download full example.](https://github.com/QuicksortRx/universal-med-ids/blob/main/universal-med-ids.csv) 
 ## Installation
 
 These instructions start from square one on how to run this script. This ensures that anyone with any level of experience will be able to easily use this program. Some steps may be unnecessary depending on your current setup and experience. For ease of universality, the instructions will be sequentially presented for use in a Unix command-line interface (CLI).
