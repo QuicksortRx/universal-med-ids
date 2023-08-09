@@ -81,6 +81,7 @@ def weight_sig_figs(std_name, n, part):
         "BUPIVACAINE HYDROCHLORIDE; EPINEPHRINE BITARTRATE": {0.0091: 0.005},
         "CASPOFUNGIN ACETATE": {5: 50/10.8, 7: 70/10.8},
         "CEFAZOLIN SODIUM": {225: 500/2.2},
+        "DEFEROXAMINE MESYLATE": {95: 2000/(2000.04/95)},
         "DEXTROSE MONOHYDRATE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {2.98: 3, .745: .75, 2.25: 2},
         "GEMCITABINE HYDROCHLORIDE": {38: 2000/52.6, 1: 50/52.6},
         "NEOSTIGMINE METHYLSULFATE": {1.02: 1},
@@ -143,7 +144,7 @@ def process_unit(unit, value, unit_compare, unit_num, std_name):
             after_num_divider = (1/weight_sig_figs(std_name, float(after_num), "an")) if after_num else 1
             divider *= before_num_divider * after_num_divider
             new_units.append(new_unit)
-            new_values.append(round_nine(round(v * divider * weight_converter, 1)))
+            new_values.append(round_nine(round(v * divider * weight_converter, 2)))
         else:
             new_units.append(u)
             new_values.append(v)
@@ -313,10 +314,13 @@ def use_df(row):
     specifier = ""
     dose_list = ["AMPULE", "SYRINGE"]
     dosage_form_list = ["Auto-Injector"]
+    brand_list = ["solu-medrol"]
     if row['DOSE'] in dose_list:
         specifier = row['DOSE']
     if row['Dosage Form'] in dosage_form_list:
         specifier += row['Dosage Form']
+    if row['PROPRIETARYNAME'] in brand_list:
+        specifier += row['PROPRIETARYNAME']
     return row['RXCUI2'] + row['Dosage Route'] + row['ACTIVE_NUMERATOR_STRENGTH'] + specifier
 
 # Standardizes the formatting of the 'API Measure' column
