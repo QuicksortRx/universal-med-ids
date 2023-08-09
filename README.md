@@ -10,7 +10,7 @@ QUMI codes are provided under a modified MIT license (see LICENSE) that allows f
 
 ### **About QuicksortRx**
 
-QuicksortRx provides timely, transparent, and actionable guidance to help health systems make better pharmacy procurement decisions. Our team, including our intern Jack Rose, has created this groundbreaking solution to address the challenges faced by healthcare professionals when searching for alternative medications and establishing a unified medication ID within their organizations.
+QuicksortRx provides timely, transparent, and actionable guidance to help health systems make better pharmacy procurement decisions. Our team, prominently including our intern Jack Rose, has created this groundbreaking solution to address the challenges faced by healthcare professionals when searching for alternative medications and establishing a unified medication ID within their organizations.
 
 ### **The Need for a Universal Medication Identifier**
 
