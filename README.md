@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-Welcome to the QuicksortRx Universal Medication Identifier (QUMI) repository! We believe everyone in pharmacy should have access to a unified medication ID, and we have created an open-source solution to deliver it. Here, we combine the power of OpenFDA data with RXNorm data to algorithmically generate a universal, freely available generic code for medications. This revolutionary approach enables the matching of two National Drug Codes (NDCs) to determine their operational interchangeability (equivalent size, strength, form etc.), facilitating the identification of alternative medications and streamlining medication management processes for hospitals and pharmacists worldwide. Unlike other generic codes, QUMI codes incorporate operational critical data to assure the two NDCs are interchangeable, and do not require any licensing fees.
+Welcome to the [QuicksortRx](https://quicksortrx.com) Universal Medication Identifier (QUMI) repository! We believe everyone in pharmacy should have access to a unified medication ID, and we have created an open-source solution to deliver it. Here, we combine the power of OpenFDA data with RXNorm data to algorithmically generate a universal, freely available generic code for medications. This revolutionary approach enables the matching of two National Drug Codes (NDCs) to determine their operational interchangeability (equivalent size, strength, form etc.), facilitating the identification of alternative medications and streamlining medication management processes for hospitals and pharmacists worldwide. Unlike other generic codes, QUMI codes incorporate operational critical data to assure the two NDCs are interchangeable, and do not require any licensing fees.
 
 ### License
 
@@ -10,17 +10,17 @@ QUMI codes are provided under a modified MIT license (see LICENSE) that allows f
 
 ### **About QuicksortRx**
 
-QuicksortRx provides timely, transparent, and actionable guidance to help health systems make better pharmacy procurement decisions. Our team, prominently including our intern Jack Rose, has created this groundbreaking solution to address the challenges faced by healthcare professionals when searching for alternative medications and establishing a unified medication ID within their organizations.
+[QuicksortRx](https://quicksortrx.com) provides timely, transparent, and actionable guidance to help health systems make better pharmacy procurement decisions. Our team, prominently including our intern Jack Rose, has created this groundbreaking solution to address the challenges faced by healthcare professionals when searching for alternative medications and establishing a unified medication ID within their organizations.
 
 ### **The Need for a Universal Medication Identifier**
 
 In the healthcare industry, pharmacies, hospitals, and other healthcare facilities deal with a vast array of medications, each identified by its unique NDC. While this specificity is essential for ensuring accurate dispensing and tracking of medications, it also presents challenges when pharmacists need to find operational equivalents or alternative medications to fulfill patient needs. The absence of a standardized universal medication identifier has hindered efficiency and interoperability within the industry.
 
-QuicksortRx recognized this critical issue and set out to develop a solution that would empower healthcare professionals with a comprehensive, license-free, and universally applicable medication identification system.
+[QuicksortRx](https://quicksortrx.com) recognized this critical issue and set out to develop a solution that would empower healthcare professionals with a comprehensive, license-free, and universally applicable medication identification system.
 
 ### **How QuicksortRx Universal Medication Identifier Works**
 
-The QuicksortRx Universal Medication Identifier combines the wealth of information available through the OpenFDA and RXNorm databases. By applying advanced algorithms, our software can automatically generate generic codes that accurately identify operational equivalents for different NDCs.
+The [QuicksortRx](https://quicksortrx.com) Universal Medication Identifier combines the wealth of information available through the OpenFDA and RXNorm databases. By applying advanced algorithms, our software can automatically generate generic codes that accurately identify operational equivalents for different NDCs.
 
 This powerful identifier not only helps pharmacists quickly find alternative medications but also assists hospitals and other healthcare organizations in streamlining their internal medication management systems. The universal medication identifier allows for seamless integration with existing healthcare software, electronic health records (EHRs), and pharmacy management systems, ensuring a consistent and standardized approach to medication identification across the board.
 
@@ -55,7 +55,7 @@ By leveraging the QuicksortRx Universal Medication Identifier in alignment with 
 
 ### Example Data
 
-Two different vancomycin types with two different QUMI codes.
+Two different Vancomycin strengths with two distinct QUMI codes.
 
 ![Example Data](example.png)
 
