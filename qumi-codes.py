@@ -376,6 +376,16 @@ def dea_std(dea):
         dea = dea.replace(key, dea_dict[key])
     return dea
 
+# Standardizes the formatting of the strength
+def strength_std(strength):
+    num_list = strength.split("; ")
+    result = []
+    for num in num_list:
+        if num.find(".0") == (len(num) - 2):
+            num = num.replace(".0", "")
+        result.append(num)
+    return "; ".join(result)
+
 # Standardizes the formatting of the measure
 def measure_std(unit):
     unit_dict = {"ML": "mL", "MG": "mg", "MCG": "mcg", "MEQ": "mEq"}
@@ -383,12 +393,17 @@ def measure_std(unit):
         unit = unit.replace(key, unit_dict[key])
     return unit
 
-def hcl(hcl):
-    return hcl
+# Standardizes the formatting of HCl.
+def to_hcl(desc):
+    desc = desc.replace("HYDROCHLORIDE", "HCl")
+    desc = desc.replace("Hydrochloride", "HCl")
+    desc = desc.replace("hydrochloride", "HCl")
+    desc = desc.replace("Hcl", "HCl")
+    return desc
 
 # Standardizes the formatting of the description
 def description_std(desc):
-    desc = desc.replace("HYDROCHLORIDE")
+    desc = to_hcl(desc)
     desc = desc[0].capitalize() + desc[1:]
     desc = desc.replace(".0 ", " ")
     unit_dict = {"ML": "mL", "MG": "mg", "MCG": "mcg", "MEQ": "mEq"}
@@ -584,7 +599,9 @@ def main(filename, log_level):
     ndc_data.replace("HYDROCHLORIDE", "HCl", inplace=True)
     ndc_data.replace("hydrochloride", "HCl", inplace=True)
     ndc_data['DEASCHEDULE'] = ndc_data['DEASCHEDULE'].apply(dea_std)
+    ndc_data['ACTIVE_NUMERATOR_STRENGTH'] = ndc_data['ACTIVE_NUMERATOR_STRENGTH'].apply(strength_std)
     ndc_data['API Measure'] = ndc_data['API Measure'].apply(measure_std)
+    ndc_data['SUBSTANCENAME'] = ndc_data['SUBSTANCENAME'].apply(to_hcl)
     ndc_data['Description'] = ndc_data['Description'].apply(description_std) 
     logging.info("Merging complete")
 
