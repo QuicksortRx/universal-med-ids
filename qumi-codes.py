@@ -369,6 +369,53 @@ def get_qsrx_code_from_gcp(generic_code_plus):
     result = encode_custom_alphanumeric(gcp_hex)
     return result
 
+# Standardizes the formatting of the DEA Schedule
+def dea_std(dea):
+    dea_dict = {"CII": "2", "CIII": "3", "CIV": "4", "CV": "5", "CVI": "6"}
+    for key in dea_dict:
+        dea = dea.replace(key, dea_dict[key])
+    return dea
+
+# Standardizes the formatting of the strength
+def strength_std(strength):
+    num_list = strength.split("; ")
+    result = []
+    for num in num_list:
+        if num.find(".0") == (len(num) - 2):
+            num = num.replace(".0", "")
+        result.append(num)
+    return "; ".join(result)
+
+# Standardizes the formatting of the measure
+def measure_std(unit):
+    unit_dict = {"ML": "mL", "MG": "mg", "MCG": "mcg", "MEQ": "mEq"}
+    for key in unit_dict:
+        unit = unit.replace(key, unit_dict[key])
+    return unit
+
+# Standardizes the formatting of HCl.
+def to_hcl(desc):
+    desc = desc.replace("HYDROCHLORIDE", "HCl")
+    desc = desc.replace("Hydrochloride", "HCl")
+    desc = desc.replace("hydrochloride", "HCl")
+    desc = desc.replace("Hcl", "HCl")
+    return desc
+
+# Standardizes the formatting of the description
+def description_std(desc):
+    desc = to_hcl(desc)
+    desc = desc[0].capitalize() + desc[1:]
+    desc = desc.replace(".0 ", " ")
+    unit_dict = {"ML": "mL", "MG": "mg", "MCG": "mcg", "MEQ": "mEq"}
+    for u in unit_dict:
+        pre_list = [" ", "/"]
+        for pre in pre_list:
+            post_list = [" ", "/", ";"]
+            for post in post_list:
+                upper_unit = pre + u + post
+                desc = desc.replace(upper_unit, pre + unit_dict[u] + post)
+    return desc
+
 def main(filename, log_level):
     # Set up logging level
     numeric_level = getattr(logging, log_level.upper(), None)
@@ -549,11 +596,23 @@ def main(filename, log_level):
     no_desc_mask = (ndc_data['Description'] == "nan")
     ndc_data.loc[no_desc_mask] = ndc_data_desc.loc[no_desc_mask]
     ndc_data['QUMI Code'] = ndc_data['New Code'].apply(get_qsrx_code_from_gcp)
+    ndc_data.replace("HYDROCHLORIDE", "HCl", inplace=True)
+    ndc_data.replace("hydrochloride", "HCl", inplace=True)
+    ndc_data['DEASCHEDULE'] = ndc_data['DEASCHEDULE'].apply(dea_std)
+    ndc_data['ACTIVE_NUMERATOR_STRENGTH'] = ndc_data['ACTIVE_NUMERATOR_STRENGTH'].apply(strength_std)
+    ndc_data['API Measure'] = ndc_data['API Measure'].apply(measure_std)
+    ndc_data['SUBSTANCENAME'] = ndc_data['SUBSTANCENAME'].apply(to_hcl)
+    ndc_data['Description'] = ndc_data['Description'].apply(description_std) 
     logging.info("Merging complete")
 
     # Creating the output CSV
     logging.info("Creating the output CSV")
-    qsrx_data = ndc_data[['NDC', 'QUMI Code', 'Package Count', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
+    if log_level == 'debug':
+        qsrx_data = ndc_data[['NDC', 'RXCUI', 'New Code', 'QUMI Code', 'Package Count', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
+        qsrx_data = qsrx_data.rename(columns={'New Code': 'Pre-Hash Code'})
+    else:
+        qsrx_data = ndc_data[['NDC', 'QUMI Code', 'Package Count', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
+    qsrx_data = qsrx_data.rename(columns={'LABELERNAME': 'Supplier', 'ACTIVE_NUMERATOR_STRENGTH': 'Strength', 'API Measure': 'Measure', 'APPLICATIONNUMBER': 'ANDA', 'SUBSTANCENAME': 'Generic Description', 'DEASCHEDULE': 'DEA'})
     qsrx_data = qsrx_data.sort_values(by=['Dosage Route','QUMI Code'])
     qsrx_data.replace("nan", np.nan, inplace=True)
     output_list = ["INJECTABLE", "INTRATRACHEAL", "IRRIGATION"]
