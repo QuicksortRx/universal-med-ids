@@ -24,6 +24,8 @@ The [QuicksortRx](https://quicksortrx.com) Universal Medication Identifier combi
 
 This powerful identifier not only helps pharmacists quickly find alternative medications but also assists hospitals and other healthcare organizations in streamlining their internal medication management systems. The universal medication identifier allows for seamless integration with existing healthcare software, electronic health records (EHRs), and pharmacy management systems, ensuring a consistent and standardized approach to medication identification across the board.
 
+We estimate the RxCUIs cover 56% of interchangable products on the market, but still cause many issues for supply chain analytics. For those interested in auto-substitution of ordered products, RxCUIs tend to create far more issues than they solve.
+
 ### **Key Features**
 
 - **Algorithmic Matching**: Our software employs sophisticated algorithms to match NDCs based on OpenFDA and RXNorm data, enabling users to find operationally equivalent medications swiftly.
@@ -55,7 +57,7 @@ By leveraging the QuicksortRx Universal Medication Identifier in alignment with 
 
 ### Example Data
 
-Two different Vancomycin strengths with two distinct QUMI codes.
+Examples of NDCs that share the same RxCUI but are distinctly different products by size and form. 
 
 ![Example Data](example.png)
 
