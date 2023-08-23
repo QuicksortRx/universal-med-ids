@@ -59,7 +59,7 @@ By leveraging the QuicksortRx Universal Medication Identifier in alignment with 
 
 Examples of NDCs that share the same RxCUI but are distinctly different products by size and form. 
 
-![Example Data](example.png)
+![Example Data](example2.png)
 
 [Click here to download full example.](https://github.com/QuicksortRx/universal-med-ids/blob/main/universal-med-ids.csv) 
 ## Installation
