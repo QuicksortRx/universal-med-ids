@@ -165,3 +165,4 @@ cython_debug/
 !universal-med-ids.csv
 data/*
 .DS_Store
+test.py
