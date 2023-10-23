@@ -611,7 +611,7 @@ def main(filename, log_level):
         qsrx_data = ndc_data[['NDC', 'RXCUI', 'New Code', 'QUMI Code', 'Package Count', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
         qsrx_data = qsrx_data.rename(columns={'New Code': 'Pre-Hash Code'})
     else:
-        qsrx_data = ndc_data[['NDC', 'QUMI Code', 'Package Count', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
+        qsrx_data = ndc_data[['NDC', 'RXCUI', 'QUMI Code', 'Package Count', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
     qsrx_data = qsrx_data.rename(columns={'LABELERNAME': 'Supplier', 'ACTIVE_NUMERATOR_STRENGTH': 'Strength', 'API Measure': 'Measure', 'APPLICATIONNUMBER': 'ANDA', 'SUBSTANCENAME': 'Generic Description', 'DEASCHEDULE': 'DEA'})
     qsrx_data = qsrx_data.sort_values(by=['Dosage Route','QUMI Code'])
     qsrx_data.replace("nan", np.nan, inplace=True)
