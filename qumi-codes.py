@@ -82,15 +82,22 @@ def weight_sig_figs(std_name, n, part):
         "CASPOFUNGIN ACETATE": {5: 50/10.8, 7: 70/10.8},
         "CEFAZOLIN SODIUM": {225: 500/2.2},
         "DEFEROXAMINE MESYLATE": {95: 2000/(2000.04/95)},
-        "DEXTROSE MONOHYDRATE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {2.98: 3, .745: .75, 2.25: 2},
-        "GEMCITABINE HYDROCHLORIDE": {38: 2000/52.6, 1: 50/52.6},
+        "DEXTROSE MONOHYDRATE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {.745: .75, 2.25: 2, 2.98: 3},
+        "GEMCITABINE HYDROCHLORIDE": {1: 50/52.6, 38: 2000/52.6},
+        "METHYLPHENIDATE": {1.6: 15/9},
         "NEOSTIGMINE METHYLSULFATE": {1.02: 1},
-        "POTASSIUM CHLORIDE": {7.46: 7.45}
+        "POTASSIUM CHLORIDE": {7.46: 7.45, 750: 745}
     }
-    an_dict = {"GEMCITABINE HYDROCHLORIDE": {26.3: (50/52.6)*26.3}}
+    an_dict = {
+        "GEMCITABINE HYDROCHLORIDE": {26.3: (50/52.6)*26.3},
+        "POTASSIUM CHLORIDE": {1.54: 1.5}
+    }
     wc_dict = {
+        "BACITRACIN ZINC": {28.35: 28},
         "CASPOFUNGIN ACETATE": {10: 10.8},
-        "DEFEROXAMINE MESYLATE": {21.1: 21.053, 5.3: 500/95},
+        "DEFEROXAMINE MESYLATE": {5.3: 500/95, 21.1: 21.053},
+        "HYDROCORTISONE": {28: 30, 28.35: 30, 28.4: 30},
+        "LIDOCAINE HYDROCHLORIDE": {28.35: 28.3},
         "TOBRAMYCIN SULFATE": {50: 30}
     }
     part_dict = {"v": v_dict, "an": an_dict, "wc": wc_dict}
@@ -615,8 +622,8 @@ def main(filename, log_level):
     qsrx_data = qsrx_data.rename(columns={'LABELERNAME': 'Supplier', 'ACTIVE_NUMERATOR_STRENGTH': 'Strength', 'API Measure': 'Measure', 'APPLICATIONNUMBER': 'ANDA', 'SUBSTANCENAME': 'Generic Description', 'DEASCHEDULE': 'DEA'})
     qsrx_data = qsrx_data.sort_values(by=['Dosage Route','QUMI Code'])
     qsrx_data.replace("nan", np.nan, inplace=True)
-    output_list = ["INJECTABLE", "INTRATRACHEAL", "IRRIGATION"]
-    qsrx_data = qsrx_data[qsrx_data['Dosage Route'].isin(output_list)]
+    #output_list = ["INJECTABLE", "INTRATRACHEAL", "IRRIGATION"]
+    #qsrx_data = qsrx_data[qsrx_data['Dosage Route'].isin(output_list)]
     qsrx_data.to_csv(filename, index=False)
     logging.info(f'{filename} has been successfully created')
 
