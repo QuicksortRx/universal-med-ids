@@ -49,7 +49,7 @@ def unit_dosage(df, column='PACKAGEDESCRIPTION'):
 
 # Adjusts the processed data from the description to only utilize data that can be used to calculate unit dosages
 def adjust_units(df):
-    viable_units=["mL", "L", "g", "mg"]
+    viable_units = ["g", "h", "L", "mg", "mL"]
     mask = ~df['DOSE_UNIT'].isin(viable_units)
     df.loc[mask, ['DOSE', 'DOSE_QUANTITY']] = df.loc[mask, ['DOSE_UNIT', 'DOSE_UNIT_VALUE']].values
     df.loc[mask, ['DOSE_UNIT', 'DOSE_UNIT_VALUE']] = np.nan
@@ -78,26 +78,41 @@ def round_nine(n):
 # Accounts for discrepancies in values due to the number of significant figures taken in measurements
 def weight_sig_figs(std_name, n, part):
     v_dict = {
+        "ACETAMINOPHEN": {650: 649.6},
+        "BENZOYL PEROXIDE; CLINDAMYCIN PHOSPHATE": {12: 10},
+        "BETAMETHASONE DIPROPIONATE; CLOTRIMAZOLE": {0.64: 0.5},
+        "BROMFENAC SODIUM": {1.035: 0.9},
         "BUPIVACAINE HYDROCHLORIDE; EPINEPHRINE BITARTRATE": {0.0091: 0.005},
         "CASPOFUNGIN ACETATE": {5: 50/10.8, 7: 70/10.8},
         "CEFAZOLIN SODIUM": {225: 500/2.2},
+        "CLOBETASOL PROPIONATE": {0.4625: 0.5},
         "DEFEROXAMINE MESYLATE": {95: 2000/(2000.04/95)},
         "DEXTROSE MONOHYDRATE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {.745: .75, 2.25: 2, 2.98: 3},
         "GEMCITABINE HYDROCHLORIDE": {1: 50/52.6, 38: 2000/52.6},
+        "KETOTIFEN FUMARATE": {0.35: 0.25},
+        "LEVOTHYROXINE SODIUM": {0.175: 0.18},
         "METHYLPHENIDATE": {1.6: 15/9},
         "NEOSTIGMINE METHYLSULFATE": {1.02: 1},
+        "OMEPRAZOLE MAGNESIUM": {20.6: 20},
         "POTASSIUM CHLORIDE": {7.46: 7.45, 750: 745}
     }
     an_dict = {
         "GEMCITABINE HYDROCHLORIDE": {26.3: (50/52.6)*26.3},
-        "POTASSIUM CHLORIDE": {1.54: 1.5}
+        "POTASSIUM CHLORIDE": {1.54: 1.5},
+        "SULFACETAMIDE; SULFUR": {473.2: 473.2/473}
     }
     wc_dict = {
         "BACITRACIN ZINC": {28.35: 28},
         "CASPOFUNGIN ACETATE": {10: 10.8},
+        "CHOLESTYRAMINE": {239.6: 239.4},
+        "CLOTRIMAZOLE": {28: 30, 28.35: 30},
         "DEFEROXAMINE MESYLATE": {5.3: 500/95, 21.1: 21.053},
         "HYDROCORTISONE": {28: 30, 28.35: 30, 28.4: 30},
+        "LIDOCAINE": {28.35: 30},
         "LIDOCAINE HYDROCHLORIDE": {28.35: 28.3},
+        "MICONAZOLE NITRATE": {28: 30},
+        "SUCRALFATE": {414: 420},
+        "SULFACETAMIDE SODIUM; SULFUR": {170.3: 170},
         "TOBRAMYCIN SULFATE": {50: 30}
     }
     part_dict = {"v": v_dict, "an": an_dict, "wc": wc_dict}
@@ -110,7 +125,8 @@ def weight_sig_figs(std_name, n, part):
 # Carries out moles and other substance dependent unit conversions
 def mole_converter(std_name, before_unit):
     meq_dict = {"POTASSIUM CHLORIDE": 74.5, "SODIUM CHLORIDE": 58.5}
-    iu_dict = {"BLEOMYCIN SULFATE": [1/1000, "[USP'U]"]}
+    iu_dict = {"BLEOMYCIN SULFATE": [1/1000, "[USP'U]"], "HUMAN RHO(D) IMMUNE GLOBULIN" : [1/5000, "mg"]}
+    usp_dict = {"PETROLATUM": [1000, "mg"]}
     divider = 1
     if before_unit == "meq" and std_name in meq_dict:
         divider = meq_dict[std_name]
@@ -118,6 +134,9 @@ def mole_converter(std_name, before_unit):
     elif before_unit == "[iU]" and std_name in iu_dict:
         divider = iu_dict[std_name][0]
         before_unit = iu_dict[std_name][1]
+    elif before_unit == "[USP'U]" and std_name in usp_dict:
+        divider = usp_dict[std_name][0]
+        before_unit = usp_dict[std_name][1]
     return divider, before_unit
 
 # Processes all unit dosage related data to result in a standardized API (active pharmaceutical ingredient) amount
@@ -140,7 +159,7 @@ def process_unit(unit, value, unit_compare, unit_num, std_name):
             elif before_unit == "ug":
                 divider = 1/1000
                 before_unit = "mg"
-            elif before_unit == "meq" or before_unit == "[iU]":
+            elif before_unit == "meq" or before_unit == "[iU]" or before_unit == "[USP'U]":
                 divider, before_unit = mole_converter(std_name, before_unit)
             if unit_compare == after_unit:
                 if float(unit_num) != 0:
