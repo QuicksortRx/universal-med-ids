@@ -1,23 +1,21 @@
 # Merge Medicare NDC Crosswalk file with ASP Pricing file.
 #
-# Use included files or download the latest files from:
-#   https://www.cms.gov/medicare/payment/all-fee-service-providers/medicare-part-b-drug-average-sales-price/asp-pricing-files
-# Put files in 'data' directory and update ASP_FILE_PATH and CROSSWALK_FILE_PATH below.
+# Use included files in DATA_PATH directory or download the latest files from:
+#  https://www.cms.gov/medicare/payment/all-fee-service-providers/medicare-part-b-drug-average-sales-price/asp-pricing-files
 #
 # Usage: python -m src.medicare_part_b.merge_ndc_crosswalk_asp
+#        -crosswalk_file <path>
+#        -asp_file <path>
 
+import argparse
 import pandas as pd
 
-from src.common.logger_config import logger  # noqa: E402
+from src.common.logger_config import logger
 
 FILE_ENCODING = "ISO-8859-1"
-DATA_ROW_START = 8
+HEADER_ROW = 8  # 0-indexed
 DATA_PATH = "src/medicare_part_b/data"
 MERGED_FILE_PATH = f"{DATA_PATH}/merged.csv"
-ASP_FILE_PATH = (
-    f"{DATA_PATH}/section 508 version of January 2024 ASP Pricing File 121223.csv"
-)
-CROSSWALK_FILE_PATH = f"{DATA_PATH}/section 508 version of January 2024 ASP NDC-HCPCS Crosswalk 122023.csv"
 ASP_COLUMNS = [
     "HCPCS Code",
     "Payment Limit",
@@ -41,20 +39,12 @@ def calculate_asp(payment_limit, markup_percentage=0.06):
     return payment_limit / (1 + markup_percentage)
 
 
-def merge():
-    asp_df = pd.read_csv(
-        ASP_FILE_PATH,
-        encoding=FILE_ENCODING,
-        header=DATA_ROW_START,
-    )
-    asp_df = asp_df[ASP_COLUMNS]
-
+def merge(crosswalk_file_path, asp_file_path):
     crosswalk_df = pd.read_csv(
-        CROSSWALK_FILE_PATH,
+        crosswalk_file_path,
         encoding=FILE_ENCODING,
-        header=DATA_ROW_START,
+        header=HEADER_ROW,
     )
-
     crosswalk_df = crosswalk_df[CROSSWALK_COLUMNS]
     crosswalk_df_renamed = crosswalk_df.rename(
         columns={
@@ -67,10 +57,17 @@ def merge():
         }
     )
 
+    asp_df = pd.read_csv(
+        asp_file_path,
+        encoding=FILE_ENCODING,
+        header=HEADER_ROW,
+    )
+    asp_df = asp_df[ASP_COLUMNS]
+
     # Merge DataFrames on HCPCS Code
     merged_df = pd.merge(crosswalk_df_renamed, asp_df, on="HCPCS Code")
 
-    # Add ASP
+    # Add Average Sales Price (ASP) column
     merged_df["ASP"] = calculate_asp(merged_df["Payment Limit"]).round(3)
 
     # Save the result to a CSV file
@@ -79,4 +76,19 @@ def merge():
 
 
 if __name__ == "__main__":
-    merge()
+    parser = argparse.ArgumentParser(
+        description="Merge Medicare NDC Crosswalk file with ASP Pricing file."
+    )
+    parser.add_argument(
+        "-crosswalk_file",
+        required=True,
+        help="Path to the NDC-HCPCS Crosswalk file",
+    )
+    parser.add_argument(
+        "-asp_file",
+        required=True,
+        help="Path to the ASP Pricing file",
+    )
+    args = parser.parse_args()
+
+    merge(args.crosswalk_file, args.asp_file)
