@@ -163,6 +163,7 @@ cython_debug/
 *.db
 *.csv
 !universal-med-ids.csv
-data/*
+/data/
+!/src/medicare_part_b/data/*
 .DS_Store
 test.py
