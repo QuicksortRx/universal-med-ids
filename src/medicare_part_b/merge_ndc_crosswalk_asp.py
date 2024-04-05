@@ -21,7 +21,7 @@ ASP_COLUMNS = [
     "Payment Limit",
 ]
 CROSSWALK_COLUMNS = [
-    "_2023_CODE",
+    "_2024_CODE",
     "NDC2",
     "Short Description",
     "Drug Name",
@@ -48,7 +48,7 @@ def merge(crosswalk_file_path, asp_file_path):
     crosswalk_df = crosswalk_df[CROSSWALK_COLUMNS]
     crosswalk_df_renamed = crosswalk_df.rename(
         columns={
-            "_2023_CODE": "HCPCS Code",
+            "_2024_CODE": "HCPCS Code",
             "NDC2": "NDC",
             "Short Description": "Description",
             "PKG SIZE": "Pkg Size",
