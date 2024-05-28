@@ -79,6 +79,8 @@ def round_nine(n):
 def weight_sig_figs(std_name, n, part):
     v_dict = {
         "ACETAMINOPHEN": {650: 649.6},
+        "ACETIC ACID": {20.65: 20},
+        "APRACLONIDINE HYDROCHLORIDE": {5.75: 5},
         "BENZOYL PEROXIDE; CLINDAMYCIN PHOSPHATE": {12: 10},
         "BETAMETHASONE DIPROPIONATE; CLOTRIMAZOLE": {0.64: 0.5},
         "BROMFENAC SODIUM": {1.035: 0.9},
@@ -91,29 +93,39 @@ def weight_sig_figs(std_name, n, part):
         "GEMCITABINE HYDROCHLORIDE": {1: 50/52.6, 38: 2000/52.6},
         "KETOTIFEN FUMARATE": {0.35: 0.25},
         "LEVOTHYROXINE SODIUM": {0.175: 0.18},
-        "METHYLPHENIDATE": {1.6: 15/9},
+        "METHYLPHENIDATE": {1.6: 15/9, 2.2: 20/9},
         "NEOSTIGMINE METHYLSULFATE": {1.02: 1},
         "OMEPRAZOLE MAGNESIUM": {20.6: 20},
-        "POTASSIUM CHLORIDE": {7.46: 7.45, 750: 745}
+        "POTASSIUM CHLORIDE": {7.46: 7.45, 40: 3000/74.5, 600: 596, 750: 745}
     }
     an_dict = {
+        "CICLOPIROX": {0.96: 1},
         "GEMCITABINE HYDROCHLORIDE": {26.3: (50/52.6)*26.3},
         "POTASSIUM CHLORIDE": {1.54: 1.5},
+        "SODIUM PHOSPHATE, DIBASIC, UNSPECIFIED FORM; SODIUM PHOSPHATE, MONOBASIC, UNSPECIFIED FORM": {118 : 133},
         "SULFACETAMIDE; SULFUR": {473.2: 473.2/473}
     }
     wc_dict = {
+        "ACETAMINOPHEN; DEXTROMETHORPHAN HYDROBROMIDE; DOXYLAMINE SUCCINATE": {236: 237},
+        "BACITRACIN": {28: 30, 28.4: 30},
         "BACITRACIN ZINC": {28.35: 28},
         "CASPOFUNGIN ACETATE": {10: 10.8},
         "CHOLESTYRAMINE": {239.6: 239.4},
         "CLOTRIMAZOLE": {28: 30, 28.35: 30},
         "DEFEROXAMINE MESYLATE": {5.3: 500/95, 21.1: 21.053},
-        "HYDROCORTISONE": {28: 30, 28.35: 30, 28.4: 30},
-        "LIDOCAINE": {28.35: 30},
+        "DEXTROMETHORPHAN HYDROBROMIDE; GUAIFENESIN": {236: 237},
+        "GUAIFENESIN": {237: 236},
+        "HYDROCORTISONE": {28: 30, 28.35: 30, 28.4: 30, 118: 120, 553.6: 554},
+        "LIDOCAINE": {28: 30, 28.35: 30},
         "LIDOCAINE HYDROCHLORIDE": {28.35: 28.3},
+        "METRONIDAZOLE": {59.7: 59},
         "MICONAZOLE NITRATE": {28: 30},
         "SUCRALFATE": {414: 420},
+        "SULFACETAMIDE SODIUM": {473: 480},
         "SULFACETAMIDE SODIUM; SULFUR": {170.3: 170},
-        "TOBRAMYCIN SULFATE": {50: 30}
+        "TOBRAMYCIN SULFATE": {50: 30},
+        "HYDROCORTISONE ACETATE; LIDOCAINE HYDROCHLORIDE": {28.35: 28.3},
+        "UREA": {198.4: 198}
     }
     part_dict = {"v": v_dict, "an": an_dict, "wc": wc_dict}
     new_value_dict = part_dict[part]
