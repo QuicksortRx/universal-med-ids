@@ -49,7 +49,7 @@ def unit_dosage(df, column='PACKAGEDESCRIPTION'):
 
 # Adjusts the processed data from the description to only utilize data that can be used to calculate unit dosages
 def adjust_units(df):
-    viable_units=["mL", "L", "g", "mg"]
+    viable_units = ["g", "h", "L", "mg", "mL"]
     mask = ~df['DOSE_UNIT'].isin(viable_units)
     df.loc[mask, ['DOSE', 'DOSE_QUANTITY']] = df.loc[mask, ['DOSE_UNIT', 'DOSE_UNIT_VALUE']].values
     df.loc[mask, ['DOSE_UNIT', 'DOSE_UNIT_VALUE']] = np.nan
@@ -78,20 +78,54 @@ def round_nine(n):
 # Accounts for discrepancies in values due to the number of significant figures taken in measurements
 def weight_sig_figs(std_name, n, part):
     v_dict = {
+        "ACETAMINOPHEN": {650: 649.6},
+        "ACETIC ACID": {20.65: 20},
+        "APRACLONIDINE HYDROCHLORIDE": {5.75: 5},
+        "BENZOYL PEROXIDE; CLINDAMYCIN PHOSPHATE": {12: 10},
+        "BETAMETHASONE DIPROPIONATE; CLOTRIMAZOLE": {0.64: 0.5},
+        "BROMFENAC SODIUM": {1.035: 0.9},
         "BUPIVACAINE HYDROCHLORIDE; EPINEPHRINE BITARTRATE": {0.0091: 0.005},
         "CASPOFUNGIN ACETATE": {5: 50/10.8, 7: 70/10.8},
         "CEFAZOLIN SODIUM": {225: 500/2.2},
+        "CLOBETASOL PROPIONATE": {0.4625: 0.5},
         "DEFEROXAMINE MESYLATE": {95: 2000/(2000.04/95)},
-        "DEXTROSE MONOHYDRATE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {2.98: 3, .745: .75, 2.25: 2},
-        "GEMCITABINE HYDROCHLORIDE": {38: 2000/52.6, 1: 50/52.6},
+        "DEXTROSE MONOHYDRATE; POTASSIUM CHLORIDE; SODIUM CHLORIDE": {.745: .75, 2.25: 2, 2.98: 3},
+        "GEMCITABINE HYDROCHLORIDE": {1: 50/52.6, 38: 2000/52.6},
+        "KETOTIFEN FUMARATE": {0.35: 0.25},
+        "LEVOTHYROXINE SODIUM": {0.175: 0.18},
+        "METHYLPHENIDATE": {1.6: 15/9, 2.2: 20/9},
         "NEOSTIGMINE METHYLSULFATE": {1.02: 1},
-        "POTASSIUM CHLORIDE": {7.46: 7.45}
+        "OMEPRAZOLE MAGNESIUM": {20.6: 20},
+        "POTASSIUM CHLORIDE": {7.46: 7.45, 40: 3000/74.5, 600: 596, 750: 745}
     }
-    an_dict = {"GEMCITABINE HYDROCHLORIDE": {26.3: (50/52.6)*26.3}}
+    an_dict = {
+        "CICLOPIROX": {0.96: 1},
+        "GEMCITABINE HYDROCHLORIDE": {26.3: (50/52.6)*26.3},
+        "POTASSIUM CHLORIDE": {1.54: 1.5},
+        "SODIUM PHOSPHATE, DIBASIC, UNSPECIFIED FORM; SODIUM PHOSPHATE, MONOBASIC, UNSPECIFIED FORM": {118 : 133},
+        "SULFACETAMIDE; SULFUR": {473.2: 473.2/473}
+    }
     wc_dict = {
+        "ACETAMINOPHEN; DEXTROMETHORPHAN HYDROBROMIDE; DOXYLAMINE SUCCINATE": {236: 237},
+        "BACITRACIN": {28: 30, 28.4: 30},
+        "BACITRACIN ZINC": {28.35: 28},
         "CASPOFUNGIN ACETATE": {10: 10.8},
-        "DEFEROXAMINE MESYLATE": {21.1: 21.053, 5.3: 500/95},
-        "TOBRAMYCIN SULFATE": {50: 30}
+        "CHOLESTYRAMINE": {239.6: 239.4},
+        "CLOTRIMAZOLE": {28: 30, 28.35: 30},
+        "DEFEROXAMINE MESYLATE": {5.3: 500/95, 21.1: 21.053},
+        "DEXTROMETHORPHAN HYDROBROMIDE; GUAIFENESIN": {236: 237},
+        "GUAIFENESIN": {237: 236},
+        "HYDROCORTISONE": {28: 30, 28.35: 30, 28.4: 30, 118: 120, 553.6: 554},
+        "LIDOCAINE": {28: 30, 28.35: 30},
+        "LIDOCAINE HYDROCHLORIDE": {28.35: 28.3},
+        "METRONIDAZOLE": {59.7: 59},
+        "MICONAZOLE NITRATE": {28: 30},
+        "SUCRALFATE": {414: 420},
+        "SULFACETAMIDE SODIUM": {473: 480},
+        "SULFACETAMIDE SODIUM; SULFUR": {170.3: 170},
+        "TOBRAMYCIN SULFATE": {50: 30},
+        "HYDROCORTISONE ACETATE; LIDOCAINE HYDROCHLORIDE": {28.35: 28.3},
+        "UREA": {198.4: 198}
     }
     part_dict = {"v": v_dict, "an": an_dict, "wc": wc_dict}
     new_value_dict = part_dict[part]
@@ -103,7 +137,8 @@ def weight_sig_figs(std_name, n, part):
 # Carries out moles and other substance dependent unit conversions
 def mole_converter(std_name, before_unit):
     meq_dict = {"POTASSIUM CHLORIDE": 74.5, "SODIUM CHLORIDE": 58.5}
-    iu_dict = {"BLEOMYCIN SULFATE": [1/1000, "[USP'U]"]}
+    iu_dict = {"BLEOMYCIN SULFATE": [1/1000, "[USP'U]"], "HUMAN RHO(D) IMMUNE GLOBULIN" : [1/5000, "mg"]}
+    usp_dict = {"PETROLATUM": [1000, "mg"]}
     divider = 1
     if before_unit == "meq" and std_name in meq_dict:
         divider = meq_dict[std_name]
@@ -111,6 +146,9 @@ def mole_converter(std_name, before_unit):
     elif before_unit == "[iU]" and std_name in iu_dict:
         divider = iu_dict[std_name][0]
         before_unit = iu_dict[std_name][1]
+    elif before_unit == "[USP'U]" and std_name in usp_dict:
+        divider = usp_dict[std_name][0]
+        before_unit = usp_dict[std_name][1]
     return divider, before_unit
 
 # Processes all unit dosage related data to result in a standardized API (active pharmaceutical ingredient) amount
@@ -133,7 +171,7 @@ def process_unit(unit, value, unit_compare, unit_num, std_name):
             elif before_unit == "ug":
                 divider = 1/1000
                 before_unit = "mg"
-            elif before_unit == "meq" or before_unit == "[iU]":
+            elif before_unit == "meq" or before_unit == "[iU]" or before_unit == "[USP'U]":
                 divider, before_unit = mole_converter(std_name, before_unit)
             if unit_compare == after_unit:
                 if float(unit_num) != 0:
@@ -416,12 +454,36 @@ def description_std(desc):
                 desc = desc.replace(upper_unit, pre + unit_dict[u] + post)
     return desc
 
-def main(filename, log_level):
+def validate_csv(new_data_csv, reference_csv='universal-med-ids.csv'):
+    try:
+        new_data = pd.read_csv(new_data_csv)
+    except:
+        logging.error(f"'{new_data_csv}' not found, ensure it is in the directory and named the same")
+        raise
+    reference  = pd.read_csv(reference_csv)
+    merged_df = pd.merge(reference, new_data, on='NDC', how='outer', suffixes=('_old', '_new'))
+
+    # Check for differences in QUMI Code
+    for index, row in merged_df.iterrows():
+        old_value = row['QUMI Code_old']
+        new_value = row['QUMI Code_new']
+        if pd.isna(old_value) and not pd.isna(new_value):
+            print(f"{row['NDC']}:\tNaN -> {new_value}\t{row['Description_new']}")
+        elif not pd.isna(old_value) and pd.isna(new_value):
+            print(f"{row['NDC']}:\t{old_value} -> NaN\t{row['Description_old']}")
+        elif old_value != new_value:
+            print(f"{row['NDC']}:\t{old_value} -> {new_value}\t{row['Description_new']}")
+
+def main(operation, filename, log_level):
     # Set up logging level
     numeric_level = getattr(logging, log_level.upper(), None)
     if not isinstance(numeric_level, int):
         raise ValueError(f'Invalid log level: {log_level}')
     logging.basicConfig(format='%(asctime)s %(name)s:%(levelname)s: %(message)s', level=numeric_level)
+
+    if operation == "validate":
+        validate_csv(filename)
+        return
 
     # Converting the NDC-inclusive data to pandas DataFrames
     logging.info("Converting the NDC-inclusive data to pandas DataFrames...")
@@ -615,16 +677,23 @@ def main(filename, log_level):
     qsrx_data = qsrx_data.rename(columns={'LABELERNAME': 'Supplier', 'ACTIVE_NUMERATOR_STRENGTH': 'Strength', 'API Measure': 'Measure', 'APPLICATIONNUMBER': 'ANDA', 'SUBSTANCENAME': 'Generic Description', 'DEASCHEDULE': 'DEA'})
     qsrx_data = qsrx_data.sort_values(by=['Dosage Route','QUMI Code'])
     qsrx_data.replace("nan", np.nan, inplace=True)
-    output_list = ["INJECTABLE", "INTRATRACHEAL", "IRRIGATION"]
-    qsrx_data = qsrx_data[qsrx_data['Dosage Route'].isin(output_list)]
+    #output_list = ["INJECTABLE", "INTRATRACHEAL", "IRRIGATION"]
+    #qsrx_data = qsrx_data[qsrx_data['Dosage Route'].isin(output_list)]
     qsrx_data.to_csv(filename, index=False)
     logging.info(f'{filename} has been successfully created')
 
 # Parse command-line arguments and run main
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="This script generates Open QSRX Codes")
-    parser.add_argument('-generate', type=valid_filename, help="The name of the CSV file to generate", required=True)
+    #parser.add_argument('-generate', type=valid_filename, help="The name of the CSV file to generate", required=True)
+    #parser.add_argument('-validate', type=valid_filename, help="The name of the CSV file to validate", required=True)
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('-generate', type=str, help="The name of the CSV file to generate")
+    group.add_argument('-validate', type=str, help="The name of the CSV file to validate")
     parser.add_argument("-level", help="Set logging level", type=str, choices=['debug', 'info', 'error', 'warning', 'critical'], 
                         default='info')
     args = parser.parse_args()
-    main(args.generate, args.level)
+    if args.generate:
+        main("generate", args.generate, args.level)
+    elif args.validate:
+        main("validate", args.validate, args.level)
