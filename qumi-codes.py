@@ -454,12 +454,36 @@ def description_std(desc):
                 desc = desc.replace(upper_unit, pre + unit_dict[u] + post)
     return desc
 
-def main(filename, log_level):
+def validate_csv(new_data_csv, reference_csv='universal-med-ids.csv'):
+    try:
+        new_data = pd.read_csv(new_data_csv)
+    except:
+        logging.error(f"'{new_data_csv}' not found, ensure it is in the directory and named the same")
+        raise
+    reference  = pd.read_csv(reference_csv)
+    merged_df = pd.merge(reference, new_data, on='NDC', how='outer', suffixes=('_old', '_new'))
+
+    # Check for differences in QUMI Code
+    for index, row in merged_df.iterrows():
+        old_value = row['QUMI Code_old']
+        new_value = row['QUMI Code_new']
+        if pd.isna(old_value) and not pd.isna(new_value):
+            print(f"{row['NDC']}:\tNaN -> {new_value}\t{row['Description_new']}")
+        elif not pd.isna(old_value) and pd.isna(new_value):
+            print(f"{row['NDC']}:\t{old_value} -> NaN\t{row['Description_old']}")
+        elif old_value != new_value:
+            print(f"{row['NDC']}:\t{old_value} -> {new_value}\t{row['Description_new']}")
+
+def main(operation, filename, log_level):
     # Set up logging level
     numeric_level = getattr(logging, log_level.upper(), None)
     if not isinstance(numeric_level, int):
         raise ValueError(f'Invalid log level: {log_level}')
     logging.basicConfig(format='%(asctime)s %(name)s:%(levelname)s: %(message)s', level=numeric_level)
+
+    if operation == "validate":
+        validate_csv(filename)
+        return
 
     # Converting the NDC-inclusive data to pandas DataFrames
     logging.info("Converting the NDC-inclusive data to pandas DataFrames...")
@@ -661,8 +685,15 @@ def main(filename, log_level):
 # Parse command-line arguments and run main
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="This script generates Open QSRX Codes")
-    parser.add_argument('-generate', type=valid_filename, help="The name of the CSV file to generate", required=True)
+    #parser.add_argument('-generate', type=valid_filename, help="The name of the CSV file to generate", required=True)
+    #parser.add_argument('-validate', type=valid_filename, help="The name of the CSV file to validate", required=True)
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('-generate', type=str, help="The name of the CSV file to generate")
+    group.add_argument('-validate', type=str, help="The name of the CSV file to validate")
     parser.add_argument("-level", help="Set logging level", type=str, choices=['debug', 'info', 'error', 'warning', 'critical'], 
                         default='info')
     args = parser.parse_args()
-    main(args.generate, args.level)
+    if args.generate:
+        main("generate", args.generate, args.level)
+    elif args.validate:
+        main("validate", args.validate, args.level)
