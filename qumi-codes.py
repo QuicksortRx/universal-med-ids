@@ -32,13 +32,15 @@ def ndc_eleven_digits(ndc):
 
 # Processes the description to separate out useful information on the unit dosage
 def process_description(desc):
-        pattern = r"(?:.*\/)?\s*(\d+(\.\d+)?)\s*([^\d\(\)]*)\s*in\s*(\d+)\s*([^\d\(\)]*)"
-        match = re.search(pattern, desc)
-        if match:
-            unit_num, _, unit, form_num, form = match.groups()
-            return unit_num.strip(), unit.strip(), form_num.strip(), form.strip()
-        else:
-            return np.nan, np.nan, np.nan, np.nan
+    parts = desc.split('/')
+    last_part = parts[-1]
+    pattern = r"\s*(\d*\.\d+|\d+)\s*([^\d\(\)\s][^\(\)]*?)\s*in\s*(\d+)\s*([^\d\(\)\s][^\(\)]*)"
+    match = re.search(pattern, last_part.strip())
+    if match:
+        unit_num, unit, form_num, form = match.groups()
+        return unit_num.strip(), unit.strip(), form_num.strip(), form.strip()
+    else:
+        return np.nan, np.nan, np.nan, np.nan
 
 # Assigns each of the separated unit dosage parts from the description to new columns
 def unit_dosage(df, column='PACKAGEDESCRIPTION'):
@@ -319,7 +321,7 @@ def dfg_std(dfg):
         dfg = dfg.upper()
     return dfg
 
-# Standardizees the formatting for the 'Dosage Form' column
+# Standardizes the formatting for the 'Dosage Form' column
 def dosage_form_std(row):
     df_list = ["Injectable Solution", "Injectable Suspension", "Injection"]
     if row['DF'] in df_list or row['DF'] == "nan":
@@ -468,11 +470,11 @@ def validate_csv(new_data_csv, reference_csv='universal-med-ids.csv'):
         old_value = row['QUMI Code_old']
         new_value = row['QUMI Code_new']
         if pd.isna(old_value) and not pd.isna(new_value):
-            print(f"{row['NDC']}:\tNaN -> {new_value}\t{row['Description_new']}")
+            print(f"{row['NDC']}:\tNaN -> {new_value}\t{row['Description_new']} \t{row['Strength_new']} {row['Measure_new']}")
         elif not pd.isna(old_value) and pd.isna(new_value):
-            print(f"{row['NDC']}:\t{old_value} -> NaN\t{row['Description_old']}")
+            print(f"{row['NDC']}:\t{old_value} -> NaN\t{row['Description_old']} \t{row['Strength_old']} {row['Measure_old']}")
         elif old_value != new_value:
-            print(f"{row['NDC']}:\t{old_value} -> {new_value}\t{row['Description_new']}")
+            print(f"{row['NDC']}:\t{old_value} -> {new_value}\t{row['Description_new']} \t{row['Strength_new']} {row['Measure_new']}")
 
 def main(operation, filename, log_level):
     # Set up logging level
@@ -544,6 +546,7 @@ def main(operation, filename, log_level):
     ndc_data['RXCUI'] = ndc_data['RXCUI'].apply(rxcui_std)
     ndc_data['DOSAGEFORMNAME2'] = ndc_data['DOSAGEFORMNAME'].apply(dosage_form)
     ndc_data['ROUTENAME2'] = ndc_data['ROUTENAME'].apply(route)
+    ndc_data = ndc_data.astype(str)
     ndc_data['DOSE'] = ndc_data['DOSE'].apply(dose_simplified)
     ndc_data['DOSAGEFORMNAME2'] = ndc_data.apply(route_to_dosage, axis=1)
     ndc_data = ndc_data.astype(str)
