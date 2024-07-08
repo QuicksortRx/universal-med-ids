@@ -371,18 +371,35 @@ def api_measure_std(unit):
         unit = unit[:-1]
     return unit
 
-# Makes descriptions for NDCs not found in RxNorm
+# Makes descriptions for NDCs without preformatted descriptions in RxNorm
 def make_desc(row):
     np_name = row['NONPROPRIETARYNAME'].lower()
-    num = row['ACTIVE_NUMERATOR_STRENGTH']
-    unit = row['API Measure']
+    np_name = np_name.replace(", and", ",")
+    np_name = np_name.replace(" and", ",")
+    np_name = np_name.replace(", ", ",")
+    np_names = np_name.split(",")
+    use_np_names = False
+    nums = row['ACTIVE_NUMERATOR_STRENGTH'].split("; ")
+    units = row['API Measure'].split("; ")
+    amount = ""
+    if len(np_names) == len(nums):
+        np_name = ""
+        use_np_names = True
+    else:
+        np_name = np_name.replace(",", ", ")
+        np_name += " "
+    for i in range(len(nums)):
+        if use_np_names:
+            amount += np_names[i].capitalize() + " "
+        amount += nums[i] + " " + units[i] + "; "
+    amount = amount[:-2]
     d_f = row['Dosage Form']
     p_name = row['PROPRIETARYNAME'].title()
     if p_name.lower() == np_name:
         p_name = ""
     else:
         p_name = " [" + p_name + "]"
-    return np_name + " " + num + " " + unit + " " + str(d_f) + p_name
+    return np_name + amount + " " + str(d_f) + p_name
 
 # Gets an unsigned shake_256 integer from the long formed code
 def shakehash_generic_code(generic_code_plus):
@@ -671,7 +688,7 @@ def main(operation, filename, log_level):
     logging.info("Merging complete")
 
     # Creating the output CSV
-    logging.info("Creating the output CSV")
+    logging.info("Creating the output CSV...")
     if log_level == 'debug':
         qsrx_data = ndc_data[['NDC', 'RXCUI', 'New Code', 'QUMI Code', 'Package Count', 'LABELERNAME', 'Description', 'Dosage Form', 'Dosage Route', 'ACTIVE_NUMERATOR_STRENGTH', 'API Measure', 'APPLICATIONNUMBER', 'SUBSTANCENAME', 'DEASCHEDULE']]
         qsrx_data = qsrx_data.rename(columns={'New Code': 'Pre-Hash Code'})
