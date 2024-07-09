@@ -351,17 +351,20 @@ def use_dfg(row):
 
 # Inputs code specifiers to prevent clashing codes due to lack of precision
 def use_df(row):
+    rxcuish = row['RXCUI2']
     specifier = ""
     dose_list = ["AMPULE", "SYRINGE"]
     dosage_form_list = ["Auto-Injector"]
     brand_list = ["solu-medrol"]
+    if rxcuish == "nan":
+        rxcuish = row['SUBSTANCENAME']
     if row['DOSE'] in dose_list:
         specifier = row['DOSE']
     if row['Dosage Form'] in dosage_form_list:
         specifier += row['Dosage Form']
     if row['PROPRIETARYNAME'] in brand_list:
         specifier += row['PROPRIETARYNAME']
-    return row['RXCUI2'] + row['Dosage Route'] + row['ACTIVE_NUMERATOR_STRENGTH'] + specifier
+    return rxcuish + row['Dosage Route'] + row['ACTIVE_NUMERATOR_STRENGTH'] + specifier
 
 # Standardizes the formatting of the 'API Measure' column
 def api_measure_std(unit):
