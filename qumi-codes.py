@@ -377,12 +377,17 @@ def make_desc(row):
     np_name = np_name.replace(", and", ",")
     np_name = np_name.replace(" and", ",")
     np_name = np_name.replace(", ", ",")
-    np_names = np_name.split(",")
+    np_names = sorted(np_name.split(","))
     use_np_names = False
+    substances = row['SUBSTANCENAME'].lower().split("; ")
     nums = row['ACTIVE_NUMERATOR_STRENGTH'].split("; ")
     units = row['API Measure'].split("; ")
     amount = ""
-    if len(np_names) == len(nums):
+    if len(np_names) == len(nums) and (np_names[0][:2] == substances[0][:2] or len(np_names) == 1):
+        np_name = ""
+        use_np_names = True
+    elif len(substances) == len(nums):
+        np_names = substances
         np_name = ""
         use_np_names = True
     else:
@@ -391,11 +396,13 @@ def make_desc(row):
     for i in range(len(nums)):
         if use_np_names:
             amount += np_names[i].capitalize() + " "
-        amount += nums[i] + " " + units[i] + "; "
+        if units[i] != "":
+            units[i] = " " + units[i]
+        amount += nums[i] + units[i] + "; "
     amount = amount[:-2]
     d_f = row['Dosage Form']
     p_name = row['PROPRIETARYNAME'].title()
-    if p_name.lower() == np_name:
+    if p_name.lower() == row['NONPROPRIETARYNAME'].lower():
         p_name = ""
     else:
         p_name = " [" + p_name + "]"
