@@ -1,21 +1,28 @@
-# Merge Medicare NDC Crosswalk file with ASP Pricing file.
+# Merge Medicare pricing files:
+#   - NDC Crosswalk
+#   - ASP
+#   - Addendum B
 #
 # Use included files in DATA_PATH directory or download the latest files from:
-#  https://www.cms.gov/medicare/payment/all-fee-service-providers/medicare-part-b-drug-average-sales-price/asp-pricing-files
+#   - https://www.cms.gov/medicare/payment/all-fee-service-providers/medicare-part-b-drug-average-sales-price/asp-pricing-files
+#   - https://www.cms.gov/medicare/medicare-fee-service-payment/hospitaloutpatientpps/addendum-and-addendum-b-updates/addendum-b
 #
-# Usage: python -m src.medicare_part_b.merge_ndc_crosswalk_asp
+# Usage: python -m src.medicare_part_b.merge_medicare_pricing
 #        -crosswalk_file <path>
 #        -asp_file <path>
+#        -addendum_b_file <path>
 
 import argparse
 import pandas as pd
 
 from src.common.logger_config import logger
 
-FILE_ENCODING = "ISO-8859-1"
-HEADER_ROW = 8  # 0-indexed
 DATA_PATH = "src/medicare_part_b/data"
-MERGED_FILE_PATH = f"{DATA_PATH}/merged.csv"
+MERGED_FILE_PATH = f"{DATA_PATH}/medicare-pricing-merged.csv"
+FILE_ENCODING = "ISO-8859-1"
+ASP_HEADER_ROW = 8  # 0-indexed
+CROSSWALK_HEADER_ROW = 8  # 0-indexed
+ADDENDUM_B_HEADER_ROW = 6  # 0-indexed
 ASP_COLUMNS = [
     "HCPCS Code",
     "Payment Limit",
@@ -29,6 +36,10 @@ CROSSWALK_COLUMNS = [
     "PKG QTY",
     "BILLUNITSPKG",
 ]
+ADDENDUM_B_COLUMNS = [
+    "HCPCS Code",
+    "SI",
+]
 
 
 def calculate_asp(payment_limit, markup_percentage=0.06):
@@ -39,13 +50,13 @@ def calculate_asp(payment_limit, markup_percentage=0.06):
     return payment_limit / (1 + markup_percentage)
 
 
-def merge(crosswalk_file_path, asp_file_path):
+def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path):
     crosswalk_df = pd.read_csv(
         crosswalk_file_path,
         encoding=FILE_ENCODING,
-        header=HEADER_ROW,
+        header=CROSSWALK_HEADER_ROW,
+        usecols=CROSSWALK_COLUMNS,
     )
-    crosswalk_df = crosswalk_df[CROSSWALK_COLUMNS]
     crosswalk_df_renamed = crosswalk_df.rename(
         columns={
             "_2024_CODE": "HCPCS Code",
@@ -60,15 +71,25 @@ def merge(crosswalk_file_path, asp_file_path):
     asp_df = pd.read_csv(
         asp_file_path,
         encoding=FILE_ENCODING,
-        header=HEADER_ROW,
+        header=ASP_HEADER_ROW,
+        usecols=ASP_COLUMNS,
     )
-    asp_df = asp_df[ASP_COLUMNS]
 
-    # Merge DataFrames on HCPCS Code
+    addendum_b_df = pd.read_csv(
+        addendum_b_file_path,
+        encoding=FILE_ENCODING,
+        header=ADDENDUM_B_HEADER_ROW,
+        usecols=ADDENDUM_B_COLUMNS,
+    )
+
+    # Merge crosswalk with ASP DataFrames on HCPCS Code
     merged_df = pd.merge(crosswalk_df_renamed, asp_df, on="HCPCS Code")
 
     # Add Average Sales Price (ASP) column
     merged_df["ASP"] = calculate_asp(merged_df["Payment Limit"]).round(3)
+
+    # Merge Addendum B DataFrame on HCPCS Code
+    merged_df = pd.merge(merged_df, addendum_b_df, on="HCPCS Code")
 
     # Save the result to a CSV file
     merged_df.to_csv(MERGED_FILE_PATH, index=False)
@@ -76,9 +97,7 @@ def merge(crosswalk_file_path, asp_file_path):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Merge Medicare NDC Crosswalk file with ASP Pricing file."
-    )
+    parser = argparse.ArgumentParser(description="Merge Medicare Pricing files.")
     parser.add_argument(
         "-crosswalk_file",
         required=True,
@@ -89,6 +108,11 @@ if __name__ == "__main__":
         required=True,
         help="Path to the ASP Pricing file",
     )
+    parser.add_argument(
+        "-addendum_b_file",
+        required=True,
+        help="Path to the Addendum B file",
+    )
     args = parser.parse_args()
 
-    merge(args.crosswalk_file, args.asp_file)
+    merge(args.crosswalk_file, args.asp_file, args.addendum_b_file)
