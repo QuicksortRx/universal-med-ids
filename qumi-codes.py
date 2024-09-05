@@ -328,7 +328,7 @@ def dosage_form_std(row):
         return row['DOSE'].title()
     return row['DF']
 
-# Helps specifies the descriptions given by RxNorm further by replacing the attribute found in the 'DF' column
+# Helps specify the descriptions given by RxNorm further by replacing the attribute found in the 'DF' column
 def replace_df(row):
     result = row['Description']
     if result == "nan":
@@ -481,6 +481,17 @@ def description_std(desc):
             for post in post_list:
                 upper_unit = pre + u + post
                 desc = desc.replace(upper_unit, pre + unit_dict[u] + post)
+    pattern = r'^(\d+\s+\w+)\s+(.*\d+\s+\w+/\w+)(.*)'
+    match = re.search(pattern, desc)
+    if match:
+        size, info, extra = match.groups()
+        desc = info + " " + size + extra
+    desc = desc.replace(" / ", "; ")
+    desc_parts = desc.split("; ")
+    for i in range(len(desc_parts)):
+        phrase = desc_parts[i]
+        desc_parts[i] = phrase[0].upper() + phrase[1:]
+    desc = "; ".join(desc_parts)
     return desc
 
 def validate_csv(new_data_csv, reference_csv='universal-med-ids.csv'):
@@ -494,14 +505,18 @@ def validate_csv(new_data_csv, reference_csv='universal-med-ids.csv'):
 
     # Check for differences in QUMI Code
     for index, row in merged_df.iterrows():
-        old_value = row['QUMI Code_old']
-        new_value = row['QUMI Code_new']
-        if pd.isna(old_value) and not pd.isna(new_value):
-            print(f"{row['NDC']}:\tNaN -> {new_value}\t{row['Description_new']} \t{row['Strength_new']} {row['Measure_new']}")
-        elif not pd.isna(old_value) and pd.isna(new_value):
-            print(f"{row['NDC']}:\t{old_value} -> NaN\t{row['Description_old']} \t{row['Strength_old']} {row['Measure_old']}")
-        elif old_value != new_value:
-            print(f"{row['NDC']}:\t{old_value} -> {new_value}\t{row['Description_new']} \t{row['Strength_new']} {row['Measure_new']}")
+        old_qumi = row['QUMI Code_old']
+        new_qumi = row['QUMI Code_new']
+        if pd.isna(old_qumi) and not pd.isna(new_qumi):
+            print(f"{row['NDC']}:\tNew NDC -> {new_qumi}\t{row['Description_new']} \t{row['Strength_new']} {row['Measure_new']}")
+        elif not pd.isna(old_qumi) and pd.isna(new_qumi):
+            print(f"{row['NDC']}:\t{old_qumi} -> NDC deprecated\t{row['Description_old']} \t{row['Strength_old']} {row['Measure_old']}")
+        elif old_qumi != new_qumi:
+            print(f"{row['NDC']}:\t{old_qumi} -> {new_qumi}\t{row['Description_new']} \t{row['Strength_new']} {row['Measure_new']}")
+        old_desc = row['Description_old']
+        new_desc = row['Description_new']
+        if (not pd.isna(old_qumi) or not pd.isna(new_qumi)) and old_desc != new_desc:
+            print(f"{row['NDC']}:\t{old_desc} -> {new_desc}")
 
 def main(operation, filename, log_level):
     # Set up logging level
@@ -714,7 +729,7 @@ def main(operation, filename, log_level):
 
 # Parse command-line arguments and run main
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="This script generates Open QSRX Codes")
+    parser = argparse.ArgumentParser(description="This script generates QUMI Codes")
     #parser.add_argument('-generate', type=valid_filename, help="The name of the CSV file to generate", required=True)
     #parser.add_argument('-validate', type=valid_filename, help="The name of the CSV file to validate", required=True)
     group = parser.add_mutually_exclusive_group(required=True)
