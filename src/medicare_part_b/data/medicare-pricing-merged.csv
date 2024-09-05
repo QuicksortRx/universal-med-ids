@@ -205,6 +205,7 @@ J0172,"Inj, aducanumab-avwa, 2 mg",64406-0102-02,Aduhelm,3.0,1,150.0,5.978,5.64,
 J0173,"Inj, epinephrine (belcher)",00404-9857-01,Epinephrine HCl (Belcher),1.0,1,10.0,1.859,1.754,K
 J0174,"Inj, lecanemab-irmb, 1 mg",62856-0212-01,Leqembi,2.0,1,200.0,1.336,1.26,G
 J0174,"Inj, lecanemab-irmb, 1 mg",62856-0215-01,Leqembi,5.0,1,500.0,1.336,1.26,G
+J0177,"Inj, aflibercept hd, 1 mg",61755-0050-01,Eylea HD,0.07,1,8.0,335.707,316.705,
 J0178,Aflibercept injection,61755-0005-01,Eylea,0.05,1,2.0,835.399,788.112,K
 J0178,Aflibercept injection,61755-0005-02,EYLEA,0.05,1,2.0,835.399,788.112,K
 J0179,"Inj, brolucizumab-dbll, 1 mg",00078-0827-60,Beovu,0.05,1,6.0,331.229,312.48,K
@@ -508,6 +509,13 @@ J0561,Penicillin g benzathine inj,60793-0700-10,Bicillin L-A,1.0,10,60.0,23.972,
 J0561,Penicillin g benzathine inj,60793-0701-10,Bicillin L-A,2.0,10,120.0,23.972,22.615,K
 J0561,Penicillin g benzathine inj,60793-0702-10,Bicillin L-A,4.0,10,240.0,23.972,22.615,K
 J0565,"Inj, bezlotoxumab, 10 mg",00006-3025-00,ZINPLAVA,40.0,1,100.0,39.885,37.627,K
+J0577,"Inj, brixadi, 7 days or less",58284-0208-01,Brixadi (weekly dosing),0.16,1,1.0,426.971,402.803,
+J0577,"Inj, brixadi, 7 days or less",58284-0216-01,Brixadi (weekly dosing),0.32,1,1.0,426.971,402.803,
+J0577,"Inj, brixadi, 7 days or less",58284-0224-01,Brixadi (weekly dosing),0.48,1,1.0,426.971,402.803,
+J0577,"Inj, brixadi, 7 days or less",58284-0232-01,Brixadi (weekly dosing),0.64,1,1.0,426.971,402.803,
+J0578,"Inj,brixadi, more than 7 day",58284-0228-01,Brixadi (monthly dosing),0.36,1,1.0,1707.883,1611.21,
+J0578,"Inj,brixadi, more than 7 day",58284-0264-01,Brixadi (monthly dosing),0.18,1,1.0,1707.883,1611.21,
+J0578,"Inj,brixadi, more than 7 day",58284-0296-01,Brixadi (monthly dosing),0.27,1,1.0,1707.883,1611.21,
 J0583,Bivalirudin,00409-8300-10,BIVALIRUDIN,1.0,10,2500.0,0.202,0.191,N
 J0583,Bivalirudin,00409-8300-15,BIVALIRUDIN,1.0,10,2500.0,0.202,0.191,N
 J0583,Bivalirudin,00781-3158-95,BIVALIRUDIN,1.0,10,2500.0,0.202,0.191,N
@@ -738,6 +746,7 @@ J0670,Inj mepivacaine hcl/10 ml,63323-0283-57,Polocaine,50.0,25,125.0,3.381,3.19
 J0670,Inj mepivacaine hcl/10 ml,63323-0293-37,Polocaine-Mpf,30.0,25,75.0,3.381,3.19,N
 J0670,Inj mepivacaine hcl/10 ml,63323-0294-27,Polocaine-Mpf,20.0,25,50.0,3.381,3.19,N
 J0670,Inj mepivacaine hcl/10 ml,63323-0296-57,Polocaine,50.0,25,125.0,3.381,3.19,N
+J0687,Inj cefazolin (wg crit care),44567-0840-25,CEFAZOLIN,1.0,25,100.0,1.081,1.02,
 J0688,"Inj cefazolin sodium, hikma",00143-9139-25,CEFAZOLIN,1.0,25,100.0,1.061,1.001,N
 J0688,"Inj cefazolin sodium, hikma",00143-9140-25,CEFAZOLIN,1.0,25,150.0,1.061,1.001,N
 J0689,"Inj cefazolin sodium, baxter",00338-3503-41,Cefazolin Sodium,50.0,24,48.0,1.272,1.2,K
@@ -1037,6 +1046,8 @@ J0841,Inj crotalidae im f(ab')2 eq,66621-0790-02,Anavip,1.0,1,1.0,1056.385,996.5
 J0850,Cytomegalovirus imm iv /vial,44206-0532-11,CYTOGAM,50.0,1,1.0,1812.137,1709.563,K
 J0850,Cytomegalovirus imm iv /vial,49591-0532-51,CYTOGAM,50.0,1,1.0,1812.137,1709.563,K
 J0850,Cytomegalovirus imm iv /vial,70257-0532-51,CYTOGAM,50.0,1,1.0,1812.137,1709.563,K
+J0872,Daptomycin (xellia) unrefrig,70594-0060-01,DAPTOMYCIN,1.0,1,500.0,0.325,0.307,
+J0872,Daptomycin (xellia) unrefrig,70594-0066-01,DAPTOMYCIN,1.0,1,350.0,0.325,0.307,
 J0873,"Inj, daptomycin (xellia)",70594-0053-01,Daptomycin,1.0,1,350.0,0.031,0.029,N
 J0874,"Inj, daptomycin (baxter)",00338-0712-24,Daptomycin in NaCl (Baxter),50.0,24,8400.0,0.068,0.064,E2
 J0874,"Inj, daptomycin (baxter)",00338-0714-24,Daptomycin in NaCl (Baxter),50.0,24,12000.0,0.068,0.064,E2
@@ -1175,6 +1186,51 @@ J0896,Inj luspatercept-aamt 0.25mg,59572-0775-01,Reblozyl,1.0,1,300.0,40.68,38.3
 J0897,Denosumab injection,55513-0710-01,Prolia,1.0,1,60.0,26.749,25.235,K
 J0897,Denosumab injection,55513-0730-01,XGEVA,1.0,1,120.0,26.749,25.235,K
 J1000,Depo-estradiol cypionate inj,00009-0271-01,Depo-Estradiol,5.0,1,5.0,39.33,37.104,N
+J1010,"Inj, methylpred acetate 1 mg",00009-0274-01,Depo-Medrol,5.0,1,100.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-0280-02,Depo-Medrol,5.0,1,200.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-0280-03,Depo-Medrol,10.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-0280-51,Depo-Medrol,5.0,25,5000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-0280-52,Depo-Medrol,10.0,25,10000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-0306-02,Depo-Medrol,5.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-0306-12,Depo-Medrol,5.0,25,10000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-3073-01,Depo-Medrol,1.0,1,40.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-3073-03,Depo-Medrol,1.0,25,1000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-3073-22,Depo-Medrol,1.0,1,40.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-3073-23,Depo-Medrol,1.0,25,1000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-3475-01,Depo-Medrol,1.0,1,80.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-3475-03,Depo-Medrol,1.0,25,2000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-3475-22,Depo-Medrol,1.0,1,80.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00009-3475-23,Depo-Medrol,1.0,25,2000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00781-3516-75,METHYLPREDNISOLONE ACETAT,5.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00781-3522-70,METHYLPREDNISOLONE ACETATE,10.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",00781-3522-75,METHYLPREDNISOLONE ACETATE,5.0,1,200.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",16714-0088-01,Methylprednisolone Acetate,1.0,1,40.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",16714-0088-25,Methylprednisolone Acetate,1.0,25,1000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",16714-0089-01,Methylprednisolone Acetate,5.0,1,200.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",16714-0090-01,Methylprednisolone Acetate,10.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",16714-0472-25,METHYLPREDNISOLONE ACETATE,1.0,25,2000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",16714-0473-01,Methylprednisolone Acetate,5.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",25021-0820-05,Methylprednisolone Acetate,5.0,1,200.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",25021-0820-10,Methylprednisolone Acetate,10.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",25021-0821-05,Methylprednisolone Acetate,5.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",42023-0238-01,METHYLPREDNISOLONE ACETATE,5.0,1,200.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",42023-0239-01,Methylprednisolone Acetate,10.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",42023-0240-01,Methylprednisolone Acetate,5.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",50090-0436-00,Depo-Medrol,1.0,1,80.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",50090-0556-00,Depo-Medrol,10.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",50090-1823-00,Depo-Medrol,5.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",50090-2098-00,Depo-Medrol,1.0,1,40.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",50090-5894-00,Methylprednisolone Acetate,1.0,1,40.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",50090-6024-00,Methylprednisolone Acetate,1.0,25,2000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",55150-0313-01,Methylprednisolone Acetate Usp,10.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",55150-0314-01,Methylprednisolone Acetate,5.0,1,400.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",60219-1573-05,Methylprednisolone Acetate,1.0,25,1000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",60219-1574-05,Methylprednisolone Acetate,1.0,25,2000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",70121-1552-05,Methylprednisolone Acetate,1.0,25,2000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",70121-1573-01,Methylprednisolone Acetate,1.0,1,40.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",70121-1573-05,Methylprednisolone Acetate,1.0,25,1000.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",70121-1574-01,Methylprednisolone Acetate,1.0,1,80.0,0.138,0.13,
+J1010,"Inj, methylpred acetate 1 mg",70121-1574-05,Methylprednisolone Acetate,1.0,25,2000.0,0.138,0.13,
 J1071,Inj testosterone cypionate,00009-0085-10,Depo-Testosterone,10.0,1,1000.0,0.031,0.029,N
 J1071,Inj testosterone cypionate,00009-0086-01,Depo-Testosterone,1.0,1,200.0,0.031,0.029,N
 J1071,Inj testosterone cypionate,00009-0086-10,Depo-Testosterone,10.0,1,2000.0,0.031,0.029,N
@@ -1347,6 +1403,7 @@ J1200,Diphenhydramine hcl injectio,72485-0101-25,Diphenhydramine Hcl,1.0,25,25.0
 J1200,Diphenhydramine hcl injectio,76045-0102-10,Diphenhydramine Hcl,1.0,24,24.0,0.907,0.856,N
 J1201,Inj. cetirizine hcl 0.5mg,70720-0100-10,QUZYTTIR,1.0,1,20.0,14.955,14.108,K
 J1201,Inj. cetirizine hcl 0.5mg,70720-0100-25,QUZYTTIR,1.0,25,500.0,14.955,14.108,K
+J1203,"Inj, cipaglucosidase, 5 mg",71904-0200-01,Pombiliti,1.0,1,21.0,88.141,83.152,
 J1205,Chlorothiazide sodium inj,00517-1820-01,Chlorothiazide Sodium,1.0,1,1.0,63.789,60.178,N
 J1205,Chlorothiazide sodium inj,25021-0305-20,Chlorothiazide Sodium,1.0,1,1.0,63.789,60.178,N
 J1205,Chlorothiazide sodium inj,25021-0305-66,Chlorothiazide Sodium,1.0,1,1.0,63.789,60.178,N
@@ -1417,6 +1474,8 @@ J1305,"Inj, evinacumab-dgnb, 5mg",61755-0010-01,Evkeeza,8.0,1,240.0,182.655,172.
 J1305,"Inj, evinacumab-dgnb, 5mg",61755-0013-01,Evkeeza,2.3,1,69.0,182.655,172.316,G
 J1306,"Injection, inclisiran, 1 mg",00078-1000-60,Leqvio,1.5,1,284.0,12.205,11.514,G
 J1322,"Elosulfase alfa, injection",68135-0100-01,VIMIZIM,5.0,1,5.0,288.537,272.205,K
+J1323,"Inj, elranatamab-bcmm, 1 mg",00069-2522-02,Elrexfio,1.1,1,44.0,179.921,169.737,
+J1323,"Inj, elranatamab-bcmm, 1 mg",00069-4494-02,Elrexfio,1.9,1,76.0,179.921,169.737,
 J1325,Epoprostenol injection,00173-0517-00,Flolan,1.0,1,1.0,16.474,15.542,N
 J1325,Epoprostenol injection,00173-0519-00,Flolan,1.0,1,3.0,16.474,15.542,N
 J1325,Epoprostenol injection,00703-1985-01,Epoprostenol,1.0,1,1.0,16.474,15.542,N
@@ -2513,6 +2572,7 @@ J2175,Meperidine hydrochl /100 mg,00641-6052-25,Meperidine Hcl,1.0,25,6.25,6.022
 J2175,Meperidine hydrochl /100 mg,00641-6053-25,Meperidine Hcl,1.0,25,12.5,6.022,5.681,N
 J2175,Meperidine hydrochl /100 mg,00641-6054-25,Meperidine Hcl,1.0,25,25.0,6.022,5.681,N
 J2182,"Injection, mepolizumab, 1mg",00173-0881-01,NUCALA,1.0,1,100.0,30.459,28.735,K
+J2183,Inj meropenem (wg crit care),44567-0402-06,MEROPENEM,1.0,6,120.0,1.601,1.51,
 J2184,"Inj, meropenem (b. braun)",00264-3183-11,MEROPENEM,1.0,24,120.0,2.107,1.988,K
 J2184,"Inj, meropenem (b. braun)",00264-3185-11,MEROPENEM,1.0,24,240.0,2.107,1.988,K
 J2185,Meropenem,00409-0222-10,Meropenem,1.0,10,50.0,0.321,0.303,N
@@ -2648,6 +2708,8 @@ J2260,Inj milrinone lactate / 5 mg,71288-0200-50,Milrinone Lactate,50.0,1,10.0,1
 J2260,Inj milrinone lactate / 5 mg,72485-0501-10,Milrinone Lactate,10.0,10,20.0,1.391,1.312,N
 J2260,Inj milrinone lactate / 5 mg,72485-0502-10,Milrinone Lactate,20.0,10,40.0,1.391,1.312,N
 J2260,Inj milrinone lactate / 5 mg,72485-0503-01,Milrinone Lactate,50.0,1,10.0,1.391,1.312,N
+J2267,"Inj, mirikizumab-mrkz, 1 mg",00002-7575-01,Omvoh,15.0,1,300.0,34.743,32.776,
+J2267,"Inj, mirikizumab-mrkz, 1 mg",00002-8011-27,Omvoh,1.0,2,200.0,34.743,32.776,
 J2270,Morphine sulfate injection,00409-1134-03,Morphine Sulfate,20.0,1,100.0,3.242,3.058,N
 J2270,Morphine sulfate injection,00409-1134-05,Morphine Sulfate,50.0,1,250.0,3.242,3.058,N
 J2270,Morphine sulfate injection,00409-1890-01,Morphine Sulfate,1.0,10,2.0,3.242,3.058,N
@@ -2676,6 +2738,7 @@ J2274,Inj morphine pf epid ithc,00641-6039-01,Infumorph 200,20.0,1,20.0,10.482,9
 J2274,Inj morphine pf epid ithc,00641-6040-01,Infumorph 500,20.0,1,50.0,10.482,9.889,N
 J2274,Inj morphine pf epid ithc,66794-0160-02,MITIGO,20.0,1,20.0,10.482,9.889,N
 J2274,Inj morphine pf epid ithc,66794-0162-02,MITIGO,20.0,1,50.0,10.482,9.889,N
+J2277,"Inj, motixafortide, 0.25 mg",82737-0073-01,APHEXDA,1.0,1,248.0,25.218,23.791,
 J2278,Ziconotide injection,70720-0720-10,Prialt,1.0,1,100.0,9.776,9.223,K
 J2278,Ziconotide injection,70720-0722-10,Prialt,5.0,1,500.0,9.776,9.223,K
 J2278,Ziconotide injection,70720-0723-10,Prialt,20.0,1,500.0,9.776,9.223,K
@@ -2796,6 +2859,8 @@ J2359,"Inj. olanzapine, 0.5mg",55150-0308-01,Olanzapine (Immediate Release),1.0,
 J2360,Orphenadrine injection,00641-6182-10,Orphenadrine Citrate Injection,2.0,10,10.0,9.093,8.578,N
 J2360,Orphenadrine injection,25021-0651-02,Orphenadrine Citrate Injection,2.0,10,10.0,9.093,8.578,N
 J2372,"Inj, biorphen, 20 micrograms",43598-0172-15,Biorphen,5.0,10,250.0,0.17,0.16,K
+J2373,"Inj, immphentiv, 20 mcg",00641-6245-10,IMMPHENTIV,5.0,10,250.0,0.212,0.2,
+J2373,"Inj, immphentiv, 20 mcg",00641-6246-10,IMMPHENTIV,10.0,10,500.0,0.212,0.2,
 J2401,Chloroprocaine hcl injection,00143-9209-10,CHLOROPROCAINE HCL,20.0,10,4000.0,0.03,0.028,K
 J2401,Chloroprocaine hcl injection,00143-9210-10,CHLOROPROCAINE HCL,20.0,10,6000.0,0.03,0.028,K
 J2401,Chloroprocaine hcl injection,00404-9926-30,Nesacaine,30.0,1,300.0,0.03,0.028,K
@@ -3189,6 +3254,7 @@ J2778,Ranibizumab injection,50242-0082-03,Lucentis PFS,0.05,1,3.0,137.626,129.83
 J2779,"Inj, susvimo 0.1 mg",50242-0078-12,Susvimo,0.1,1,100.0,80.489,75.933,G
 J2779,"Inj, susvimo 0.1 mg",50242-0078-55,Susvimo,0.1,1,100.0,80.489,75.933,G
 J2781,"Inj, pegcetacoplan, 1mg",73606-0020-01,SYFOVRE,0.1,1,15.0,149.07,140.632,G
+J2782,Inj avacincapted pegol 0.1mg,82829-0002-01,Izervay,0.1,1,20.0,110.459,104.207,
 J2783,Rasburicase,00024-5150-10,Elitek,1.0,3,9.0,370.902,349.908,K
 J2783,Rasburicase,00024-5151-75,Elitek,7.5,1,15.0,370.902,349.908,K
 J2785,Regadenoson injection,00409-1401-01,REGADENOSON,5.0,10,40.0,3.391,3.199,N
@@ -3321,6 +3387,37 @@ J2916,Na ferric gluconate complex,00024-2792-10,Ferrlecit,5.0,10,50.0,2.137,2.01
 J2916,Na ferric gluconate complex,00024-2794-10,Ferrlecit,5.0,10,50.0,2.137,2.016,N
 J2916,Na ferric gluconate complex,00143-9298-10,SODIUM FERRIC GLUCONATE,5.0,10,50.0,2.137,2.016,N
 J2916,Na ferric gluconate complex,00143-9570-10,SODIUM FERRIC GLUCONATE,5.0,10,50.0,2.137,2.016,N
+J2919,"Inj, methylpred sod succ 5mg",00009-0003-02,Solu-Medrol,1.0,1,100.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0018-20,Solu-Medrol,1.0,1,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0039-06,Solu-Medrol,1.0,25,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0039-28,Solu-Medrol,1.0,25,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0039-32,Solu-Medrol,1.0,25,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0047-04,Solu-Medrol,1.0,25,625.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0047-22,Solu-Medrol,1.0,25,625.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0047-26,Solu-Medrol,1.0,25,625.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0698-01,Solu-Medrol,1.0,1,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0698-02,Solu-Medrol,1.0,1,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0758-01,Solu-Medrol,1.0,1,100.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00009-0850-01,SOLU-MEDROL,1.0,1,400.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00143-9753-25,Methylprednisolone Sodium Succ,1.0,25,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00143-9754-25,Methylprednisolone Sodium Succ,1.0,25,625.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00143-9850-01,Methylprednisolone Sodium Succ,1.0,1,100.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00143-9851-01,Methylprednisolone Sodium Succ,1.0,1,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00404-9957-02,Solu-Medrol,1.0,1,25.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",00404-9958-01,Solu-Medrol,1.0,1,8.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",43598-0127-25,Methylprednisolone Sodium Succ,1.0,25,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",43598-0128-11,Methylprednisolone Sodium Succ,1.0,1,100.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",43598-0129-25,Methylprednisolone Sodium Succ,1.0,25,625.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",43598-0130-74,Methylprednisolone Sodium Succ,1.0,1,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",50090-0271-00,Solu-Medrol,1.0,1,25.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",50090-0271-01,Solu-Medrol,1.0,25,625.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",51662-1263-01,Solu-Medrol,1.0,1,25.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",51662-1263-03,Solu-Medrol,1.0,25,625.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",51662-1264-01,Solu-Medrol,1.0,1,8.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",51662-1264-03,Solu-Medrol,1.0,25,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",63323-0255-03,Methylprednisolone Sodium Succ,1.0,25,200.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",63323-0258-03,Methylprednisolone Sodium Succ,1.0,25,625.0,0.295,0.278,
+J2919,"Inj, methylpred sod succ 5mg",63323-0265-30,Methylprednisolone Sodium Succ,1.0,1,200.0,0.295,0.278,
 J2997,Alteplase recombinant,50242-0041-10,Cathflo Activase,1.0,10,20.0,91.341,86.171,K
 J2997,Alteplase recombinant,50242-0041-64,Cathflo Activase,1.0,1,2.0,91.341,86.171,K
 J2997,Alteplase recombinant,50242-0044-13,Activase,1.0,1,50.0,91.341,86.171,K
@@ -3355,6 +3452,8 @@ J3010,Fentanyl citrate injection,72572-0171-25,Fentanyl Citrate,5.0,25,62.5,0.83
 J3010,Fentanyl citrate injection,72572-0172-01,Fentanyl Citrate,50.0,1,25.0,0.838,0.791,N
 J3010,Fentanyl citrate injection,81565-0205-02,FENTANYL CITRATE,2.0,25,25.0,0.838,0.791,N
 J3032,Inj. eptinezumab-jjmr 1 mg,67386-0130-51,Vyepti,1.0,1,100.0,18.656,17.6,K
+J3055,Inj talquetamab-tgvs 0.25 mg,57894-0469-01,Talvey,1.5,1,12.0,67.612,63.785,
+J3055,Inj talquetamab-tgvs 0.25 mg,57894-0470-01,Talvey,1.0,1,160.0,67.612,63.785,
 J3060,"Inj, taliglucerase alfa 10 u",00069-0106-01,Elelyso,1.0,1,20.0,44.57,42.047,K
 J3090,Inj tedizolid phosphate,67919-0040-02,SIVEXTRO,1.0,10,2000.0,1.809,1.707,K
 J3090,Inj tedizolid phosphate,72000-0320-10,Sivextro,1.0,10,2000.0,1.809,1.707,K
@@ -3395,6 +3494,7 @@ J3246,Tirofiban hcl,25208-0902-01,Aggrastat,100.0,1,20.0,3.963,3.739,K
 J3246,Tirofiban hcl,25208-0902-02,Aggrastat,250.0,1,50.0,3.963,3.739,K
 J3246,Tirofiban hcl,55150-0429-01,Tirofiban,100.0,1,20.0,3.963,3.739,K
 J3246,Tirofiban hcl,55150-0430-01,Tirofiban,250.0,1,50.0,3.963,3.739,K
+J3247,Inj secukinumab intrav 1mg,00078-1168-61,Cosentyx,5.0,1,125.0,17.564,16.57,
 J3250,Trimethobenzamide hcl inj,00404-9964-02,Tigan,2.0,1,1.0,48.359,45.622,N
 J3250,Trimethobenzamide hcl inj,42023-0119-25,Tigan,2.0,25,25.0,48.359,45.622,N
 J3250,Trimethobenzamide hcl inj,51662-1430-01,Tigan,2.0,1,1.0,48.359,45.622,N
@@ -3420,6 +3520,7 @@ J3260,Tobramycin sulfate injection,72266-0163-06,Tobramycin Sulfate,1.0,6,90.0,2
 J3262,Tocilizumab injection,50242-0135-01,Actemra,4.0,1,80.0,5.95,5.613,K
 J3262,Tocilizumab injection,50242-0136-01,Actemra,10.0,1,200.0,5.95,5.613,K
 J3262,Tocilizumab injection,50242-0137-01,Actemra,20.0,1,400.0,5.95,5.613,K
+J3263,"Inj, toripalimab-tpzi, 1 mg",70114-0340-01,LOQTORZI,6.0,1,240.0,39.272,37.049,
 J3285,Treprostinil injection,00703-0666-01,Treprostinil Injection,20.0,1,20.0,55.484,52.343,K
 J3285,Treprostinil injection,00703-0676-01,Treprostinil Injection,20.0,1,50.0,55.484,52.343,K
 J3285,Treprostinil injection,00703-0686-01,Treprostinil Injection,20.0,1,100.0,55.484,52.343,K
@@ -3941,6 +4042,8 @@ J7170,"Inj., emicizumab-kxwh 0.5 mg",50242-0922-01,HEMLIBRA,0.7,1,210.0,52.569,4
 J7170,"Inj., emicizumab-kxwh 0.5 mg",50242-0923-01,HEMLIBRA,1.0,1,300.0,52.569,49.593,K
 J7170,"Inj., emicizumab-kxwh 0.5 mg",50242-0927-01,Hemlibra,0.4,1,24.0,52.569,49.593,K
 J7170,"Inj., emicizumab-kxwh 0.5 mg",50242-0930-01,HEMLIBRA,2.0,1,600.0,52.569,49.593,K
+J7171,"Inj, adzynma, 10 iu",64764-0140-05,Adzynma,1.0,1,1.0,34.679,32.716,
+J7171,"Inj, adzynma, 10 iu",64764-0145-05	,Adzynma,1.0,1,1.0,34.679,32.716,
 J7175,"Inj, factor x, (human), 1iu",64208-7752-01,COAGADEX,1.0,1,1.0,9.112,8.596,K
 J7175,"Inj, factor x, (human), 1iu",64208-7753-01,COAGADEX,1.0,1,1.0,9.112,8.596,K
 J7177,"Inj., fibryga, 1 mg",68982-0347-01,FIBRYGA,1.0,1,1.0,1.1,1.038,K
@@ -4146,6 +4249,9 @@ J7340,Carbidopa levodopa ent 100ml,00074-3012-07,DUOPA,100.0,7,7.0,234.902,221.6
 J7345,"Aminolevulinic acid, 10% gel",70621-0101-10,Ameluz Gel,2.0,1,200.0,1.742,1.643,K
 J7345,"Aminolevulinic acid, 10% gel",70621-0101-20,AMINOLEVULINIC ACID HYDROCHLORIDE NANOEMULSION 10% TOPICAL GEL,2.0,10,2000.0,1.742,1.643,K
 J7351,Inj bimatoprost itc imp1mcg,00023-9652-01,Durysta,1.0,1,10.0,208.381,196.586,K
+J7354,"Cantharidin top, applicator",71349-0070-01,Ycanth,0.45,1,1.0,719.584,678.853,
+J7354,"Cantharidin top, applicator",71349-0070-06,Ycanth,0.45,6,6.0,719.584,678.853,
+J7354,"Cantharidin top, applicator",71349-0070-12,Ycanth,0.45,12,12.0,719.584,678.853,
 J7402,Mometasone sinus sinuva,10599-0003-01,Sinuva,1.0,1,135.0,11.345,10.703,K
 J7500,Azathioprine oral 50mg,00378-1005-01,Azathioprine,100.0,1,100.0,1.833,1.729,N
 J7500,Azathioprine oral 50mg,65649-0231-41,Azasan,100.0,1,150.0,1.833,1.729,N
@@ -5067,6 +5173,48 @@ J9071,Inj cyclophosphamd auromedic,55150-0270-01,Cyclophosphamide,2.5,1,100.0,1.
 J9071,Inj cyclophosphamd auromedic,55150-0270-99,CYCLOPHOSPHAMIDE,2.5,1,100.0,1.254,1.183,G
 J9071,Inj cyclophosphamd auromedic,55150-0271-01,Cyclophosphamide,5.0,1,200.0,1.254,1.183,G
 J9071,Inj cyclophosphamd auromedic,55150-0271-99,CYCLOPHOSPHAMIDE,5.0,1,200.0,1.254,1.183,G
+J9073,Inj cyclophosphamd (ingenus),50742-0519-02,Cyclophosphamide (Ingenus),2.5,1,100.0,0.789,0.744,
+J9073,Inj cyclophosphamd (ingenus),50742-0520-05,Cyclophosphamide (Ingenus),5.0,1,200.0,0.789,0.744,
+J9073,Inj cyclophosphamd (ingenus),50742-0521-10,Cyclophosphamide (Ingenus),10.0,1,400.0,0.789,0.744,
+J9073,Inj cyclophosphamd (ingenus),68001-0564-22,Cyclophosphamide (Ingenus),5.0,1,200.0,0.789,0.744,
+J9073,Inj cyclophosphamd (ingenus),68001-0565-28,Cyclophosphamide (Ingenus),10.0,1,400.0,0.789,0.744,
+J9073,Inj cyclophosphamd (ingenus),70860-0218-10,Cyclophosphamide (Ingenus),10.0,1,400.0,0.789,0.744,
+J9075,"Inj, cyclophosphamide, nos",00781-3233-94,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",00781-3244-94,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",00781-3255-94,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0935-01,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0936-01,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0937-01,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0938-01,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0939-01,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0942-01,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0943-01,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0944-01,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0945-01,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0955-01,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0956-01,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",10019-0957-01,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",16714-0857-01,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",16714-0858-01,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",16714-0859-01,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",39822-0255-01,CYCLOPHOSPHAMIDE,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",65219-0131-20,CYCLOPHOSPHAMIDE,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",65219-0133-20,CYCLOPHOSPHAMIDE,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",65219-0135-20,CYCLOPHOSPHAMIDE,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",68001-0442-26,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",68001-0443-27,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",68001-0444-32,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",70121-1238-01,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",70121-1239-01,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",70121-1240-01,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",72572-0083-01,Cyclophosphamide,1.0,1,400.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",72572-0085-01,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",72572-0087-01,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",72603-0104-01,Cyclophosphamide,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",72603-0326-01,Cyclophosphamide,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",81298-8110-01,CYCLOPHOSPHAMIDE,1.0,1,100.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",81298-8112-01,CYCLOPHOSPHAMIDE,1.0,1,200.0,1.106,1.043,
+J9075,"Inj, cyclophosphamide, nos",81298-8114-01,CYCLOPHOSPHAMIDE,1.0,1,400.0,1.106,1.043,
 J9100,Cytarabine hcl 100 mg inj,25021-0223-20,Cytarabine,20.0,1,20.0,0.764,0.721,N
 J9100,Cytarabine hcl 100 mg inj,25021-0229-05,Cytarabine,5.0,5,5.0,0.764,0.721,N
 J9100,Cytarabine hcl 100 mg inj,61703-0303-46,Cytarabine,50.0,1,10.0,0.764,0.721,N
@@ -5662,6 +5810,7 @@ J9355,Inj trastuzumab excl biosimi,50242-0132-10,Herceptin,1.0,10,150.0,78.082,7
 J9356,"Inj. herceptin hylecta, 10mg",50242-0077-01,Herceptin Hylecta,6.0,1,60.0,64.612,60.955,K
 J9357,Valrubicin injection,24201-0101-04,VALRUBICIN,5.0,4,4.0,1453.797,1371.507,K
 J9357,Valrubicin injection,67979-0001-01,Valstar,5.0,4,4.0,1453.797,1371.507,K
+J9358,Inj fam-trastu deru-nxki 1mg,65597-0406-01,Enhertu,1.0,1,100.0,27.752,26.181,
 J9359,Inj lon tesirin-lpyl 0.075mg,79952-0110-01,Zynlonta,1.0,1,133.33,206.414,194.73,G
 J9360,Vinblastine sulfate inj,63323-0278-10,Vinblastine Sulfate,10.0,1,10.0,3.88,3.66,N
 J9370,Vincristine sulfate 1 mg inj,00703-4402-11,Vincristine Sulfate,1.0,1,1.0,8.491,8.01,N
@@ -6771,6 +6920,18 @@ Q4299,"Amnicore pro+, per sq cm",00850021556907,AmnioCore Pro+,9.0,1,9.0,2385.0,
 Q4299,"Amnicore pro+, per sq cm",00850021556921,AMNIOCORE PRO+,16.0,1,16.0,2385.0,2250.0,N
 Q4299,"Amnicore pro+, per sq cm",00850021556945,AMNIOCORE PRO+,32.0,1,32.0,2385.0,2250.0,N
 Q4304,"Grafix plus, per sq cm",PS16034,GRAFIX PL,12.0,1,12.0,1189.21,1121.896,N
+Q4332,"Axolotl dualgraft, per sq cm",50038-072607,AXOLOTL DUALGRAFT,4.0,1,4.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",50038-072608,Axolotl DualGraft,8.0,1,8.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",50038-072609,AXOLOTL DUALGRAFT,16.0,1,16.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",50038-072610,AXOLOTL DUALGRAFT,24.0,1,24.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",50038-072611,AXOLOTL DUALGRAFT,32.0,1,32.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",50038-072630,AXOLOTL DUALGRAFT,2.0,1,2.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",80038-072607,AXOLOTL DUALGRAFT,4.0,1,4.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",80038-072608,AXOLOTL DUALGRAFT,8.0,1,8.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",80038-072609,AXOLOTL DUALGRAFT,16.0,1,16.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",80038-072610,AXOLOTL DUALGRAFT,24.0,1,24.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",80038-072611,AXOLOTL DUALGRAFT,32.0,1,32.0,1718.585,1621.307,
+Q4332,"Axolotl dualgraft, per sq cm",80038-072630,AXOLOTL DUALGRAFT,2.0,1,2.0,1718.585,1621.307,
 Q5101,"Injection, zarxio",61314-0318-01,ZARXIO (filgrastim-sndz),0.5,1,300.0,0.248,0.234,K
 Q5101,"Injection, zarxio",61314-0318-10,ZARXIO (filgrastim-sndz),0.5,10,3000.0,0.248,0.234,K
 Q5101,"Injection, zarxio",61314-0326-01,ZARXIO (filgrastim-sndz),0.8,1,480.0,0.248,0.234,K

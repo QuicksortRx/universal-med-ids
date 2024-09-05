@@ -88,8 +88,8 @@ def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path):
     # Add Average Sales Price (ASP) column
     merged_df["ASP"] = calculate_asp(merged_df["Payment Limit"]).round(3)
 
-    # Merge Addendum B DataFrame on HCPCS Code
-    merged_df = pd.merge(merged_df, addendum_b_df, on="HCPCS Code")
+    # Merge Addendum B DataFrame on HCPCS Code using left join
+    merged_df = pd.merge(merged_df, addendum_b_df, on="HCPCS Code", how="left")
 
     # Save the result to a CSV file
     merged_df.to_csv(MERGED_FILE_PATH, index=False)
