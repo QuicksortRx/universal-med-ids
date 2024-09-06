@@ -481,7 +481,7 @@ def description_std(desc):
             for post in post_list:
                 upper_unit = pre + u + post
                 desc = desc.replace(upper_unit, pre + unit_dict[u] + post)
-    pattern = r'^(\d+\s+\w+)\s+(.*\d+\s+\w+/\w+)(.*)'
+    pattern = r'^(\d+(?:\.\d+)?+\s+\w+)\s+(.*\d+\s+\w+/\w+)(.*)'
     match = re.search(pattern, desc)
     if match:
         size, info, extra = match.groups()
