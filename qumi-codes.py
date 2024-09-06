@@ -486,7 +486,7 @@ def description_std(desc):
     if match:
         size, info, extra = match.groups()
         desc = info + " " + size + extra
-    pattern = r'^(\d+\s+HR)\s+(.*mg)(.*)'
+    pattern = r'^((?:3-Bead+\s)?+\d+\s+HR)\s+(.*mg)(.*)'
     match = re.search(pattern, desc)
     if match:
         time, info, extra = match.groups()
