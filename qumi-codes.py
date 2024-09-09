@@ -481,11 +481,16 @@ def description_std(desc):
             for post in post_list:
                 upper_unit = pre + u + post
                 desc = desc.replace(upper_unit, pre + unit_dict[u] + post)
-    pattern = r'^(\d+\s+\w+)\s+(.*\d+\s+\w+/\w+)(.*)'
+    pattern = r'^(\d+(?:\.\d+)?+\s+\w+)\s+(.*\d+\s+\w+/\w+)(.*)'
     match = re.search(pattern, desc)
     if match:
         size, info, extra = match.groups()
         desc = info + " " + size + extra
+    pattern = r'^((?:3-Bead+\s)?+\d+\s+HR)\s+(.*mg)(.*)'
+    match = re.search(pattern, desc)
+    if match:
+        time, info, extra = match.groups()
+        desc = info + " " + time + extra
     desc = desc.replace(" / ", "; ")
     desc_parts = desc.split("; ")
     for i in range(len(desc_parts)):
