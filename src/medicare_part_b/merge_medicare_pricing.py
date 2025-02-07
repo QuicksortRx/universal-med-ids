@@ -22,13 +22,13 @@ MERGED_FILE_PATH = f"{DATA_PATH}/medicare-pricing-merged.csv"
 FILE_ENCODING = "ISO-8859-1"
 ASP_HEADER_ROW = 8  # 0-indexed
 CROSSWALK_HEADER_ROW = 8  # 0-indexed
-ADDENDUM_B_HEADER_ROW = 6  # 0-indexed
+ADDENDUM_B_HEADER_ROW = 4  # 0-indexed
 ASP_COLUMNS = [
     "HCPCS Code",
     "Payment Limit",
 ]
 CROSSWALK_COLUMNS = [
-    "_2024_CODE",
+    "_2025_CODE",
     "NDC2",
     "Short Description",
     "Drug Name",
@@ -59,7 +59,7 @@ def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path):
     )
     crosswalk_df_renamed = crosswalk_df.rename(
         columns={
-            "_2024_CODE": "HCPCS Code",
+            "_2025_CODE": "HCPCS Code",
             "NDC2": "NDC",
             "Short Description": "Description",
             "PKG SIZE": "Pkg Size",
