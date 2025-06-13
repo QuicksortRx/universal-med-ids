@@ -740,6 +740,7 @@ if __name__ == "__main__":
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('-generate', type=str, help="The name of the CSV file to generate")
     group.add_argument('-validate', type=str, help="The name of the CSV file to validate")
+    # Validate example: ./qumi-codes.py -validate 06-03-2025-updates.csv > test.txt
     parser.add_argument("-level", help="Set logging level", type=str, choices=['debug', 'info', 'error', 'warning', 'critical'], 
                         default='info')
     args = parser.parse_args()
