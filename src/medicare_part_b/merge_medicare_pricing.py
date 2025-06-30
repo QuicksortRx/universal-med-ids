@@ -22,7 +22,7 @@ MERGED_FILE_PATH = f"{DATA_PATH}/medicare-pricing-merged.csv"
 FILE_ENCODING = "ISO-8859-1"
 ASP_HEADER_ROW = 8  # 0-indexed
 CROSSWALK_HEADER_ROW = 8  # 0-indexed
-ADDENDUM_B_HEADER_ROW = 6  # 0-indexed
+ADDENDUM_B_HEADER_ROW = 4  # 0-indexed
 ASP_COLUMNS = [
     "HCPCS Code",
     "Payment Limit",
