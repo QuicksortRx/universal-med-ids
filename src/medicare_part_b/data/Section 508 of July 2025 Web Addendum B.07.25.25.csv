@@ -12221,7 +12221,7 @@ A9592,Copper cu 64 dotatate diag,K,9383,,$595.100,,$119.03,,$119.03,,,*
 A9593,Gallium ga-68 psma-11 ucsf,K,9409,,$534.910,,$106.99,,$106.99,,,*
 A9594,"Gallium ga-68 psma-11, ucla",K,9410,,$372.170,,$74.44,,$74.44,,,*
 A9595,"Piflu f-18, dia 1 millicurie",K,9430,,$332.440,,$66.49,,$66.49,,,*
-A9596,Gallium illuccix 1 millicure,K,9443,,$973.639,.,$194.73,,$194.73,*,,*
+A9596,Gallium illuccix 1 millicure,K,9443,,$511.550,.,$102.31,,$102.31,*,,*
 A9597,"Pet, dx, for tumor id, noc",N,,, ,,,,,,,
 A9598,"Pet dx for non-tumor id, noc",N,,, ,,,,,,,
 A9600,Sr89 strontium,K,0701,,"$4,146.335",,$829.27,,$829.27,,,*
@@ -12236,7 +12236,7 @@ A9609,"F18 fdg, 15 millicuries",N,,, ,,,,,,,
 A9610,"Xe129 xenon, diagnostic",N,,, ,,,,,,,
 A9611,"Flurpiridaz f18, diag, 1 mci",G ,2065,,$530.000,,$106.00,,$106.00,,,*
 A9615,"Inj, pegulicianine, 1 mg",G,0772,,$36.446,$0.00,$0.00,,$0.00,,,*
-A9697,"Inj, magtrace per study dose",G,0814,,"$11,379.909",.,$0.00,,$0.00,,,*
+A9697,"Inj, magtrace per study dose",G,0814,,"$1,137.991",.,$0.00,,$0.00,,,*
 A9698,Non-rad contrast materialnoc,N,,, ,,,,,,,
 A9699,Radiopharm rx agent noc,N,,, ,,,,,,,
 A9700,Echocardiography contrast,N,,, ,,,,,,,
@@ -12568,7 +12568,7 @@ C9046,Cocaine hcl nasal (goprelto),N,,, ,,,,,,,
 C9047,"Injection, caplacizumab-yhdp",N,,, ,,,,,,,
 C9067,Gallium ga-68 dotatoc,K,9323,,$4.050,.,$0.81,,$0.81,,,*
 C9088,"Instill, bupivac and meloxic",K1,9440,,$0.807,$0.00,$0.16,19.840%,$0.17,*,Inflation-adjusted coinsurance,*
-C9089,"Bupivacaine implant, 1 mg",K1,0762,,$2.639,.,$0.53,,$0.53,,,*
+C9089,"Bupivacaine implant, 1 mg",K1,0762,,$0.880,.,$0.18,,$0.18,,,*
 C9101,"Inj, oliceridine 0.1 mg",G,9049,,$1.302,,$0.00,,$0.00,*,,*
 C9143,Cocaine hcl nasal (numbrino),N,,, ,,,,,,,
 C9144,"Inj, bupivacaine (posimir)",G,9106,,$0.512,$0.00,$0.11,,$0.11,,,*
@@ -15950,7 +15950,7 @@ J2700,Oxacillin sodium injeciton,N,,, ,,,,,,,
 J2704,"Inj, propofol, 10 mg",N,,, ,,,,,,,
 J2710,Neostigmine methylslfte inj,N,,, ,,,,,,,
 J2720,Inj protamine sulfate/10 mg,N,,, ,,,,,,,
-J2724,Protein c concentrate,K,1139,,$1.503,.,$0.31,,$0.31,,,*
+J2724,Protein c concentrate,K,1139,,$15.031,.,$3.01,,$3.01,,,*
 J2725,Inj protirelin per 250 mcg,E2,,, ,,,,,,,
 J2730,Pralidoxime chloride inj,N,,, ,,,,,,,
 J2760,Phentolaine mesylate inj,K,1458,,$436.507,.,$87.31,,$87.31,,,*
@@ -18455,7 +18455,7 @@ Q5142,"Inj adalimumab-ryvk, 1 mg",K,0829,,$10.635,.,$2.13,,$2.13,,,*
 Q5143,"Inj adalimumab-adbm, 1 mg",K,0830,,$10.434,.,$2.09,,$2.09,,,*
 Q5144,"Inj, idacio, 1 mg",K,0833,,$8.916,.,$1.79,,$1.79,,,*
 Q5145,"Inj, abrilada, 1 mg",K,0834,,$26.625,.,$5.33,,$5.33,,,*
-Q5146,"Inj, hercessi, 10 mg",E2,,, ,,,,,,,
+Q5146,"Inj, hercessi, 10 mg",K,0865,,$76.181,,$15.24,,$15.24,,,*
 Q5147,"Inj, aflibercept-ayyh, 1 mg",G ,2068,,$869.084,,$173.82,,$173.82,,,*
 Q5148,"Inj, nyposi 1 mcg",G ,0811,,$0.550,,$0.12,,$0.12,,,*
 Q5149,"Inj, aflibercept-abzv, 1 mg",E2,,,,,,,,,,
