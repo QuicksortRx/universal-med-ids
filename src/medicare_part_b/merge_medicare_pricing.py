@@ -42,6 +42,30 @@ ADDENDUM_B_COLUMNS = [
 ]
 
 
+def validate_ndc_format(df):
+    """
+    Validate NDC format: expect #####-####-## (e.g., 51662-1341-03)
+    Only consider invalid when HCPCS Code does NOT start with 'Q' as
+    these are special codes that may not follow the NDC format.
+    """
+    ndc_series = df["NDC"].astype("string")
+    hcpcs_series = df["HCPCS Code"].astype("string")
+    ndc_pattern = r"^\d{5}-\d{4}-\d{2}$"
+    malformed_ndc_mask = ~ndc_series.str.match(ndc_pattern, na=False)
+    not_q_hcpcs_mask = ~hcpcs_series.str.startswith("Q", na=False)
+    invalid_ndc_mask = malformed_ndc_mask & not_q_hcpcs_mask
+    invalid_count = int(invalid_ndc_mask.sum())
+    if invalid_count:
+        # Log up to 10 example values to avoid noisy logs
+        samples = ndc_series[invalid_ndc_mask].dropna().unique()[:10]
+        sample_text = ", ".join(samples)
+        logger.warning(
+            "Found %d NDC value(s) with unexpected format (expected #####-####-##), excluding HCPCS codes starting with 'Q'. Example(s): %s",
+            invalid_count,
+            sample_text,
+        )
+
+
 def calculate_asp(payment_limit, markup_percentage=0.06):
     """
     Calculate Average Sales Price (ASP) from the payment limit, adjusting for the markup
@@ -57,6 +81,14 @@ def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path):
         header=CROSSWALK_HEADER_ROW,
         usecols=CROSSWALK_COLUMNS,
     )
+
+    # Strip whitespace from crosswalk text columns to normalize values
+    crosswalk_df["_2025_CODE"] = crosswalk_df["_2025_CODE"].str.strip()
+    crosswalk_df["NDC2"] = crosswalk_df["NDC2"].str.strip()
+    crosswalk_df["Drug Name"] = crosswalk_df["Drug Name"].str.strip()
+    crosswalk_df["Short Description"] = crosswalk_df["Short Description"].str.strip()
+
+    # Rename crosswalk columns for consistency
     crosswalk_df_renamed = crosswalk_df.rename(
         columns={
             "_2025_CODE": "HCPCS Code",
@@ -90,6 +122,9 @@ def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path):
 
     # Merge Addendum B DataFrame on HCPCS Code using left join
     merged_df = pd.merge(merged_df, addendum_b_df, on="HCPCS Code", how="left")
+
+    # Validation
+    validate_ndc_format(merged_df)
 
     # Save the result to a CSV file
     merged_df.to_csv(MERGED_FILE_PATH, index=False)
