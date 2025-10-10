@@ -1,6 +1,6 @@
 HCPCS Code,Description,NDC,Drug Name,Pkg Size,Pkg Qty,BUPP,Payment Limit,ASP,SI
-90371,Hep b ig im,13533-0636-01,HyperHepB ,1.0,1,1.0,134.194,126.598,K
-90371,Hep b ig im,13533-0636-03,HyperHepB ,0.5,1,1.0,134.194,126.598,K
+90371,Hep b ig im,13533-0636-01,HyperHepB,1.0,1,1.0,134.194,126.598,K
+90371,Hep b ig im,13533-0636-03,HyperHepB,0.5,1,1.0,134.194,126.598,K
 90371,Hep b ig im,13533-0636-05,HyperHepB,5.0,1,5.0,134.194,126.598,K
 90371,Hep b ig im,69800-4202-01,Nabi-Hb,1.0,1,1.0,134.194,126.598,K
 90371,Hep b ig im,69800-4203-01,Nabi-Hb,5.0,1,5.0,134.194,126.598,K
@@ -104,12 +104,12 @@ A9585,Gadobutrol injection,50419-0325-27,Gadavist,7.5,5,375.0,0.275,0.259,N
 A9585,Gadobutrol injection,50419-0325-28,Gadavist,10.0,5,500.0,0.275,0.259,N
 A9585,Gadobutrol injection,50419-0325-29,Gadavist,15.0,5,750.0,0.275,0.259,N
 A9585,Gadobutrol injection,50419-0325-37,Gadavist,2.0,15,300.0,0.275,0.259,N
-A9585,Gadobutrol injection,65219-0281-02,Gadobutrol ,2.0,15,300.0,0.275,0.259,N
-A9585,Gadobutrol injection,65219-0281-07,Gadobutrol ,7.5,20,1500.0,0.275,0.259,N
-A9585,Gadobutrol injection,65219-0281-10,Gadobutrol ,10.0,20,2000.0,0.275,0.259,N
-A9585,Gadobutrol injection,65219-0281-15,Gadobutrol ,15.0,20,3000.0,0.275,0.259,N
-A9585,Gadobutrol injection,65219-0287-30,Gadobutrol ,30.0,10,3000.0,0.275,0.259,N
-A9585,Gadobutrol injection,65219-0289-65,Gadobutrol ,65.0,10,6500.0,0.275,0.259,N
+A9585,Gadobutrol injection,65219-0281-02,Gadobutrol,2.0,15,300.0,0.275,0.259,N
+A9585,Gadobutrol injection,65219-0281-07,Gadobutrol,7.5,20,1500.0,0.275,0.259,N
+A9585,Gadobutrol injection,65219-0281-10,Gadobutrol,10.0,20,2000.0,0.275,0.259,N
+A9585,Gadobutrol injection,65219-0281-15,Gadobutrol,15.0,20,3000.0,0.275,0.259,N
+A9585,Gadobutrol injection,65219-0287-30,Gadobutrol,30.0,10,3000.0,0.275,0.259,N
+A9585,Gadobutrol injection,65219-0289-65,Gadobutrol,65.0,10,6500.0,0.275,0.259,N
 A9585,Gadobutrol injection,70436-0212-54,Gadobutrol,7.5,20,1500.0,0.275,0.259,N
 A9585,Gadobutrol injection,70436-0212-80,Gadobutrol,7.5,1,75.0,0.275,0.259,N
 A9585,Gadobutrol injection,70436-0214-54,Gadobutrol,15.0,20,3000.0,0.275,0.259,N
@@ -237,7 +237,7 @@ J0221,Lumizyme injection,58468-0160-01,Lumizyme,1.0,1,5.0,206.589,194.895,K
 J0222,"Inj., patisiran, 0.1 mg",71336-1000-01,Onpattro,5.0,1,100.0,99.967,94.308,K
 J0223,Inj givosiran 0.5 mg,71336-1001-01,Givlaari,1.0,1,378.0,117.36,110.717,K
 J0224,"Inj. lumasiran, 0.5 mg",71336-1002-01,Oxlumo,0.5,1,189.0,329.052,310.426,K
-J0225,"Inj, vutrisiran, 1 mg",71336-1003-01,Amvuttra ,0.5,1,25.0,5003.639,4720.414,G
+J0225,"Inj, vutrisiran, 1 mg",71336-1003-01,Amvuttra,0.5,1,25.0,5003.639,4720.414,G
 J0248,"Inj, remdesivir, 1 mg",61958-2901-02,Veklury,1.0,1,100.0,6.729,6.348,K
 J0256,Alpha 1 proteinase inhibitor,00053-7201-02,Zemaira,1.0,1,0.1,5.457,5.148,K
 J0256,Alpha 1 proteinase inhibitor,00053-7202-02,Zemaira,1.0,1,0.1,5.457,5.148,K
@@ -245,7 +245,7 @@ J0256,Alpha 1 proteinase inhibitor,00053-7203-02,Zemaira,1.0,1,0.1,5.457,5.148,K
 J0256,Alpha 1 proteinase inhibitor,00944-2814-01,Aralast NP,1.0,1,0.1,5.457,5.148,K
 J0256,Alpha 1 proteinase inhibitor,00944-2815-01,Aralast NP,1.0,1,0.1,5.457,5.148,K
 J0256,Alpha 1 proteinase inhibitor,13533-0705-01,Prolastin-C,1.0,1,0.1,5.457,5.148,K
-J0257,Glassia injection,00944-2884-01,Glassia             ,1.0,1,0.1,5.639,5.32,K
+J0257,Glassia injection,00944-2884-01,Glassia,1.0,1,0.1,5.639,5.32,K
 J0278,Amikacin sulfate injection,00641-6166-10,Amikacin Sulfate,4.0,10,100.0,0.633,0.597,N
 J0278,Amikacin sulfate injection,00641-6167-10,Amikacin Sulfate,2.0,10,50.0,0.633,0.597,N
 J0278,Amikacin sulfate injection,23155-0290-41,Amikacin Sulfate,2.0,10,50.0,0.633,0.597,N
@@ -362,11 +362,11 @@ J0290,Ampicillin 500 mg inj,72572-0016-10,Ampicillin Sodium,1.0,10,20.0,0.546,0.
 J0290,Ampicillin 500 mg inj,72572-0017-10,Ampicillin Sodium,1.0,10,40.0,0.546,0.515,N
 J0290,Ampicillin 500 mg inj,72603-0221-10,Ampicillin,1.0,10,10.0,0.546,0.515,N
 J0290,Ampicillin 500 mg inj,83634-0100-99,Ampicillin Sodium,1.0,1,20.0,0.546,0.515,N
-J0291,"Inj., plazomicin, 5 mg",69097-0820-96,Zemdri ,10.0,10,1000.0,3.504,3.306,K
-J0291,"Inj., plazomicin, 5 mg",80735-0820-96,Zemdri ,10.0,10,1000.0,3.504,3.306,K
-J0295,Ampicillin sulbactam 1.5 gm,00049-0013-83,Unasyn ,1.0,10,10.0,1.392,1.313,N
-J0295,Ampicillin sulbactam 1.5 gm,00049-0014-83,Unasyn ,1.0,10,20.0,1.392,1.313,N
-J0295,Ampicillin sulbactam 1.5 gm,00049-0024-28,Unasyn ,1.0,1,10.0,1.392,1.313,N
+J0291,"Inj., plazomicin, 5 mg",69097-0820-96,Zemdri,10.0,10,1000.0,3.504,3.306,K
+J0291,"Inj., plazomicin, 5 mg",80735-0820-96,Zemdri,10.0,10,1000.0,3.504,3.306,K
+J0295,Ampicillin sulbactam 1.5 gm,00049-0013-83,Unasyn,1.0,10,10.0,1.392,1.313,N
+J0295,Ampicillin sulbactam 1.5 gm,00049-0014-83,Unasyn,1.0,10,20.0,1.392,1.313,N
+J0295,Ampicillin sulbactam 1.5 gm,00049-0024-28,Unasyn,1.0,1,10.0,1.392,1.313,N
 J0295,Ampicillin sulbactam 1.5 gm,00409-2689-01,Ampicillin-Sulbactam,1.0,10,10.0,1.392,1.313,N
 J0295,Ampicillin sulbactam 1.5 gm,00409-2987-03,Ampicillin-Sulbactam,1.0,10,20.0,1.392,1.313,N
 J0295,Ampicillin sulbactam 1.5 gm,00641-6116-10,Ampicillin-Sulbactam,1.0,10,10.0,1.392,1.313,N
@@ -542,11 +542,11 @@ J0515,Inj benztropine mesylate,00143-9729-05,Cogentin,2.0,5,10.0,15.325,14.458,N
 J0515,Inj benztropine mesylate,63323-0970-02,Benztropine,2.0,5,10.0,15.325,14.458,N
 J0515,Inj benztropine mesylate,68382-0860-10,Benztropine,2.0,5,10.0,15.325,14.458,N
 J0517,"Inj., benralizumab, 1 mg",00310-1730-30,Fasenra,1.0,1,30.0,164.588,155.272,K
-J0517,"Inj., benralizumab, 1 mg",00310-1745-01,Fasenra ,0.5,1,10.0,164.588,155.272,K
+J0517,"Inj., benralizumab, 1 mg",00310-1745-01,Fasenra,0.5,1,10.0,164.588,155.272,K
 J0517,"Inj., benralizumab, 1 mg",00310-1830-30,Fasenra,1.0,1,30.0,164.588,155.272,K
-J0558,Peng benzathine/procaine inj,60793-0600-10,Bicillin CR ,2.0,10,120.0,19.523,18.418,K
-J0558,Peng benzathine/procaine inj,60793-0601-10,Bicillin CR ,2.0,10,120.0,19.523,18.418,K
-J0558,Peng benzathine/procaine inj,60793-0602-10,Bicillin CR ,2.0,10,120.0,19.523,18.418,K
+J0558,Peng benzathine/procaine inj,60793-0600-10,Bicillin CR,2.0,10,120.0,19.523,18.418,K
+J0558,Peng benzathine/procaine inj,60793-0601-10,Bicillin CR,2.0,10,120.0,19.523,18.418,K
+J0558,Peng benzathine/procaine inj,60793-0602-10,Bicillin CR,2.0,10,120.0,19.523,18.418,K
 J0561,Penicillin g benzathine inj,50090-1016-00,Bicillin L-A,2.0,10,120.0,30.011,28.312,K
 J0561,Penicillin g benzathine inj,50090-1016-01,Bicillin L-A,2.0,1,12.0,30.011,28.312,K
 J0561,Penicillin g benzathine inj,60793-0700-10,Bicillin L-A,1.0,10,60.0,30.011,28.312,K
@@ -597,8 +597,8 @@ J0588,Incobotulinumtoxin a,46783-0161-01,Xeomin,1.0,1,50.0,5.57,5.255,K
 J0589,Inj daxibotulinumtoxina-lanm,72960-0112-01,Daxxify,1.0,1,100.0,3.148,2.97,G
 J0592,Buprenorphine hydrochloride,00409-2012-32,Buprenorphine HCl,1.0,10,30.0,4.166,3.93,N
 J0592,Buprenorphine hydrochloride,42023-0179-05,Buprenorphine HCl,1.0,5,15.0,4.166,3.93,N
-J0593,"Inj., lanadelumab-flyo, 1 mg",47783-0644-01,Takhzyro ,2.0,1,300.0,87.284,82.343,E2
-J0593,"Inj., lanadelumab-flyo, 1 mg",47783-0645-01,Takhzyro ,1.0,1,150.0,87.284,82.343,E2
+J0593,"Inj., lanadelumab-flyo, 1 mg",47783-0644-01,Takhzyro,2.0,1,300.0,87.284,82.343,E2
+J0593,"Inj., lanadelumab-flyo, 1 mg",47783-0645-01,Takhzyro,1.0,1,150.0,87.284,82.343,E2
 J0593,"Inj., lanadelumab-flyo, 1 mg",47783-0646-01,Takhzyro,2.0,1,300.0,87.284,82.343,E2
 J0594,Busulfan injection,00409-1112-01,Busulfan,10.0,8,480.0,0.88,0.83,K
 J0594,Busulfan injection,16729-0351-92,Busulfan,10.0,8,480.0,0.88,0.83,K
@@ -610,7 +610,7 @@ J0594,Busulfan injection,71288-0116-11,Busulfan,10.0,8,480.0,0.88,0.83,K
 J0595,Butorphanol tartrate 1 mg,00409-1623-01,Butorphanol Tartrate,1.0,10,10.0,6.432,6.068,N
 J0595,Butorphanol tartrate 1 mg,00409-1626-01,Butorphanol Tartrate,1.0,10,20.0,6.432,6.068,N
 J0595,Butorphanol tartrate 1 mg,00409-1626-02,Butorphanol Tartrate,2.0,10,40.0,6.432,6.068,N
-J0596,"Injection, ruconest",71274-0350-02,Ruconest ,1.0,1,210.0,36.766,34.685,K
+J0596,"Injection, ruconest",71274-0350-02,Ruconest,1.0,1,210.0,36.766,34.685,K
 J0597,"C-1 esterase, berinert",63833-0825-02,Berinert,1.0,1,50.0,75.859,71.565,K
 J0598,"C-1 esterase, cinryze",42227-0083-01,Cinryze,1.0,1,50.0,65.626,61.911,K
 J0600,Edetate calcium disodium inj,64980-0588-51,Calcium Disodium Edetate,5.0,5,5.0,6408.376,6045.638,K
@@ -667,9 +667,9 @@ J0637,Caspofungin acetate,63323-0356-10,Caspofungin Acetate,1.0,10,100.0,3.541,3
 J0637,Caspofungin acetate,63323-0358-10,Caspofungin Acetate,1.0,10,140.0,3.541,3.341,N
 J0637,Caspofungin acetate,70860-0106-10,Caspofungin Acetate,1.0,1,10.0,3.541,3.341,N
 J0637,Caspofungin acetate,70860-0107-10,Caspofungin Acetate,1.0,1,14.0,3.541,3.341,N
-J0637,Caspofungin acetate,72266-0106-01,Caspofungin ,1.0,1,10.0,3.541,3.341,N
-J0637,Caspofungin acetate,72266-0107-01,Caspofungin ,1.0,1,14.0,3.541,3.341,N
-J0637,Caspofungin acetate,72611-0700-01,Caspofungin ,1.0,1,10.0,3.541,3.341,N
+J0637,Caspofungin acetate,72266-0106-01,Caspofungin,1.0,1,10.0,3.541,3.341,N
+J0637,Caspofungin acetate,72266-0107-01,Caspofungin,1.0,1,14.0,3.541,3.341,N
+J0637,Caspofungin acetate,72611-0700-01,Caspofungin,1.0,1,10.0,3.541,3.341,N
 J0637,Caspofungin acetate,72611-0702-01,Caspofungin Acetate,1.0,1,14.0,3.541,3.341,N
 J0638,Canakinumab injection,00078-0734-61,Ilaris,150.0,1,150.0,141.604,133.589,K
 J0640,Leucovorin calcium injection,00143-9368-01,Leucovorin Calcium,1.0,1,4.0,3.218,3.036,N
@@ -876,29 +876,29 @@ J0690,Cefazolin sodium injection,63323-0237-10,Cefazolin Sodium,1.0,25,50.0,0.79
 J0690,Cefazolin sodium injection,63323-0238-61,Cefazolin Sodium,1.0,10,200.0,0.798,0.753,N
 J0690,Cefazolin sodium injection,72572-0055-25,Cefazolin Sodium,1.0,25,50.0,0.798,0.753,N
 J0690,Cefazolin sodium injection,72572-0056-10,Cefazolin Sodium,1.0,10,200.0,0.798,0.753,N
-J0692,Cefepime hcl for injection,00409-9566-10,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,00409-9735-10,Cefepime ,1.0,10,40.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,25021-0121-20,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,25021-0121-66,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,25021-0122-50,Cefepime ,1.0,10,40.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,25021-0122-67,Cefepime ,1.0,10,40.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,44567-0130-10,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,44567-0131-10,Cefepime ,1.0,10,40.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,44567-0240-10,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,44567-0241-10,Cefepime ,1.0,10,40.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,60505-6144-04,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,60505-6145-04,Cefepime ,1.0,10,40.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,60505-6146-00,Cefepime ,1.0,1,2.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,60505-6146-04,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,60505-6147-00,Cefepime ,1.0,1,4.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,60505-6147-04,Cefepime ,1.0,10,40.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,00409-9566-10,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,00409-9735-10,Cefepime,1.0,10,40.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,25021-0121-20,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,25021-0121-66,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,25021-0122-50,Cefepime,1.0,10,40.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,25021-0122-67,Cefepime,1.0,10,40.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,44567-0130-10,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,44567-0131-10,Cefepime,1.0,10,40.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,44567-0240-10,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,44567-0241-10,Cefepime,1.0,10,40.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,60505-6144-04,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,60505-6145-04,Cefepime,1.0,10,40.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,60505-6146-00,Cefepime,1.0,1,2.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,60505-6146-04,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,60505-6147-00,Cefepime,1.0,1,4.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,60505-6147-04,Cefepime,1.0,10,40.0,1.222,1.153,N
 J0692,Cefepime hcl for injection,60505-6245-04,Cefepime,1.0,10,20.0,1.222,1.153,N
 J0692,Cefepime hcl for injection,60505-6246-04,Cefepime,1.0,10,40.0,1.222,1.153,N
 J0692,Cefepime hcl for injection,63323-0326-20,Maxipime,1.0,10,20.0,1.222,1.153,N
 J0692,Cefepime hcl for injection,63323-0340-20,Maxipime,1.0,10,40.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,66794-0209-41,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,70594-0089-02,Cefepime ,1.0,10,20.0,1.222,1.153,N
-J0692,Cefepime hcl for injection,70594-0090-02,Cefepime ,1.0,10,40.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,66794-0209-41,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,70594-0089-02,Cefepime,1.0,10,20.0,1.222,1.153,N
+J0692,Cefepime hcl for injection,70594-0090-02,Cefepime,1.0,10,40.0,1.222,1.153,N
 J0694,Cefoxitin sodium injection,00143-9876-10,Cefoxitin Sodium,1.0,10,100.0,4.783,4.512,N
 J0694,Cefoxitin sodium injection,00143-9877-25,Cefoxitin Sodium,1.0,25,50.0,4.783,4.512,N
 J0694,Cefoxitin sodium injection,00143-9878-25,Cefoxitin Sodium,1.0,25,25.0,4.783,4.512,N
@@ -1572,7 +1572,7 @@ J1265,Dopamine injection,00409-7810-22,Dopamine,250.0,12,240.0,0.833,0.786,N
 J1265,Dopamine injection,00409-9104-20,Dopamine,10.0,25,250.0,0.833,0.786,N
 J1265,Dopamine injection,51662-1220-01,Dopamine,10.0,1,10.0,0.833,0.786,N
 J1265,Dopamine injection,51662-1220-03,Dopamine,10.0,25,250.0,0.833,0.786,N
-J1265,Dopamine injection,51662-1291-03,Dopamine ,5.0,25,125.0,0.833,0.786,N
+J1265,Dopamine injection,51662-1291-03,Dopamine,5.0,25,125.0,0.833,0.786,N
 J1265,Dopamine injection,51662-1316-01,Dopamine in D5W,250.0,1,10.0,0.833,0.786,N
 J1265,Dopamine injection,51662-1316-03,Dopamine in D5W,250.0,12,120.0,0.833,0.786,N
 J1265,Dopamine injection,51662-1458-01,Dopamine in D5W,500.0,1,20.0,0.833,0.786,N
@@ -1615,13 +1615,13 @@ J1304,Inj tofersen intrathec 1 mg,64406-0109-01,Qalsody,15.0,1,100.0,159.401,150
 J1305,"Inj, evinacumab-dgnb, 5mg",61755-0010-01,Evkeeza,8.0,1,240.0,193.758,182.791,K
 J1305,"Inj, evinacumab-dgnb, 5mg",61755-0013-01,Evkeeza,2.3,1,69.0,193.758,182.791,K
 J1306,"Injection, inclisiran, 1 mg",00078-1000-60,Leqvio,1.5,1,284.0,12.318,11.621,K
-J1308,"Inj, famotidine, 0.25 mg",00338-5197-41,Famotidine ,50.0,12,960.0,0.009,0.008,N
+J1308,"Inj, famotidine, 0.25 mg",00338-5197-41,Famotidine,50.0,12,960.0,0.009,0.008,N
 J1308,"Inj, famotidine, 0.25 mg",00641-6021-10,Famotidine,20.0,10,8000.0,0.009,0.008,N
 J1308,"Inj, famotidine, 0.25 mg",00641-6022-25,Famotidine,2.0,25,2000.0,0.009,0.008,N
 J1308,"Inj, famotidine, 0.25 mg",00641-6023-10,Famotidine,4.0,10,1600.0,0.009,0.008,N
 J1308,"Inj, famotidine, 0.25 mg",00641-6023-25,Famotidine,4.0,25,4000.0,0.009,0.008,N
 J1308,"Inj, famotidine, 0.25 mg",25021-0753-02,Famotidine,2.0,25,2000.0,0.009,0.008,N
-J1308,"Inj, famotidine, 0.25 mg",51662-1375-02,Famotidine ,2.0,1,80.0,0.009,0.008,N
+J1308,"Inj, famotidine, 0.25 mg",51662-1375-02,Famotidine,2.0,1,80.0,0.009,0.008,N
 J1308,"Inj, famotidine, 0.25 mg",63323-0738-09,Famotidine,4.0,10,1600.0,0.009,0.008,N
 J1308,"Inj, famotidine, 0.25 mg",63323-0738-20,Famotidine,20.0,10,8000.0,0.009,0.008,N
 J1308,"Inj, famotidine, 0.25 mg",63323-0739-12,Famotidine,2.0,25,2000.0,0.009,0.008,N
@@ -1829,7 +1829,7 @@ J1570,Ganciclovir sodium injection,42023-0173-25,Ganciclovir,1.0,25,25.0,39.543,
 J1570,Ganciclovir sodium injection,63323-0315-10,Cytovene,1.0,25,25.0,39.543,37.305,N
 J1570,Ganciclovir sodium injection,63323-0315-94,Ganciclovir,1.0,25,25.0,39.543,37.305,N
 J1570,Ganciclovir sodium injection,70436-0089-55,Ganciclovir,1.0,25,25.0,39.543,37.305,N
-J1570,Ganciclovir sodium injection,70436-0231-55,Ganciclovir ,1.0,25,25.0,39.543,37.305,N
+J1570,Ganciclovir sodium injection,70436-0231-55,Ganciclovir,1.0,25,25.0,39.543,37.305,N
 J1571,Hepagam b im injection,49591-0051-51,Hepagam B,5.0,1,10.0,66.641,62.869,K
 J1571,Hepagam b im injection,49591-0052-51,Hepagam B,1.0,1,2.0,66.641,62.869,K
 J1571,Hepagam b im injection,70257-0051-51,Hepagam B,5.0,1,10.0,66.641,62.869,K
@@ -1962,7 +1962,7 @@ J1610,Glucagon hydrochloride/1 mg,00548-5850-00,Glucagon,1.0,1,1.0,182.447,172.1
 J1610,Glucagon hydrochloride/1 mg,50090-6550-00,Glucagon Emergency,1.0,1,1.0,182.447,172.12,K
 J1611,"Inj glucagon hcl, fresenius",63323-0582-82,Glucagon Emergency,1.0,1,1.0,148.989,140.556,K
 J1611,"Inj glucagon hcl, fresenius",63323-0593-03,Glucagon,1.0,1,1.0,148.989,140.556,K
-J1611,"Inj glucagon hcl, fresenius",63323-0594-03,Glucagen ,1.0,1,1.0,148.989,140.556,K
+J1611,"Inj glucagon hcl, fresenius",63323-0594-03,Glucagen,1.0,1,1.0,148.989,140.556,K
 J1611,"Inj glucagon hcl, fresenius",63323-0596-13,Glucagon,1.0,10,10.0,148.989,140.556,K
 J1611,"Inj glucagon hcl, fresenius",63323-0596-16,Glucagon,1.0,10,10.0,148.989,140.556,K
 J1626,Granisetron hcl injection,00143-9744-10,Granisetron HCl,1.0,10,100.0,0.185,0.175,N
@@ -2344,7 +2344,7 @@ J1652,Fondaparinux sodium,67457-0595-08,Arixtra,0.8,10,200.0,0.723,0.682,N
 J1652,Fondaparinux sodium,70710-1514-06,Fondaparinux Sodium,0.5,10,50.0,0.723,0.682,N
 J1652,Fondaparinux sodium,70710-1514-09,Fondaparinux Sodium,0.5,2,10.0,0.723,0.682,N
 J1652,Fondaparinux sodium,70710-1515-06,Fondaparinux Sodium,0.4,10,100.0,0.723,0.682,N
-J1670,Tetanus immune globulin inj,13533-0634-02,Hypertet ,1.0,1,1.0,593.003,559.437,K
+J1670,Tetanus immune globulin inj,13533-0634-02,Hypertet,1.0,1,1.0,593.003,559.437,K
 J1720,Hydrocortisone sodium succ i,00009-0005-01,Solu-Cortef,1.0,1,10.0,21.312,20.106,N
 J1720,Hydrocortisone sodium succ i,00009-0011-03,Solu-Cortef,1.0,1,1.0,21.312,20.106,N
 J1720,Hydrocortisone sodium succ i,00009-0011-04,Solu-Cortef,1.0,25,25.0,21.312,20.106,N
@@ -2421,7 +2421,7 @@ J1808,"Inj, folic acid, 0.1 mg",63323-0184-10,Folic Acid,10.0,1,500.0,0.062,0.05
 J1809,"Inj, fosdenopterin, 0.1mg",42358-0295-01,Nulibry,1.0,1,95.0,16.971,16.01,
 J1811,Fiasp for insulin pump use,00169-3201-11,Fiasp,10.0,1,20.0,8.255,7.788,K
 J1811,Fiasp for insulin pump use,00169-3206-15,Fiasp Pumpcart,1.6,5,16.0,8.255,7.788,K
-J1813,Lyumjev for insulin pump use,00002-7728-01,Lyumjev ,10.0,1,20.0,15.123,14.267,N
+J1813,Lyumjev for insulin pump use,00002-7728-01,Lyumjev,10.0,1,20.0,15.123,14.267,N
 J1813,Lyumjev for insulin pump use,50090-7433-00,Lyumjev,10.0,1,20.0,15.123,14.267,N
 J1817,Insulin for insulin pump use,00002-0213-01,Humilin R,3.0,1,6.0,3.187,3.007,N
 J1817,Insulin for insulin pump use,00002-7510-01,Humalog,10.0,1,20.0,3.187,3.007,N
@@ -2435,7 +2435,7 @@ J1817,Insulin for insulin pump use,00002-8215-01,Humulin R,10.0,1,20.0,3.187,3.0
 J1817,Insulin for insulin pump use,00002-8215-17,Humulin R,3.0,1,6.0,3.187,3.007,N
 J1817,Insulin for insulin pump use,00002-8222-59,Insulin Lispro Kwikpen,3.0,5,30.0,3.187,3.007,N
 J1817,Insulin for insulin pump use,00002-8501-01,Humulin R,20.0,1,200.0,3.187,3.007,N
-J1817,Insulin for insulin pump use,00002-8799-59,Humalog Kwikpen ,3.0,5,30.0,3.187,3.007,N
+J1817,Insulin for insulin pump use,00002-8799-59,Humalog Kwikpen,3.0,5,30.0,3.187,3.007,N
 J1817,Insulin for insulin pump use,00169-2100-11,insulin aspart,10.0,1,20.0,3.187,3.007,N
 J1817,Insulin for insulin pump use,00169-2101-25,insulin aspart,3.0,5,30.0,3.187,3.007,N
 J1817,Insulin for insulin pump use,00169-3303-12,Novolog Penfill,3.0,5,30.0,3.187,3.007,N
@@ -2463,8 +2463,7 @@ J1885,Ketorolac tromethamine inj,00338-0072-25,Ketorolac Tromethamine,1.0,25,50.
 J1885,Ketorolac tromethamine inj,00404-9952-01,Ketorolac Tromethamine,1.0,1,1.0,0.303,0.286,K1
 J1885,Ketorolac tromethamine inj,00404-9996-01,Ketorolac Tromethamine,1.0,1,2.0,0.303,0.286,K1
 J1885,Ketorolac tromethamine inj,00404-9997-02,Ketorolac Tromethamine,2.0,1,4.0,0.303,0.286,K1
-J1885,Ketorolac tromethamine inj,00404-9998-01,"Ketorolac Tromethamine
-",1.0,1,1.0,0.303,0.286,K1
+J1885,Ketorolac tromethamine inj,00404-9998-01,Ketorolac Tromethamine,1.0,1,1.0,0.303,0.286,K1
 J1885,Ketorolac tromethamine inj,00409-3793-01,Ketorolac Tromethamine,1.0,25,25.0,0.303,0.286,K1
 J1885,Ketorolac tromethamine inj,00409-3793-25,Ketorolac Tromethamine,1.0,25,25.0,0.303,0.286,K1
 J1885,Ketorolac tromethamine inj,00409-3795-01,Ketorolac Tromethamine,1.0,25,50.0,0.303,0.286,K1
@@ -2726,7 +2725,7 @@ J2002,"Inj, lidocaine in d5w, 1 mg",00338-0411-02,Lidocaine In D5W,250.0,1,2000.
 J2002,"Inj, lidocaine in d5w, 1 mg",50090-4555-00,Lidocaine in D5W,250.0,1,2000.0,0.003,0.003,K
 J2002,"Inj, lidocaine in d5w, 1 mg",50090-4559-00,Lidocaine in D5W,500.0,1,2000.0,0.003,0.003,K
 J2002,"Inj, lidocaine in d5w, 1 mg",51662-1302-01,Lidocaine in D5W,500.0,1,2000.0,0.003,0.003,K
-J2002,"Inj, lidocaine in d5w, 1 mg",51662-1600-03,Lidocaine HCl ,50.0,25,6250.0,0.003,0.003,K
+J2002,"Inj, lidocaine in d5w, 1 mg",51662-1600-03,Lidocaine HCl,50.0,25,6250.0,0.003,0.003,K
 J2010,Lincomycin injection,00009-0104-04,Lincocin,2.0,1,2.0,4.498,4.243,N
 J2010,Lincomycin injection,00009-0107-04,Lincocin,10.0,1,10.0,4.498,4.243,N
 J2010,Lincomycin injection,00009-0555-01,Lincocin,2.0,1,2.0,4.498,4.243,N
@@ -2821,34 +2820,34 @@ J2210,Methylergonovin maleate inj,51991-0144-17,Methylergonovine Maleate,1.0,10,
 J2246,"Inj, micafungin (baxter)",00338-9051-12,Micafungin In Sodium Chloride,50.0,12,600.0,0.489,0.461,E2
 J2246,"Inj, micafungin (baxter)",00338-9053-12,Micafungin In Sodium Chloride,100.0,12,1200.0,0.489,0.461,E2
 J2246,"Inj, micafungin (baxter)",00338-9055-10,Micafungin In Sodium Chloride,150.0,10,1500.0,0.489,0.461,E2
-J2247,"Inj, micafungin (par pharm)",42023-0229-10,Micafungin ,1.0,10,500.0,0.371,0.35,N
-J2247,"Inj, micafungin (par pharm)",42023-0230-10,Micafungin ,1.0,10,1000.0,0.371,0.35,N
-J2248,Micafungin sodium injection,00143-9361-01,Micafungin ,1.0,1,50.0,0.256,0.242,N
-J2248,Micafungin sodium injection,00143-9362-01,Micafungin ,1.0,1,100.0,0.256,0.242,N
+J2247,"Inj, micafungin (par pharm)",42023-0229-10,Micafungin,1.0,10,500.0,0.371,0.35,N
+J2247,"Inj, micafungin (par pharm)",42023-0230-10,Micafungin,1.0,10,1000.0,0.371,0.35,N
+J2248,Micafungin sodium injection,00143-9361-01,Micafungin,1.0,1,50.0,0.256,0.242,N
+J2248,Micafungin sodium injection,00143-9362-01,Micafungin,1.0,1,100.0,0.256,0.242,N
 J2248,Micafungin sodium injection,00469-3211-10,Mycamine,1.0,10,1000.0,0.256,0.242,N
 J2248,Micafungin sodium injection,00469-3250-10,Mycamine,1.0,10,500.0,0.256,0.242,N
 J2248,Micafungin sodium injection,16714-0164-10,Micafungin Sodium,1.0,10,500.0,0.256,0.242,N
 J2248,Micafungin sodium injection,16714-0301-10,Micafungin Sodium,1.0,10,1000.0,0.256,0.242,N
-J2248,Micafungin sodium injection,25021-0190-10,Micafungin ,1.0,1,50.0,0.256,0.242,N
+J2248,Micafungin sodium injection,25021-0190-10,Micafungin,1.0,1,50.0,0.256,0.242,N
 J2248,Micafungin sodium injection,25021-0190-11,Micafungin,1.0,10,500.0,0.256,0.242,N
-J2248,Micafungin sodium injection,25021-0191-10,Micafungin ,1.0,1,100.0,0.256,0.242,N
+J2248,Micafungin sodium injection,25021-0191-10,Micafungin,1.0,1,100.0,0.256,0.242,N
 J2248,Micafungin sodium injection,25021-0191-11,Micafungin,1.0,10,1000.0,0.256,0.242,N
-J2248,Micafungin sodium injection,60505-6119-05,Micafungin ,1.0,10,500.0,0.256,0.242,N
-J2248,Micafungin sodium injection,60505-6120-06,Micafungin ,1.0,10,1000.0,0.256,0.242,N
+J2248,Micafungin sodium injection,60505-6119-05,Micafungin,1.0,10,500.0,0.256,0.242,N
+J2248,Micafungin sodium injection,60505-6120-06,Micafungin,1.0,10,1000.0,0.256,0.242,N
 J2248,Micafungin sodium injection,63323-0728-10,Mycamine,1.0,10,500.0,0.256,0.242,N
 J2248,Micafungin sodium injection,63323-0729-10,Mycamine,1.0,10,1000.0,0.256,0.242,N
-J2248,Micafungin sodium injection,63323-0729-12,Micafungin ,1.0,10,1000.0,0.256,0.242,N
+J2248,Micafungin sodium injection,63323-0729-12,Micafungin,1.0,10,1000.0,0.256,0.242,N
 J2248,Micafungin sodium injection,70377-0075-91,Micafungin,1.0,10,500.0,0.256,0.242,N
 J2248,Micafungin sodium injection,70377-0076-91,Micafungin,1.0,10,1000.0,0.256,0.242,N
-J2248,Micafungin sodium injection,70594-0036-01,Micafungin ,1.0,1,50.0,0.256,0.242,N
-J2248,Micafungin sodium injection,70594-0037-01,Micafungin ,1.0,1,100.0,0.256,0.242,N
-J2248,Micafungin sodium injection,70710-1724-06,Micafungin ,1.0,10,500.0,0.256,0.242,N
+J2248,Micafungin sodium injection,70594-0036-01,Micafungin,1.0,1,50.0,0.256,0.242,N
+J2248,Micafungin sodium injection,70594-0037-01,Micafungin,1.0,1,100.0,0.256,0.242,N
+J2248,Micafungin sodium injection,70710-1724-06,Micafungin,1.0,10,500.0,0.256,0.242,N
 J2248,Micafungin sodium injection,70710-1725-01,Micafungin,1.0,1,100.0,0.256,0.242,N
-J2248,Micafungin sodium injection,70710-1725-06,Micafungin ,1.0,10,1000.0,0.256,0.242,N
+J2248,Micafungin sodium injection,70710-1725-06,Micafungin,1.0,10,1000.0,0.256,0.242,N
 J2248,Micafungin sodium injection,71288-0028-11,Micafungin Sodium,1.0,10,500.0,0.256,0.242,N
 J2248,Micafungin sodium injection,71288-0029-11,Micafungin Sodium,1.0,10,1000.0,0.256,0.242,N
-J2248,Micafungin sodium injection,71288-0029-12,Micafungin ,1.0,1,100.0,0.256,0.242,N
-J2248,Micafungin sodium injection,72572-0427-01,Micafungin ,1.0,1,100.0,0.256,0.242,N
+J2248,Micafungin sodium injection,71288-0029-12,Micafungin,1.0,1,100.0,0.256,0.242,N
+J2248,Micafungin sodium injection,72572-0427-01,Micafungin,1.0,1,100.0,0.256,0.242,N
 J2250,Inj midazolam hydrochloride,00404-9801-10,Midazolam HCl,10.0,1,50.0,0.154,0.145,N
 J2250,Inj midazolam hydrochloride,00404-9912-10,Midazolam HCl,10.0,1,10.0,0.154,0.145,N
 J2250,Inj midazolam hydrochloride,00404-9913-05,Midazolam HCl,5.0,1,5.0,0.154,0.145,N
@@ -2942,7 +2941,7 @@ J2267,"Inj, mirikizumab-mrkz, 1 mg",00002-7575-01,Omvoh,15.0,1,300.0,43.048,40.6
 J2267,"Inj, mirikizumab-mrkz, 1 mg",00002-7717-11,Omvoh,3.0,1,300.0,43.048,40.611,G
 J2267,"Inj, mirikizumab-mrkz, 1 mg",00002-7722-11,Omvoh,3.0,1,300.0,43.048,40.611,G
 J2267,"Inj, mirikizumab-mrkz, 1 mg",00002-8011-27,Omvoh,1.0,2,200.0,43.048,40.611,G
-J2267,"Inj, mirikizumab-mrkz, 1 mg",00002-8870-27,Omvoh ,1.0,2,200.0,43.048,40.611,G
+J2267,"Inj, mirikizumab-mrkz, 1 mg",00002-8870-27,Omvoh,1.0,2,200.0,43.048,40.611,G
 J2270,Morphine sulfate injection,00409-1134-03,Morphine Sulfate,20.0,1,100.0,2.182,2.058,N
 J2270,Morphine sulfate injection,00409-1134-05,Morphine Sulfate,50.0,1,250.0,2.182,2.058,N
 J2270,Morphine sulfate injection,00409-1890-01,Morphine Sulfate,1.0,10,2.0,2.182,2.058,N
@@ -2953,7 +2952,7 @@ J2270,Morphine sulfate injection,00409-1892-01,Morphine Sulfate,1.0,10,8.0,2.182
 J2270,Morphine sulfate injection,00409-1893-01,Morphine Sulfate,1.0,10,10.0,2.182,2.058,N
 J2270,Morphine sulfate injection,00409-1893-23,Morphine Sulfate,1.0,10,10.0,2.182,2.058,N
 J2270,Morphine sulfate injection,00409-1896-20,Morphine Sulfate,20.0,1,100.0,2.182,2.058,N
-J2270,Morphine sulfate injection,00409-2022-01,Morphine Sulfate ,50.0,1,250.0,2.182,2.058,N
+J2270,Morphine sulfate injection,00409-2022-01,Morphine Sulfate,50.0,1,250.0,2.182,2.058,N
 J2270,Morphine sulfate injection,00641-6125-25,Morphine Sulfate,1.0,25,10.0,2.182,2.058,N
 J2270,Morphine sulfate injection,00641-6126-25,Morphine Sulfate,1.0,25,20.0,2.182,2.058,N
 J2270,Morphine sulfate injection,00641-6127-25,Morphine Sulfate,1.0,25,25.0,2.182,2.058,N
@@ -3192,13 +3191,13 @@ J2401,Chloroprocaine hcl injection,63323-0477-27,Nesacaine-Mpf,20.0,25,10000.0,0
 J2401,Chloroprocaine hcl injection,63323-0478-27,Nesacaine-Mpf,20.0,25,15000.0,0.04,0.038,N
 J2403,"Chloroprocaine opht gel, 1mg",82667-0300-01,Iheezo,1.0,1,800.0,0.583,0.55,G
 J2404,"Inj, nicardipine 0.1 mg",00143-9542-10,Nicardipine,10.0,10,2500.0,0.073,0.069,N
-J2404,"Inj, nicardipine 0.1 mg",00143-9633-10,Nicardipine ,200.0,10,4000.0,0.073,0.069,N
-J2404,"Inj, nicardipine 0.1 mg",00143-9634-10,Nicardipine ,200.0,10,2000.0,0.073,0.069,N
+J2404,"Inj, nicardipine 0.1 mg",00143-9633-10,Nicardipine,200.0,10,4000.0,0.073,0.069,N
+J2404,"Inj, nicardipine 0.1 mg",00143-9634-10,Nicardipine,200.0,10,2000.0,0.073,0.069,N
 J2404,"Inj, nicardipine 0.1 mg",00143-9689-10,Nicardipine,10.0,10,2500.0,0.073,0.069,N
 J2404,"Inj, nicardipine 0.1 mg",00517-0735-10,Nicardipine,10.0,10,2500.0,0.073,0.069,N
-J2404,"Inj, nicardipine 0.1 mg",43066-0009-10,Nicardipine ,200.0,10,2000.0,0.073,0.069,N
-J2404,"Inj, nicardipine 0.1 mg",43066-0026-10,Nicardipine ,200.0,10,2000.0,0.073,0.069,N
-J2404,"Inj, nicardipine 0.1 mg",43066-0028-10,Nicardipine ,200.0,10,4000.0,0.073,0.069,N
+J2404,"Inj, nicardipine 0.1 mg",43066-0009-10,Nicardipine,200.0,10,2000.0,0.073,0.069,N
+J2404,"Inj, nicardipine 0.1 mg",43066-0026-10,Nicardipine,200.0,10,2000.0,0.073,0.069,N
+J2404,"Inj, nicardipine 0.1 mg",43066-0028-10,Nicardipine,200.0,10,4000.0,0.073,0.069,N
 J2404,"Inj, nicardipine 0.1 mg",51662-1482-01,Nicardipine,10.0,1,250.0,0.073,0.069,N
 J2404,"Inj, nicardipine 0.1 mg",55150-0183-10,Nicardipine,10.0,10,2500.0,0.073,0.069,N
 J2404,"Inj, nicardipine 0.1 mg",55150-0183-11,Nicardipine,10.0,10,2500.0,0.073,0.069,N
@@ -3477,7 +3476,7 @@ J2598,"Inj, vasopressin, 1 unit",63323-0930-01,Vasopressin,1.0,25,500.0,0.926,0.
 J2598,"Inj, vasopressin, 1 unit",65219-0039-01,Vasopressin,1.0,25,500.0,0.926,0.874,N
 J2598,"Inj, vasopressin, 1 unit",70121-1642-05,Vasopressin,1.0,25,500.0,0.926,0.874,N
 J2598,"Inj, vasopressin, 1 unit",70121-1642-07,Vasopressin,1.0,10,200.0,0.926,0.874,N
-J2599,Inj vasopressin (am reg) 1 u,00517-1020-25,Vasopressin (American Regent) ,1.0,25,500.0,0.609,0.575,N
+J2599,Inj vasopressin (am reg) 1 u,00517-1020-25,Vasopressin (American Regent),1.0,25,500.0,0.609,0.575,N
 J2599,Inj vasopressin (am reg) 1 u,00517-1030-01,Vasopressin (American Regent),10.0,1,200.0,0.609,0.575,N
 J2601,"Inj, vasopressin (baxter)",00338-9640-12,Vasopressin,100.0,12,240.0,2.008,1.894,G
 J2601,"Inj, vasopressin (baxter)",00338-9647-12,Vasopressin,100.0,12,480.0,2.008,1.894,G
@@ -3659,7 +3658,7 @@ J2795,Ropivacaine hcl injection,55150-0200-10,Ropivacaine,10.0,25,2500.0,0.046,0
 J2795,Ropivacaine hcl injection,55150-0201-20,Ropivacaine,20.0,25,5000.0,0.046,0.043,N
 J2795,Ropivacaine hcl injection,63323-0285-10,Naropin,10.0,5,100.0,0.046,0.043,N
 J2795,Ropivacaine hcl injection,63323-0285-13,Naropin,10.0,25,500.0,0.046,0.043,N
-J2795,Ropivacaine hcl injection,63323-0285-20,Naropin ,20.0,5,200.0,0.046,0.043,N
+J2795,Ropivacaine hcl injection,63323-0285-20,Naropin,20.0,5,200.0,0.046,0.043,N
 J2795,Ropivacaine hcl injection,63323-0285-23,Naropin,20.0,25,1000.0,0.046,0.043,N
 J2795,Ropivacaine hcl injection,63323-0285-28,Naropin,20.0,25,1000.0,0.046,0.043,N
 J2795,Ropivacaine hcl injection,63323-0285-61,Naropin,100.0,24,4800.0,0.046,0.043,N
@@ -3732,7 +3731,7 @@ J2804,"Inj, rifampin, 1 mg",67457-0445-60,Rifampin,1.0,1,600.0,0.142,0.134,N
 J2805,Sincalide injection,00270-0556-15,Sincalide Inj,1.0,10,10.0,123.362,116.379,N
 J2805,Sincalide injection,63323-0579-05,Sincalide,1.0,10,10.0,123.362,116.379,N
 J2805,Sincalide injection,72266-0248-05,Sincalide,1.0,5,5.0,123.362,116.379,N
-J2820,Sargramostim injection,71837-5843-05,Leukine ,1.0,5,25.0,50.365,47.514,K
+J2820,Sargramostim injection,71837-5843-05,Leukine,1.0,5,25.0,50.365,47.514,K
 J2860,"Injection, siltuximab",73090-0420-01,Sylvant,1.0,1,10.0,165.831,156.444,K
 J2860,"Injection, siltuximab",73090-0421-01,Sylvant,1.0,1,40.0,165.831,156.444,K
 J2865,Inj sulfameth/trim 5 mg/1 mg,00703-9503-03,Sulfamethoxazole-Trimethoprim,5.0,10,800.0,0.046,0.043,N
@@ -3830,7 +3829,7 @@ J3105,Terbutaline sulfate inj,63323-0665-01,Terbutaline Sulfate,1.0,25,25.0,7.39
 J3111,Inj. romosozumab-aqqg 1 mg,55513-0880-02,Evenity,1.17,2,210.0,12.07,11.387,K
 J3111,Inj. romosozumab-aqqg 1 mg,55513-0998-02,Evenity,1.17,2,210.0,12.07,11.387,K
 J3121,Inj testostero enanthate 1mg,00143-9750-01,Testosterone Enanthate,5.0,1,1000.0,0.052,0.049,N
-J3145,Testosterone undecanoate 1mg,67979-0511-43,Aveed ,3.0,1,750.0,2.069,1.952,K
+J3145,Testosterone undecanoate 1mg,67979-0511-43,Aveed,3.0,1,750.0,2.069,1.952,K
 J3230,Chlorpromazine hcl injection,00404-9836-01,Chlorpromazine HCl,1.0,1,1.0,25.268,23.838,N
 J3230,Chlorpromazine hcl injection,00641-1397-35,Chlorpromazine HCl,1.0,25,13.0,25.268,23.838,N
 J3230,Chlorpromazine hcl injection,00641-1398-35,Chlorpromazine HCl,2.0,25,25.0,25.268,23.838,N
@@ -3889,7 +3888,7 @@ J3260,Tobramycin sulfate injection,67457-0428-30,Tobramycin Sulfate,30.0,10,150.
 J3260,Tobramycin sulfate injection,67457-0473-22,Tobramycin Sulfate,2.0,25,25.0,2.373,2.239,N
 J3260,Tobramycin sulfate injection,70436-0110-56,Tobramycin Sulfate,1.0,6,90.0,2.373,2.239,N
 J3260,Tobramycin sulfate injection,70436-0110-80,Tobramycin Sulfate,1.0,1,15.0,2.373,2.239,N
-J3260,Tobramycin sulfate injection,70700-0173-22,Tobramycin ,1.0,1,15.0,2.373,2.239,N
+J3260,Tobramycin sulfate injection,70700-0173-22,Tobramycin,1.0,1,15.0,2.373,2.239,N
 J3260,Tobramycin sulfate injection,70700-0173-86,Tobramycin Sulfate,1.0,6,90.0,2.373,2.239,N
 J3260,Tobramycin sulfate injection,72266-0163-06,Tobramycin Sulfate,1.0,6,90.0,2.373,2.239,N
 J3262,Tocilizumab injection,50242-0135-01,Actemra,4.0,1,80.0,5.708,5.385,K
@@ -3918,7 +3917,7 @@ J3285,Treprostinil injection,66302-0105-01,Remodulin,20.0,1,100.0,54.707,51.61,K
 J3285,Treprostinil injection,66302-0110-01,Remodulin,20.0,1,200.0,54.707,51.61,K
 J3299,Inj xipere 1 mg,24208-0040-40,Xipere,0.9,1,36.0,47.973,45.258,K
 J3299,Inj xipere 1 mg,71565-0040-01,Xipere,0.9,1,36.0,47.973,45.258,K
-J3300,Triamcinolone a inj prs-free,00078-0897-78,Triesence ,1.0,1,40.0,24.498,23.111,G
+J3300,Triamcinolone a inj prs-free,00078-0897-78,Triesence,1.0,1,40.0,24.498,23.111,G
 J3300,Triamcinolone a inj prs-free,82667-0800-01,Triesence,1.0,1,40.0,24.498,23.111,G
 J3301,Triamcinolone acet inj nos,00003-0293-05,Kenalog-80,1.0,1,4.0,0.844,0.796,N
 J3301,Triamcinolone acet inj nos,00003-0293-20,Kenalog-80,5.0,1,20.0,0.844,0.796,N
@@ -3949,20 +3948,13 @@ J3301,Triamcinolone acet inj nos,70121-1049-02,Triamcinolone Acetonide,1.0,1,4.0
 J3301,Triamcinolone acet inj nos,70121-1049-05,Triamcinolone Acetonide,1.0,25,100.0,0.844,0.796,N
 J3301,Triamcinolone acet inj nos,70121-1168-01,Triamcinolone Acetonide,5.0,1,20.0,0.844,0.796,N
 J3301,Triamcinolone acet inj nos,70121-1169-01,Triamcinolone Acetonide,10.0,1,40.0,0.844,0.796,N
-J3301,Triamcinolone acet inj nos,70121-1651-01,"Triamcinolone Acetonide
-",1.0,1,4.0,0.844,0.796,N
-J3301,Triamcinolone acet inj nos,70121-1651-05,"Triamcinolone Acetonide
-",1.0,25,100.0,0.844,0.796,N
-J3301,Triamcinolone acet inj nos,70121-1652-01,"Triamcinolone Acetonide
-",5.0,1,20.0,0.844,0.796,N
-J3301,Triamcinolone acet inj nos,70121-1653-01,"Triamcinolone Acetonide
-",10.0,1,40.0,0.844,0.796,N
-J3301,Triamcinolone acet inj nos,70121-1654-01,"Triamcinolone Acetonide
-",5.0,1,20.0,0.844,0.796,N
-J3301,Triamcinolone acet inj nos,70121-1655-01,"Triamcinolone Acetonide
-",10.0,1,40.0,0.844,0.796,N
-J3301,Triamcinolone acet inj nos,70121-1657-01,"Triamcinolone Acetonide
-",1.0,1,4.0,0.844,0.796,N
+J3301,Triamcinolone acet inj nos,70121-1651-01,Triamcinolone Acetonide,1.0,1,4.0,0.844,0.796,N
+J3301,Triamcinolone acet inj nos,70121-1651-05,Triamcinolone Acetonide,1.0,25,100.0,0.844,0.796,N
+J3301,Triamcinolone acet inj nos,70121-1652-01,Triamcinolone Acetonide,5.0,1,20.0,0.844,0.796,N
+J3301,Triamcinolone acet inj nos,70121-1653-01,Triamcinolone Acetonide,10.0,1,40.0,0.844,0.796,N
+J3301,Triamcinolone acet inj nos,70121-1654-01,Triamcinolone Acetonide,5.0,1,20.0,0.844,0.796,N
+J3301,Triamcinolone acet inj nos,70121-1655-01,Triamcinolone Acetonide,10.0,1,40.0,0.844,0.796,N
+J3301,Triamcinolone acet inj nos,70121-1657-01,Triamcinolone Acetonide,1.0,1,4.0,0.844,0.796,N
 J3301,Triamcinolone acet inj nos,81298-5781-05,Triamcinolone Acetonide,1.0,25,100.0,0.844,0.796,N
 J3301,Triamcinolone acet inj nos,81298-5783-03,Triamcinolone Acetonide,10.0,1,40.0,0.844,0.796,N
 J3301,Triamcinolone acet inj nos,81298-5785-03,Triamcinolone Acetonide,5.0,1,20.0,0.844,0.796,N
@@ -4074,7 +4066,7 @@ J3375,Inj vancomycin (xellia) 10mg,70594-0044-02,Vancomycin HCl,400.0,6,1200.0,0
 J3375,Inj vancomycin (xellia) 10mg,70594-0056-03,Vancomycin HCl,150.0,12,900.0,0.139,0.131,N
 J3375,Inj vancomycin (xellia) 10mg,70594-0057-02,Vancomycin HCl,250.0,6,750.0,0.139,0.131,N
 J3375,Inj vancomycin (xellia) 10mg,70594-0058-02,Vancomycin HCl,350.0,6,1050.0,0.139,0.131,N
-J3380,Inj vedolizumab iv 1 mg,64764-0300-20,Entyvio ,1.0,1,300.0,21.311,20.105,K
+J3380,Inj vedolizumab iv 1 mg,64764-0300-20,Entyvio,1.0,1,300.0,21.311,20.105,K
 J3385,Velaglucerase alfa,54092-0701-04,Vpriv,1.0,1,4.0,381.36,359.774,K
 J3396,Verteporfin injection,00187-5600-15,Visudyne,1.0,1,150.0,11.538,10.885,K
 J3401,"Vyjuvek 5x10^9pfu/ml, 0.1 ml",82194-0510-02,Vyjuvek,1.0,1,25.0,1025.436,967.392,G
@@ -4556,11 +4548,11 @@ J7190,Factor viii,76125-0679-12,Koate,1.0,1,1.0,1.085,1.024,K
 J7192,Factor viii recombinant nos,00026-3782-25,Kogenate Fs,1.0,1,1.0,1.613,1.522,K
 J7192,Factor viii recombinant nos,00026-3783-35,Kogenate Fs,1.0,1,1.0,1.613,1.522,K
 J7192,Factor viii recombinant nos,00026-3787-75,Kogenate Fs,1.0,1,1.0,1.613,1.522,K
-J7192,Factor viii recombinant nos,00944-2841-10,Recombinate ,1.0,1,1.0,1.613,1.522,K
-J7192,Factor viii recombinant nos,00944-2842-10,Recombinate ,1.0,1,1.0,1.613,1.522,K
-J7192,Factor viii recombinant nos,00944-2843-10,Recombinate ,1.0,1,1.0,1.613,1.522,K
-J7192,Factor viii recombinant nos,00944-2844-10,Recombinate ,1.0,1,1.0,1.613,1.522,K
-J7192,Factor viii recombinant nos,00944-2845-10,Recombinate ,1.0,1,1.0,1.613,1.522,K
+J7192,Factor viii recombinant nos,00944-2841-10,Recombinate,1.0,1,1.0,1.613,1.522,K
+J7192,Factor viii recombinant nos,00944-2842-10,Recombinate,1.0,1,1.0,1.613,1.522,K
+J7192,Factor viii recombinant nos,00944-2843-10,Recombinate,1.0,1,1.0,1.613,1.522,K
+J7192,Factor viii recombinant nos,00944-2844-10,Recombinate,1.0,1,1.0,1.613,1.522,K
+J7192,Factor viii recombinant nos,00944-2845-10,Recombinate,1.0,1,1.0,1.613,1.522,K
 J7192,Factor viii recombinant nos,00944-3045-10,Advate,1.0,1,1.0,1.613,1.522,K
 J7192,Factor viii recombinant nos,00944-3046-10,Advate,1.0,1,1.0,1.613,1.522,K
 J7192,Factor viii recombinant nos,00944-3047-10,Advate,1.0,1,1.0,1.613,1.522,K
@@ -4589,12 +4581,12 @@ J7200,Factor ix recombinan rixubis,00944-3028-02,Rixubis,1.0,1,1.0,1.69,1.594,N
 J7200,Factor ix recombinan rixubis,00944-3030-02,Rixubis,1.0,1,1.0,1.69,1.594,N
 J7200,Factor ix recombinan rixubis,00944-3032-02,Rixubis,1.0,1,1.0,1.69,1.594,N
 J7200,Factor ix recombinan rixubis,00944-3034-02,Rixubis,1.0,1,1.0,1.69,1.594,N
-J7201,Factor ix alprolix recomb,71104-0911-01,Alprolix ,1.0,1,1.0,3.594,3.391,K
-J7201,Factor ix alprolix recomb,71104-0922-01,Alprolix ,1.0,1,1.0,3.594,3.391,K
-J7201,Factor ix alprolix recomb,71104-0933-01,Alprolix ,1.0,1,1.0,3.594,3.391,K
-J7201,Factor ix alprolix recomb,71104-0944-01,Alprolix ,1.0,1,1.0,3.594,3.391,K
-J7201,Factor ix alprolix recomb,71104-0966-01,Alprolix ,1.0,1,1.0,3.594,3.391,K
-J7201,Factor ix alprolix recomb,71104-0977-01,Alprolix ,1.0,1,1.0,3.594,3.391,K
+J7201,Factor ix alprolix recomb,71104-0911-01,Alprolix,1.0,1,1.0,3.594,3.391,K
+J7201,Factor ix alprolix recomb,71104-0922-01,Alprolix,1.0,1,1.0,3.594,3.391,K
+J7201,Factor ix alprolix recomb,71104-0933-01,Alprolix,1.0,1,1.0,3.594,3.391,K
+J7201,Factor ix alprolix recomb,71104-0944-01,Alprolix,1.0,1,1.0,3.594,3.391,K
+J7201,Factor ix alprolix recomb,71104-0966-01,Alprolix,1.0,1,1.0,3.594,3.391,K
+J7201,Factor ix alprolix recomb,71104-0977-01,Alprolix,1.0,1,1.0,3.594,3.391,K
 J7202,Factor ix idelvion inj,69911-0864-02,Idelvion,1.0,1,1.0,5.32,5.019,K
 J7202,Factor ix idelvion inj,69911-0865-02,Idelvion,1.0,1,1.0,5.32,5.019,K
 J7202,Factor ix idelvion inj,69911-0866-02,Idelvion,1.0,1,1.0,5.32,5.019,K
@@ -4620,13 +4612,13 @@ J7205,Factor viii fc fusion recomb,71104-0807-01,Eloctate,1.0,1,1.0,2.426,2.289,
 J7205,Factor viii fc fusion recomb,71104-0808-01,Eloctate,1.0,1,1.0,2.426,2.289,K
 J7205,Factor viii fc fusion recomb,71104-0809-01,Eloctate,1.0,1,1.0,2.426,2.289,K
 J7205,Factor viii fc fusion recomb,71104-0810-01,Eloctate,1.0,1,1.0,2.426,2.289,K
-J7207,Factor viii pegylated recomb,00944-4622-01,Adynovate ,1.0,1,1.0,2.097,1.978,K
-J7207,Factor viii pegylated recomb,00944-4623-01,Adynovate ,1.0,1,1.0,2.097,1.978,K
-J7207,Factor viii pegylated recomb,00944-4624-01,Adynovate ,1.0,1,1.0,2.097,1.978,K
-J7207,Factor viii pegylated recomb,00944-4625-01,Adynovate ,1.0,1,1.0,2.097,1.978,K
-J7207,Factor viii pegylated recomb,00944-4626-01,Adynovate ,1.0,1,1.0,2.097,1.978,K
-J7207,Factor viii pegylated recomb,00944-4627-01,Adynovate ,1.0,1,1.0,2.097,1.978,K
-J7207,Factor viii pegylated recomb,00944-4628-01,Adynovate ,1.0,1,1.0,2.097,1.978,K
+J7207,Factor viii pegylated recomb,00944-4622-01,Adynovate,1.0,1,1.0,2.097,1.978,K
+J7207,Factor viii pegylated recomb,00944-4623-01,Adynovate,1.0,1,1.0,2.097,1.978,K
+J7207,Factor viii pegylated recomb,00944-4624-01,Adynovate,1.0,1,1.0,2.097,1.978,K
+J7207,Factor viii pegylated recomb,00944-4625-01,Adynovate,1.0,1,1.0,2.097,1.978,K
+J7207,Factor viii pegylated recomb,00944-4626-01,Adynovate,1.0,1,1.0,2.097,1.978,K
+J7207,Factor viii pegylated recomb,00944-4627-01,Adynovate,1.0,1,1.0,2.097,1.978,K
+J7207,Factor viii pegylated recomb,00944-4628-01,Adynovate,1.0,1,1.0,2.097,1.978,K
 J7208,Inj. jivi 1 iu,00026-3942-25,Jivi,1.0,1,1.0,2.646,2.496,K
 J7208,Inj. jivi 1 iu,00026-3944-25,Jivi,1.0,1,1.0,2.646,2.496,K
 J7208,Inj. jivi 1 iu,00026-3946-25,Jivi,1.0,1,1.0,2.646,2.496,K
@@ -4677,8 +4669,8 @@ J7321,Hyalgan supartz visco-3 dose,50016-0957-21,Visco-3,2.5,3,3.0,71.523,67.475
 J7321,Hyalgan supartz visco-3 dose,89122-0724-12,Hyalgan,2.0,1,1.0,71.523,67.475,N
 J7321,Hyalgan supartz visco-3 dose,89122-0724-20,Hyalgan,2.0,1,1.0,71.523,67.475,N
 J7321,Hyalgan supartz visco-3 dose,89130-4444-01,Supartz FX,2.5,1,1.0,71.523,67.475,N
-J7322,Hymovis injection 1 mg,89122-0496-01,Hymovis ,3.0,1,24.0,17.618,16.621,K
-J7322,Hymovis injection 1 mg,89122-0496-63,Hymovis ,3.0,2,48.0,17.618,16.621,K
+J7322,Hymovis injection 1 mg,89122-0496-01,Hymovis,3.0,1,24.0,17.618,16.621,K
+J7322,Hymovis injection 1 mg,89122-0496-63,Hymovis,3.0,2,48.0,17.618,16.621,K
 J7323,Euflexxa inj per dose,55566-4100-01,Euflexxa,2.0,3,3.0,112.454,106.089,K
 J7324,Orthovisc inj per dose,59676-0360-01,Orthovisc,2.0,1,1.0,114.536,108.053,K
 J7325,Synvisc or synvisc-one,58468-0090-01,Synvisc,2.0,3,48.0,7.951,7.501,K
@@ -4803,7 +4795,7 @@ J7510,Prednisolone oral per 5 mg,50090-7115-01,Prednisolone,240.0,1,144.0,0.231,
 J7510,Prednisolone oral per 5 mg,68788-7708-02,Prednisolone,240.0,1,144.0,0.231,0.218,N
 J7510,Prednisolone oral per 5 mg,69238-2122-09,Prednisolone Sodium Phosphate,237.0,1,143.0,0.231,0.218,N
 J7511,Antithymocyte globuln rabbit,58468-0080-01,Thymoglobulin,1.0,1,1.0,999.367,942.799,K
-J7512,Prednisone ir or dr oral 1mg,00054-3721-44,Prednisone ,30.0,1,150.0,0.005,0.005,N
+J7512,Prednisone ir or dr oral 1mg,00054-3721-44,Prednisone,30.0,1,150.0,0.005,0.005,N
 J7512,Prednisone ir or dr oral 1mg,00054-3722-50,Prednisone,120.0,1,120.0,0.005,0.005,N
 J7512,Prednisone ir or dr oral 1mg,00054-3722-63,Prednisone,500.0,1,500.0,0.005,0.005,N
 J7512,Prednisone ir or dr oral 1mg,00054-4741-25,Prednisone,100.0,1,100.0,0.005,0.005,N
@@ -5020,21 +5012,21 @@ J7517,Mycophenolate mofetil oral,67877-0266-05,Mycophenolate Mofetil,500.0,1,500
 J7518,Mycophenolic acid,00078-0385-66,Myfortic,120.0,1,120.0,0.337,0.318,N
 J7518,Mycophenolic acid,00078-0386-66,Myfortic,120.0,1,240.0,0.337,0.318,N
 J7518,Mycophenolic acid,50090-6492-00,Mycophenolic Acid,180.0,1,360.0,0.337,0.318,N
-J7518,Mycophenolic acid,50268-0559-12,Mycophenolic Acid DR ,20.0,1,20.0,0.337,0.318,N
-J7518,Mycophenolic acid,60505-2965-07,Mycophenolic Acid DR ,120.0,1,120.0,0.337,0.318,N
-J7518,Mycophenolic acid,60505-2966-07,Mycophenolic Acid DR ,120.0,1,240.0,0.337,0.318,N
-J7518,Mycophenolic acid,67877-0426-12,Mycophenolic Acid DR ,120.0,1,120.0,0.337,0.318,N
-J7518,Mycophenolic acid,67877-0427-12,Mycophenolic Acid DR ,120.0,1,240.0,0.337,0.318,N
-J7518,Mycophenolic acid,68084-0907-21,Mycophenolic Acid DR ,30.0,1,30.0,0.337,0.318,N
+J7518,Mycophenolic acid,50268-0559-12,Mycophenolic Acid DR,20.0,1,20.0,0.337,0.318,N
+J7518,Mycophenolic acid,60505-2965-07,Mycophenolic Acid DR,120.0,1,120.0,0.337,0.318,N
+J7518,Mycophenolic acid,60505-2966-07,Mycophenolic Acid DR,120.0,1,240.0,0.337,0.318,N
+J7518,Mycophenolic acid,67877-0426-12,Mycophenolic Acid DR,120.0,1,120.0,0.337,0.318,N
+J7518,Mycophenolic acid,67877-0427-12,Mycophenolic Acid DR,120.0,1,240.0,0.337,0.318,N
+J7518,Mycophenolic acid,68084-0907-21,Mycophenolic Acid DR,30.0,1,30.0,0.337,0.318,N
 J7518,Mycophenolic acid,68084-0918-25,Mycophenolic Acid,30.0,1,60.0,0.337,0.318,N
-J7518,Mycophenolic acid,70377-0039-11,Mycophenolic Acid DR ,120.0,1,120.0,0.337,0.318,N
-J7518,Mycophenolic acid,70377-0040-11,Mycophenolic Acid DR ,120.0,1,240.0,0.337,0.318,N
+J7518,Mycophenolic acid,70377-0039-11,Mycophenolic Acid DR,120.0,1,120.0,0.337,0.318,N
+J7518,Mycophenolic acid,70377-0040-11,Mycophenolic Acid DR,120.0,1,240.0,0.337,0.318,N
 J7518,Mycophenolic acid,70377-0126-11,Mycophenolic Acid DR,120.0,1,120.0,0.337,0.318,N
 J7518,Mycophenolic acid,70377-0127-11,Mycophenolic Acid DR,120.0,1,240.0,0.337,0.318,N
 J7518,Mycophenolic acid,70436-0172-23,Mycophenolic Acid DR,120.0,1,120.0,0.337,0.318,N
 J7518,Mycophenolic acid,70436-0173-23,Mycophenolic Acid DR,120.0,1,240.0,0.337,0.318,N
-J7518,Mycophenolic acid,72819-0155-08,Mycophenolic Acid DR ,120.0,1,120.0,0.337,0.318,N
-J7518,Mycophenolic acid,72819-0156-08,Mycophenolic Acid DR ,120.0,1,240.0,0.337,0.318,N
+J7518,Mycophenolic acid,72819-0155-08,Mycophenolic Acid DR,120.0,1,120.0,0.337,0.318,N
+J7518,Mycophenolic acid,72819-0156-08,Mycophenolic Acid DR,120.0,1,240.0,0.337,0.318,N
 J7519,Inj. mycophenolate mofetil,00004-0298-09,Cellcept - IV,1.0,4,200.0,0.361,0.341,N
 J7519,Inj. mycophenolate mofetil,42023-0172-04,Mycophenolate Mofetil IV,1.0,4,200.0,0.361,0.341,N
 J7519,Inj. mycophenolate mofetil,67457-0386-81,Mycophenolate Mofetil IV,1.0,4,200.0,0.361,0.341,N
@@ -5121,8 +5113,8 @@ J7606,"Formoterol fumarate, inh",42858-0094-35,Formoterol Fumarate,2.0,30,30.0,2
 J7606,"Formoterol fumarate, inh",42858-0094-62,Formoterol Fumarate,2.0,60,60.0,2.728,2.574,M
 J7606,"Formoterol fumarate, inh",43598-0778-30,Formoterol Fumarate,2.0,30,30.0,2.728,2.574,M
 J7606,"Formoterol fumarate, inh",43598-0778-60,Formoterol Fumarate,2.0,60,60.0,2.728,2.574,M
-J7606,"Formoterol fumarate, inh",49502-0605-30,Perforomist ,2.0,30,30.0,2.728,2.574,M
-J7606,"Formoterol fumarate, inh",49502-0605-61,Perforomist ,2.0,60,60.0,2.728,2.574,M
+J7606,"Formoterol fumarate, inh",49502-0605-30,Perforomist,2.0,30,30.0,2.728,2.574,M
+J7606,"Formoterol fumarate, inh",49502-0605-61,Perforomist,2.0,60,60.0,2.728,2.574,M
 J7606,"Formoterol fumarate, inh",62332-0655-30,Formoterol Fumarate,2.0,30,30.0,2.728,2.574,M
 J7606,"Formoterol fumarate, inh",62332-0655-60,Formoterol Fumarate,2.0,60,60.0,2.728,2.574,M
 J7606,"Formoterol fumarate, inh",70748-0261-30,Formoterol Fumarate,2.0,30,30.0,2.728,2.574,M
@@ -5411,7 +5403,7 @@ J8611,Oral methotrexate (jylamvo),81927-0204-01,Jylamvo,60.0,1,48.0,18.466,17.42
 J8612,Oral methotrexate (xatmep),52652-2001-01,Xatmep,120.0,1,120.0,22.68,21.396,K
 J8612,Oral methotrexate (xatmep),52652-2001-06,Xatmep,60.0,1,60.0,22.68,21.396,K
 J8655,"Oral netupitant, palonosetro",69639-0101-01,Akynzeo,1.0,1,1.0,422.893,398.956,K
-J8670,"Rolapitant, oral, 1mg",70720-0101-02,Varubi Oral ,2.0,1,180.0,1.855,1.75,K
+J8670,"Rolapitant, oral, 1mg",70720-0101-02,Varubi Oral,2.0,1,180.0,1.855,1.75,K
 J8700,Temozolomide,16729-0048-53,Temozolomide,5.0,1,5.0,0.455,0.429,N
 J8700,Temozolomide,16729-0048-54,Temozolomide,14.0,1,14.0,0.455,0.429,N
 J8700,Temozolomide,16729-0049-53,Temozolomide,5.0,1,20.0,0.455,0.429,N
@@ -6138,7 +6130,7 @@ J9263,Oxaliplatin,72603-0301-01,Oxaliplatin,10.0,1,100.0,0.083,0.078,N
 J9263,Oxaliplatin,72603-0320-01,Oxaliplatin,20.0,1,200.0,0.083,0.078,N
 J9263,Oxaliplatin,72603-0420-01,Oxaliplatin,10.0,1,100.0,0.083,0.078,N
 J9264,Paclitaxel protein bound,00480-3290-01,Paclitaxel Protein-Bound (American Regent),1.0,1,100.0,10.543,9.946,K
-J9264,Paclitaxel protein bound,00517-4300-01,Paclitaxel Protein-Bound ,1.0,1,100.0,10.543,9.946,K
+J9264,Paclitaxel protein bound,00517-4300-01,Paclitaxel Protein-Bound,1.0,1,100.0,10.543,9.946,K
 J9264,Paclitaxel protein bound,00781-3531-91,Paclitaxel Protein-Bound Particles,1.0,1,100.0,10.543,9.946,K
 J9264,Paclitaxel protein bound,24979-0710-51,Paclitaxel Protein-Bound,1.0,1,100.0,10.543,9.946,K
 J9264,Paclitaxel protein bound,60505-6230-04,Paclitaxel Protein-Bound,1.0,1,100.0,10.543,9.946,K
@@ -6222,12 +6214,12 @@ J9293,Mitoxantrone hydrochl / 5 mg,61703-0343-65,Mitoxantrone Hydrochloride,12.5
 J9293,Mitoxantrone hydrochl / 5 mg,61703-0343-66,Mitoxantrone Hydrochloride,15.0,1,6.0,23.877,22.525,K
 J9293,Mitoxantrone hydrochl / 5 mg,63323-0132-10,Mitoxantrone Hydrochloride,10.0,1,4.0,23.877,22.525,K
 J9293,Mitoxantrone hydrochl / 5 mg,63323-0132-12,Mitoxantrone Hydrochloride,12.5,1,5.0,23.877,22.525,K
-J9294,"Inj pemetrexed, hospira 10mg",00409-0004-04,Pemetrexed ,40.0,1,100.0,3.547,3.346,K
-J9294,"Inj pemetrexed, hospira 10mg",00409-0020-02,Pemetrexed ,4.0,1,10.0,3.547,3.346,K
-J9294,"Inj pemetrexed, hospira 10mg",00409-0021-03,Pemetrexed ,20.0,1,50.0,3.547,3.346,K
-J9294,"Inj pemetrexed, hospira 10mg",00409-1045-01,Pemetrexed ,4.0,1,10.0,3.547,3.346,K
-J9294,"Inj pemetrexed, hospira 10mg",00409-2188-01,Pemetrexed ,20.0,1,50.0,3.547,3.346,K
-J9294,"Inj pemetrexed, hospira 10mg",00409-3532-01,Pemetrexed ,40.0,1,100.0,3.547,3.346,K
+J9294,"Inj pemetrexed, hospira 10mg",00409-0004-04,Pemetrexed,40.0,1,100.0,3.547,3.346,K
+J9294,"Inj pemetrexed, hospira 10mg",00409-0020-02,Pemetrexed,4.0,1,10.0,3.547,3.346,K
+J9294,"Inj pemetrexed, hospira 10mg",00409-0021-03,Pemetrexed,20.0,1,50.0,3.547,3.346,K
+J9294,"Inj pemetrexed, hospira 10mg",00409-1045-01,Pemetrexed,4.0,1,10.0,3.547,3.346,K
+J9294,"Inj pemetrexed, hospira 10mg",00409-2188-01,Pemetrexed,20.0,1,50.0,3.547,3.346,K
+J9294,"Inj pemetrexed, hospira 10mg",00409-3532-01,Pemetrexed,40.0,1,100.0,3.547,3.346,K
 J9295,"Injection, necitumumab, 1 mg",00002-7716-01,Portrazza,50.0,1,800.0,5.731,5.407,K
 J9296,Inj pemetrexed (accord) 10mg,16729-0522-05,Pemetrexed,20.0,1,50.0,9.736,9.185,K
 J9296,Inj pemetrexed (accord) 10mg,16729-0522-28,Pemetrexed,34.0,1,85.0,9.736,9.185,K
@@ -6311,8 +6303,8 @@ J9323,Inj pemetrexed ditromethamin,00409-1060-01,Pemetrexed ditromethamine,1.0,1
 J9323,Inj pemetrexed ditromethamin,00409-1061-01,Pemetrexed ditromethamine,1.0,1,50.0,0.125,0.118,K
 J9324,"Inj, pemrydi rtu, 10 mg",70121-2453-01,Pemrydi rtu,10.0,1,10.0,75.808,71.517,G
 J9324,"Inj, pemrydi rtu, 10 mg",70121-2461-01,Pemrydi rtu,50.0,1,50.0,75.808,71.517,G
-J9325,Inj talimogene laherparepvec,55513-0078-01,Imlygic ,1.0,1,1.0,73.935,69.75,K
-J9325,Inj talimogene laherparepvec,55513-0079-01,Imlygic ,1.0,1,100.0,73.935,69.75,K
+J9325,Inj talimogene laherparepvec,55513-0078-01,Imlygic,1.0,1,1.0,73.935,69.75,K
+J9325,Inj talimogene laherparepvec,55513-0079-01,Imlygic,1.0,1,100.0,73.935,69.75,K
 J9328,Temozolomide injection,00085-1381-01,Temodar IV,1.0,1,100.0,10.389,9.801,K
 J9329,"Inj, tislelizumab-jsgr",72579-0121-01,Tevimbra,10.0,1,100.0,57.445,54.193,G
 J9330,Temsirolimus injection,00008-1179-01,Temsirolimus,1.0,1,25.0,26.712,25.2,K
@@ -6508,8 +6500,8 @@ Q0167,Dronabinol 2.5mg oral,67877-0753-60,Dronabinol,60.0,1,60.0,1.352,1.275,N
 Q0167,Dronabinol 2.5mg oral,67877-0754-60,Dronabinol,60.0,1,120.0,1.352,1.275,N
 Q0167,Dronabinol 2.5mg oral,67877-0755-60,Marinol,60.0,1,240.0,1.352,1.275,N
 Q2041,Axicabtagene ciloleucel car+,71287-0119-01,Yescarta,1.0,1,1.0,533230.171,503047.331,K
-Q2042,Tisagenlecleucel car-pos t,00078-0846-19,Kymriah ,1.0,1,1.0,591726.201,558232.265,K
-Q2042,Tisagenlecleucel car-pos t,00078-0958-19,Kymriah ,1.0,1,1.0,591726.201,558232.265,K
+Q2042,Tisagenlecleucel car-pos t,00078-0846-19,Kymriah,1.0,1,1.0,591726.201,558232.265,K
+Q2042,Tisagenlecleucel car-pos t,00078-0958-19,Kymriah,1.0,1,1.0,591726.201,558232.265,K
 Q2043,Sipuleucel-t auto cd54+,30237-8900-06,Provenge,250.0,1,1.0,55272.324,52143.702,K
 Q2050,Doxorubicin inj 10mg,00338-0063-01,Doxil,10.0,1,2.0,108.468,102.328,K
 Q2050,Doxorubicin inj 10mg,00338-0067-01,Doxil,25.0,1,5.0,108.468,102.328,K
@@ -6767,7 +6759,7 @@ Q4128,Flexhd/allopatchhd/sq cm,4D1331,FlexHD,660.0,1,660.0,29.912,28.219,N
 Q4128,Flexhd/allopatchhd/sq cm,4D1335,FlexHD,840.0,1,840.0,29.912,28.219,N
 Q4128,Flexhd/allopatchhd/sq cm,4d2331,FlexHD,660.0,1,660.0,29.912,28.219,N
 Q4128,Flexhd/allopatchhd/sq cm,4D2335,FlexHD,840.0,1,840.0,29.912,28.219,N
-Q4128,Flexhd/allopatchhd/sq cm,FN0816,FlexHD Pliable ,128.0,1,128.0,29.912,28.219,N
+Q4128,Flexhd/allopatchhd/sq cm,FN0816,FlexHD Pliable,128.0,1,128.0,29.912,28.219,N
 Q4128,Flexhd/allopatchhd/sq cm,HP1102,FlexHD Pliable,2.0,1,2.0,29.912,28.219,N
 Q4128,Flexhd/allopatchhd/sq cm,HP1202,FlexHD Pliable,400.0,1,400.0,29.912,28.219,N
 Q4128,Flexhd/allopatchhd/sq cm,HP1204,FlexHD Pliable,8.0,1,8.0,29.912,28.219,N
@@ -6902,21 +6894,21 @@ Q4138,"Biodfence dryflex, 1cm",54727-0005-42,BioDDryFlex,6.0,1,6.0,98.107,92.554
 Q4138,"Biodfence dryflex, 1cm",54727-0005-43,BioDDryFlex,12.0,1,12.0,98.107,92.554,N
 Q4138,"Biodfence dryflex, 1cm",54727-0005-44,BioDDryFlex,16.0,1,16.0,98.107,92.554,N
 Q4138,"Biodfence dryflex, 1cm",54727-0005-45,BioDDryFlex,32.0,1,32.0,98.107,92.554,N
-Q4140,Biodfence 1cm,54727-0005-28,BioDfence G3 ,2.0,2,4.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-29,BioDfence G3 ,18.0,1,18.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-30,BioDfence G3 ,4.0,1,4.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-31,BioDfence G3 ,3.0,1,3.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-32,BioDfence G3 ,8.0,1,8.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-33,BioDfence G3 ,12.0,1,12.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-34,BioDfence G3 ,16.0,1,16.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-35,BioDfence G3 ,32.0,1,32.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-37,BioDfence G3 ,36.0,1,36.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-38,BioDfence G3 ,6.0,1,6.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-70,BioDfence Sentry    ,8.0,1,8.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-71,BioDfence Sentry    ,12.0,1,12.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-72,BioDfence Sentry    ,18.0,1,18.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-73,BioDfence Sentry    ,16.0,1,16.0,161.624,152.475,N
-Q4140,Biodfence 1cm,54727-0005-74,BioDfence Sentry    ,32.0,1,32.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-28,BioDfence G3,2.0,2,4.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-29,BioDfence G3,18.0,1,18.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-30,BioDfence G3,4.0,1,4.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-31,BioDfence G3,3.0,1,3.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-32,BioDfence G3,8.0,1,8.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-33,BioDfence G3,12.0,1,12.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-34,BioDfence G3,16.0,1,16.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-35,BioDfence G3,32.0,1,32.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-37,BioDfence G3,36.0,1,36.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-38,BioDfence G3,6.0,1,6.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-70,BioDfence Sentry,8.0,1,8.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-71,BioDfence Sentry,12.0,1,12.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-72,BioDfence Sentry,18.0,1,18.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-73,BioDfence Sentry,16.0,1,16.0,161.624,152.475,N
+Q4140,Biodfence 1cm,54727-0005-74,BioDfence Sentry,32.0,1,32.0,161.624,152.475,N
 Q4141,"Alloskin ac, 1 cm",5032-61830,AlloSkin AC,32.0,1,32.0,106.968,100.913,N
 Q4141,"Alloskin ac, 1 cm",5116-61030,AlloSkin AC,16.0,1,16.0,106.968,100.913,N
 Q4141,"Alloskin ac, 1 cm",5132-61030,AlloSkin AC,32.0,1,32.0,106.968,100.913,N
@@ -7037,16 +7029,16 @@ Q4158,"Kerecis omega3, per sq cm",50200S03B0D,MariGen,70.0,1,70.0,67.273,63.465,
 Q4158,"Kerecis omega3, per sq cm",50200S04B0D,MariGen,49.0,1,49.0,67.273,63.465,N
 Q4158,"Kerecis omega3, per sq cm",50200S05B0D,MariGen,35.0,1,35.0,67.273,63.465,N
 Q4158,"Kerecis omega3, per sq cm",50200S16B0D,MariGen,2.01,1,2.0,67.273,63.465,N
-Q4159,Affinity1 square cm,57877-0005-11,Affinity ,1.0,1,7.0,204.955,193.354,N
-Q4159,Affinity1 square cm,57877-0005-13,Affinity ,1.0,1,3.0,204.955,193.354,N
+Q4159,Affinity1 square cm,57877-0005-11,Affinity,1.0,1,7.0,204.955,193.354,N
+Q4159,Affinity1 square cm,57877-0005-13,Affinity,1.0,1,3.0,204.955,193.354,N
 Q4160,Nushield 1 square cm,57877-0005-04,NuShield,1.0,1,6.0,2784.378,2626.772,N
-Q4160,Nushield 1 square cm,57877-0005-05,NuShield ,1.0,1,16.0,2784.378,2626.772,N
-Q4160,Nushield 1 square cm,57877-0005-06,NuShield ,1.0,1,24.0,2784.378,2626.772,N
-Q4160,Nushield 1 square cm,57877-0005-07,NuShield ,1.0,1,36.0,2784.378,2626.772,N
+Q4160,Nushield 1 square cm,57877-0005-05,NuShield,1.0,1,16.0,2784.378,2626.772,N
+Q4160,Nushield 1 square cm,57877-0005-06,NuShield,1.0,1,24.0,2784.378,2626.772,N
+Q4160,Nushield 1 square cm,57877-0005-07,NuShield,1.0,1,36.0,2784.378,2626.772,N
 Q4160,Nushield 1 square cm,57877-0005-16,NuShield,1.0,1,3.0,2784.378,2626.772,N
 Q4160,Nushield 1 square cm,57877-0005-18,NuShield,1.0,1,8.0,2784.378,2626.772,N
-Q4160,Nushield 1 square cm,57877-0005-19,NuShield ,1.0,1,9.0,2784.378,2626.772,N
-Q4160,Nushield 1 square cm,57877-0005-20,NuShield ,1.0,1,12.0,2784.378,2626.772,N
+Q4160,Nushield 1 square cm,57877-0005-19,NuShield,1.0,1,9.0,2784.378,2626.772,N
+Q4160,Nushield 1 square cm,57877-0005-20,NuShield,1.0,1,12.0,2784.378,2626.772,N
 Q4160,Nushield 1 square cm,57877-0005-42,NuShield,1.0,1,11.0,2784.378,2626.772,N
 Q4160,Nushield 1 square cm,NO-1140C,NuShield,2.0,1,2.0,2784.378,2626.772,N
 Q4161,Bio-connekt per square cm,1101-0202,bio-ConneK?t,4.0,1,4.0,1590.54,1500.509,N
@@ -7080,18 +7072,18 @@ Q4166,"Cytal, per square centimeter",86190-0001-09,Cytal Burn Matrix,25.0,1,25.0
 Q4166,"Cytal, per square centimeter",86190-0001-10,Cytal Burn Matrix,70.0,1,70.0,19.97,18.84,N
 Q4166,"Cytal, per square centimeter",86190-0001-11,Cytal Burn Matrix,150.0,1,150.0,19.97,18.84,N
 Q4166,"Cytal, per square centimeter",86190-0001-39,Cytal Wound Matrix,11.0,1,11.0,19.97,18.84,N
-Q4166,"Cytal, per square centimeter",86190-0001-40,Cytal Wound Matrix ,21.0,1,21.0,19.97,18.84,N
-Q4166,"Cytal, per square centimeter",86190-0001-41,Cytal Wound Matrix ,70.0,1,70.0,19.97,18.84,N
-Q4166,"Cytal, per square centimeter",86190-0001-42,Cytal Wound Matrix ,150.0,1,150.0,19.97,18.84,N
-Q4166,"Cytal, per square centimeter",86190-0001-43,Cytal Wound Matrix ,25.0,1,25.0,19.97,18.84,N
+Q4166,"Cytal, per square centimeter",86190-0001-40,Cytal Wound Matrix,21.0,1,21.0,19.97,18.84,N
+Q4166,"Cytal, per square centimeter",86190-0001-41,Cytal Wound Matrix,70.0,1,70.0,19.97,18.84,N
+Q4166,"Cytal, per square centimeter",86190-0001-42,Cytal Wound Matrix,150.0,1,150.0,19.97,18.84,N
+Q4166,"Cytal, per square centimeter",86190-0001-43,Cytal Wound Matrix,25.0,1,25.0,19.97,18.84,N
 Q4166,"Cytal, per square centimeter",86190-0001-44,Cytal Wound Matrix,70.0,1,70.0,19.97,18.84,N
-Q4166,"Cytal, per square centimeter",86190-0001-45,Cytal Wound Matrix ,150.0,1,150.0,19.97,18.84,N
+Q4166,"Cytal, per square centimeter",86190-0001-45,Cytal Wound Matrix,150.0,1,150.0,19.97,18.84,N
 Q4166,"Cytal, per square centimeter",86190-0001-46,Cytal Wound Matrix,25.0,1,25.0,19.97,18.84,N
 Q4166,"Cytal, per square centimeter",86190-0001-47,Cytal Wound Matrix,70.0,1,70.0,19.97,18.84,N
-Q4166,"Cytal, per square centimeter",86190-0001-48,Cytal Wound Matrix ,150.0,1,150.0,19.97,18.84,N
+Q4166,"Cytal, per square centimeter",86190-0001-48,Cytal Wound Matrix,150.0,1,150.0,19.97,18.84,N
 Q4166,"Cytal, per square centimeter",86190-0001-49,Cytal Wound Matrix,25.0,1,25.0,19.97,18.84,N
-Q4166,"Cytal, per square centimeter",86190-0001-50,Cytal Wound Matrix ,70.0,1,70.0,19.97,18.84,N
-Q4166,"Cytal, per square centimeter",86190-0001-51,Cytal Wound Matrix ,150.0,1,150.0,19.97,18.84,N
+Q4166,"Cytal, per square centimeter",86190-0001-50,Cytal Wound Matrix,70.0,1,70.0,19.97,18.84,N
+Q4166,"Cytal, per square centimeter",86190-0001-51,Cytal Wound Matrix,150.0,1,150.0,19.97,18.84,N
 Q4169,"Artacent wound, per sq cm",AWP24D15,Artacent Wound,2.0,1,2.0,2068.472,1951.389,N
 Q4169,"Artacent wound, per sq cm",AWP24R48,Artacent Wound,32.0,1,32.0,2068.472,1951.389,N
 Q4169,"Artacent wound, per sq cm",AWP24S22,Artacent Wound,4.0,1,4.0,2068.472,1951.389,N
@@ -7112,13 +7104,13 @@ Q4170,"Cygnus, per sq cm",CAX040400S,Cygnus Max XL,16.0,1,16.0,39.313,37.088,N
 Q4170,"Cygnus, per sq cm",CAX040600S,Cygnus Max XL,24.0,1,24.0,39.313,37.088,N
 Q4170,"Cygnus, per sq cm",CAX040800S,Cygnus Max XL,32.0,1,32.0,39.313,37.088,N
 Q4170,"Cygnus, per sq cm",CUC020400,Cygnus Cryo Max,8.0,1,8.0,39.313,37.088,N
-Q4171,"Interfyl, 1 mg",HCTM001,Interfyl ,1.0,1,100.0,10.092,9.521,N
-Q4171,"Interfyl, 1 mg",HCTM010,Interfyl ,1.0,1,170.0,10.092,9.521,N
-Q4171,"Interfyl, 1 mg",HCTM015,Interfyl ,1.0,1,275.0,10.092,9.521,N
-Q4171,"Interfyl, 1 mg",HCTM030,Interfyl ,1.0,1,45.0,10.092,9.521,N
-Q4171,"Interfyl, 1 mg",HCTM050,Interfyl ,1.0,1,50.0,10.092,9.521,N
-Q4171,"Interfyl, 1 mg",HCTM060,Interfyl ,1.0,1,75.0,10.092,9.521,N
-Q4171,"Interfyl, 1 mg",HCTM100,Interfyl ,1.0,1,100.0,10.092,9.521,N
+Q4171,"Interfyl, 1 mg",HCTM001,Interfyl,1.0,1,100.0,10.092,9.521,N
+Q4171,"Interfyl, 1 mg",HCTM010,Interfyl,1.0,1,170.0,10.092,9.521,N
+Q4171,"Interfyl, 1 mg",HCTM015,Interfyl,1.0,1,275.0,10.092,9.521,N
+Q4171,"Interfyl, 1 mg",HCTM030,Interfyl,1.0,1,45.0,10.092,9.521,N
+Q4171,"Interfyl, 1 mg",HCTM050,Interfyl,1.0,1,50.0,10.092,9.521,N
+Q4171,"Interfyl, 1 mg",HCTM060,Interfyl,1.0,1,75.0,10.092,9.521,N
+Q4171,"Interfyl, 1 mg",HCTM100,Interfyl,1.0,1,100.0,10.092,9.521,N
 Q4173,Palingen or palingen xplus,PH-030101,Palingen Hydromembrane,1.0,1,1.0,349.015,329.259,N
 Q4173,Palingen or palingen xplus,PH-030102,Palingen Hydromembrane,2.0,1,2.0,349.015,329.259,N
 Q4173,Palingen or palingen xplus,PH-030202,Palingen Hydromembrane,4.0,1,4.0,349.015,329.259,N
@@ -7177,7 +7169,7 @@ Q4175,Miroderm,857072005187,Miroderm,9.0,1,9.0,91.539,86.358,N
 Q4175,Miroderm,857072005194,Miroderm,28.0,1,28.0,91.539,86.358,N
 Q4175,Miroderm,857072005200,Miroderm,9.0,1,9.0,91.539,86.358,N
 Q4175,Miroderm,857072005217,Miroderm,16.0,1,16.0,91.539,86.358,N
-Q4175,Miroderm,857072005224,Miroderm Fenestrated ,21.0,1,21.0,91.539,86.358,N
+Q4175,Miroderm,857072005224,Miroderm Fenestrated,21.0,1,21.0,91.539,86.358,N
 Q4175,Miroderm,857072005231,Miroderm,25.0,1,25.0,91.539,86.358,N
 Q4175,Miroderm,857072005248,Miroderm Fenestrated Plus,64.0,1,64.0,91.539,86.358,N
 Q4175,Miroderm,857072005255,Miroderm,70.0,1,70.0,91.539,86.358,N
@@ -7188,14 +7180,14 @@ Q4178,"Floweramniopatch, per sq cm",FBP-204,Flowerpatch,8.0,1,8.0,89.407,84.346,
 Q4178,"Floweramniopatch, per sq cm",FBP-404,Flowerpatch,16.0,1,16.0,89.407,84.346,N
 Q4178,"Floweramniopatch, per sq cm",FBP-406,Flowerpatch,24.0,1,24.0,89.407,84.346,N
 Q4178,"Floweramniopatch, per sq cm",FBP-408,Flowerpatch,32.0,1,32.0,89.407,84.346,N
-Q4180,"Revita, per sq cm",860471002503,Revita ,1.78,1,2.0,656.124,618.985,N
-Q4180,"Revita, per sq cm",869457000304,Revita ,4.0,1,4.0,656.124,618.985,N
-Q4180,"Revita, per sq cm",869457000311,Revita ,6.0,1,6.0,656.124,618.985,N
-Q4180,"Revita, per sq cm",869457000328,Revita ,16.0,1,16.0,656.124,618.985,N
-Q4180,"Revita, per sq cm",869457000335,Revita ,24.0,1,24.0,656.124,618.985,N
-Q4180,"Revita, per sq cm",869457000342,Revita ,36.0,1,36.0,656.124,618.985,N
-Q4180,"Revita, per sq cm",869457000359,Revita ,48.0,1,48.0,656.124,618.985,N
-Q4180,"Revita, per sq cm",869457000397,Revita ,24.0,1,24.0,656.124,618.985,N
+Q4180,"Revita, per sq cm",860471002503,Revita,1.78,1,2.0,656.124,618.985,N
+Q4180,"Revita, per sq cm",869457000304,Revita,4.0,1,4.0,656.124,618.985,N
+Q4180,"Revita, per sq cm",869457000311,Revita,6.0,1,6.0,656.124,618.985,N
+Q4180,"Revita, per sq cm",869457000328,Revita,16.0,1,16.0,656.124,618.985,N
+Q4180,"Revita, per sq cm",869457000335,Revita,24.0,1,24.0,656.124,618.985,N
+Q4180,"Revita, per sq cm",869457000342,Revita,36.0,1,36.0,656.124,618.985,N
+Q4180,"Revita, per sq cm",869457000359,Revita,48.0,1,48.0,656.124,618.985,N
+Q4180,"Revita, per sq cm",869457000397,Revita,24.0,1,24.0,656.124,618.985,N
 Q4184,Cellesta or duo per sq cm,CAM0202D,Cellesta,4.0,1,4.0,80.04,75.509,N
 Q4184,Cellesta or duo per sq cm,CAM0204D,Cellesta,8.0,1,8.0,80.04,75.509,N
 Q4184,Cellesta or duo per sq cm,CAM0206D,Cellesta,12.0,1,12.0,80.04,75.509,N
@@ -7232,8 +7224,8 @@ Q4187,Epicord 1 sq cm,850029043553,EpiCord,2.0,1,2.0,245.302,231.417,N
 Q4187,Epicord 1 sq cm,850046045554,EpiCord,7.0,1,7.0,245.302,231.417,N
 Q4187,Epicord 1 sq cm,850046045561,Epicord,13.0,1,13.0,245.302,231.417,N
 Q4187,Epicord 1 sq cm,855310003049,EpiCord,6.0,1,6.0,245.302,231.417,N
-Q4187,Epicord 1 sq cm,855310003797,EpiCord ,6.0,1,6.0,245.302,231.417,N
-Q4187,Epicord 1 sq cm,855310003803,EpiCord ,15.0,1,15.0,245.302,231.417,N
+Q4187,Epicord 1 sq cm,855310003797,EpiCord,6.0,1,6.0,245.302,231.417,N
+Q4187,Epicord 1 sq cm,855310003803,EpiCord,15.0,1,15.0,245.302,231.417,N
 Q4188,Amnioarmor 1 sq cm,83011,AmnioArmor,1.0,1,1.0,487.586,459.987,N
 Q4188,Amnioarmor 1 sq cm,83122,AmnioArmor,4.0,1,4.0,487.586,459.987,N
 Q4188,Amnioarmor 1 sq cm,83223,AmnioArmor,6.0,1,6.0,487.586,459.987,N
@@ -7260,7 +7252,7 @@ Q4191,Restorigin 1 sq cm,382567000885,Restorigin,32.0,1,32.0,655.301,618.208,N
 Q4191,Restorigin 1 sq cm,382567001684,Restorigin,25.0,1,25.0,655.301,618.208,N
 Q4191,Restorigin 1 sq cm,382567001738,Restorigin,1.0,1,2.0,655.301,618.208,N
 Q4191,Restorigin 1 sq cm,382567001745,Restorigin,2.0,1,2.0,655.301,618.208,N
-Q4191,Restorigin 1 sq cm,382567002247,Restorigin  ,2.25,1,3.0,655.301,618.208,N
+Q4191,Restorigin 1 sq cm,382567002247,Restorigin,2.25,1,3.0,655.301,618.208,N
 Q4193,Coll-e-derm 1 sq cm,382567001233,Coll-e-Derm,6.0,1,6.0,1393.12,1314.264,N
 Q4193,Coll-e-derm 1 sq cm,382567001332,Coll-e-Derm,4.0,1,4.0,1393.12,1314.264,N
 Q4193,Coll-e-derm 1 sq cm,382567001349,Coll-e-Derm,8.0,1,8.0,1393.12,1314.264,N
@@ -7335,11 +7327,11 @@ Q4204,Xwrap 1 sq cm,XWO-60816,XWrap,128.0,1,128.0,3692.141,3483.152,N
 Q4204,Xwrap 1 sq cm,XWO-61616,XWrap,256.0,1,256.0,3692.141,3483.152,N
 Q4204,Xwrap 1 sq cm,XWO-61632,XWrap,512.0,1,512.0,3692.141,3483.152,N
 Q4205,Membrane graft or wrap sq cm,50016-091605,Membrane Wrap,1.0,1,1.0,1237.284,1167.249,N
-Q4205,Membrane graft or wrap sq cm,50016-091606,Membrane Wrap ,4.0,1,4.0,1237.284,1167.249,N
-Q4205,Membrane graft or wrap sq cm,50016-091607,Membrane Wrap ,6.0,1,6.0,1237.284,1167.249,N
-Q4205,Membrane graft or wrap sq cm,50016-091608,Membrane Wrap ,16.0,1,16.0,1237.284,1167.249,N
-Q4205,Membrane graft or wrap sq cm,50016-091609,Membrane Wrap ,24.0,1,24.0,1237.284,1167.249,N
-Q4205,Membrane graft or wrap sq cm,50016-091610,Membrane Wrap ,32.0,1,32.0,1237.284,1167.249,N
+Q4205,Membrane graft or wrap sq cm,50016-091606,Membrane Wrap,4.0,1,4.0,1237.284,1167.249,N
+Q4205,Membrane graft or wrap sq cm,50016-091607,Membrane Wrap,6.0,1,6.0,1237.284,1167.249,N
+Q4205,Membrane graft or wrap sq cm,50016-091608,Membrane Wrap,16.0,1,16.0,1237.284,1167.249,N
+Q4205,Membrane graft or wrap sq cm,50016-091609,Membrane Wrap,24.0,1,24.0,1237.284,1167.249,N
+Q4205,Membrane graft or wrap sq cm,50016-091610,Membrane Wrap,32.0,1,32.0,1237.284,1167.249,N
 Q4205,Membrane graft or wrap sq cm,50016-091613,Membrane Wrap,100.0,1,100.0,1237.284,1167.249,N
 Q4205,Membrane graft or wrap sq cm,50016-091616,Membrane Wrap,64.0,1,64.0,1237.284,1167.249,N
 Q4205,Membrane graft or wrap sq cm,50016-091617,Membrane Wrap,48.0,1,48.0,1237.284,1167.249,N
@@ -7358,12 +7350,12 @@ Q4221,Amniowrap2 per sq cm,300-016-0404-005,AminoWrap,16.0,1,16.0,1961.0,1850.0,
 Q4221,Amniowrap2 per sq cm,300-024-0406-005,AminoWrap,24.0,1,24.0,1961.0,1850.0,N
 Q4221,Amniowrap2 per sq cm,300-032-0408-005,AminoWrap,32.0,1,32.0,1961.0,1850.0,N
 Q4221,Amniowrap2 per sq cm,300-049-0707-005,AminoWrap2,49.0,1,49.0,1961.0,1850.0,N
-Q4222,"Progenamatrix, per sq cm",50017-015902,ProgenaMatrix ,4.0,1,4.0,145.487,137.252,N
-Q4222,"Progenamatrix, per sq cm",50017-015903,ProgenaMatrix ,9.0,1,9.0,145.487,137.252,N
-Q4222,"Progenamatrix, per sq cm",50017-015904,ProgenaMatrix ,16.0,1,16.0,145.487,137.252,N
-Q4222,"Progenamatrix, per sq cm",50017-015906,ProgenaMatrix ,36.0,1,36.0,145.487,137.252,N
-Q4222,"Progenamatrix, per sq cm",50017-015910,ProgenaMatrix ,100.0,1,100.0,145.487,137.252,N
-Q4222,"Progenamatrix, per sq cm",50017-015912,ProgenaMatrix ,24.0,1,24.0,145.487,137.252,N
+Q4222,"Progenamatrix, per sq cm",50017-015902,ProgenaMatrix,4.0,1,4.0,145.487,137.252,N
+Q4222,"Progenamatrix, per sq cm",50017-015903,ProgenaMatrix,9.0,1,9.0,145.487,137.252,N
+Q4222,"Progenamatrix, per sq cm",50017-015904,ProgenaMatrix,16.0,1,16.0,145.487,137.252,N
+Q4222,"Progenamatrix, per sq cm",50017-015906,ProgenaMatrix,36.0,1,36.0,145.487,137.252,N
+Q4222,"Progenamatrix, per sq cm",50017-015910,ProgenaMatrix,100.0,1,100.0,145.487,137.252,N
+Q4222,"Progenamatrix, per sq cm",50017-015912,ProgenaMatrix,24.0,1,24.0,145.487,137.252,N
 Q4225,"Amnio or derma tl, per sq cm",AMB2,DermaBind TL,4.0,1,4.0,1427.45,1346.651,N
 Q4225,"Amnio or derma tl, per sq cm",AMB3,DermaBind TL,9.0,1,9.0,1427.45,1346.651,N
 Q4225,"Amnio or derma tl, per sq cm",AMB4,DermaBind TL,16.0,1,16.0,1427.45,1346.651,N
@@ -7546,11 +7538,11 @@ Q4265,Neostim tl per sq cm,NST-020404,NeoStim TL,16.0,1,16.0,1386.446,1307.968,N
 Q4265,Neostim tl per sq cm,NST-020406,NeoStim TL,24.0,1,24.0,1386.446,1307.968,N
 Q4265,Neostim tl per sq cm,NST-020408,NeoStim TL,32.0,1,32.0,1386.446,1307.968,N
 Q4266,Neostim per sq cm,NSM-020102,NeoStim,2.0,1,2.0,540.301,509.718,N
-Q4266,Neostim per sq cm,NSM-020202,NeoStim ,4.0,1,4.0,540.301,509.718,N
-Q4266,Neostim per sq cm,NSM-020203,NeoStim ,6.0,1,6.0,540.301,509.718,N
-Q4266,Neostim per sq cm,NSM-020404,NeoStim ,16.0,1,16.0,540.301,509.718,N
-Q4266,Neostim per sq cm,NSM-020406,NeoStim ,24.0,1,24.0,540.301,509.718,N
-Q4266,Neostim per sq cm,NSM-020408,NeoStim ,32.0,1,32.0,540.301,509.718,N
+Q4266,Neostim per sq cm,NSM-020202,NeoStim,4.0,1,4.0,540.301,509.718,N
+Q4266,Neostim per sq cm,NSM-020203,NeoStim,6.0,1,6.0,540.301,509.718,N
+Q4266,Neostim per sq cm,NSM-020404,NeoStim,16.0,1,16.0,540.301,509.718,N
+Q4266,Neostim per sq cm,NSM-020406,NeoStim,24.0,1,24.0,540.301,509.718,N
+Q4266,Neostim per sq cm,NSM-020408,NeoStim,32.0,1,32.0,540.301,509.718,N
 Q4267,Neostim dl per sq cm,NSD-020101,NeoStim DL,1.0,1,1.0,323.214,304.919,N
 Q4267,Neostim dl per sq cm,NSD-020202,NeoStim DL,4.0,1,4.0,323.214,304.919,N
 Q4267,Neostim dl per sq cm,NSD-020203,NeoStim DL,6.0,1,6.0,323.214,304.919,N
@@ -7558,17 +7550,17 @@ Q4267,Neostim dl per sq cm,NSD-020204,NeoStim DL,8.0,1,8.0,323.214,304.919,N
 Q4267,Neostim dl per sq cm,NSD-020404,NeoStim DL,16.0,1,16.0,323.214,304.919,N
 Q4267,Neostim dl per sq cm,NSD-020406,NeoStim DL,24.0,1,24.0,323.214,304.919,N
 Q4267,Neostim dl per sq cm,NSD-020408,NeoStim DL,32.0,1,32.0,323.214,304.919,N
-Q4268,Surgraft ft per sq cm,00810167292022,Surgraft FT  ,4.0,1,4.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,00810167292039,Surgraft FT  ,6.0,1,6.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,00810167292046,Surgraft FT  ,8.0,1,8.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,00810167292053,Surgraft FT  ,16.0,1,16.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,00810167292060,Surgraft FT  ,24.0,1,24.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,00810167292077,Surgraft FT  ,32.0,1,32.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,SFT-020202,Surgraft FT  ,4.0,1,4.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,SFT-020203,Surgraft FT  ,6.0,1,6.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,SFT-020404,Surgraft FT  ,16.0,1,16.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,SFT-020406,Surgraft FT  ,24.0,1,24.0,452.707,427.082,N
-Q4268,Surgraft ft per sq cm,SFT-020408,Surgraft FT  ,32.0,1,32.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,00810167292022,Surgraft FT,4.0,1,4.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,00810167292039,Surgraft FT,6.0,1,6.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,00810167292046,Surgraft FT,8.0,1,8.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,00810167292053,Surgraft FT,16.0,1,16.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,00810167292060,Surgraft FT,24.0,1,24.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,00810167292077,Surgraft FT,32.0,1,32.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,SFT-020202,Surgraft FT,4.0,1,4.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,SFT-020203,Surgraft FT,6.0,1,6.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,SFT-020404,Surgraft FT,16.0,1,16.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,SFT-020406,Surgraft FT,24.0,1,24.0,452.707,427.082,N
+Q4268,Surgraft ft per sq cm,SFT-020408,Surgraft FT,32.0,1,32.0,452.707,427.082,N
 Q4269,Surgraft xt per sq cm,00810167291865,Surgraft XT,1.0,1,1.0,1804.956,1702.789,N
 Q4269,Surgraft xt per sq cm,00810167291889,SurGraft XT,4.0,1,4.0,1804.956,1702.789,N
 Q4269,Surgraft xt per sq cm,00810167291896,SurGraft XT,6.0,1,6.0,1804.956,1702.789,N
@@ -7586,17 +7578,17 @@ Q4271,Complete ft per sq cm,382567000328,Complete FT,8.0,1,8.0,1141.337,1076.733
 Q4271,Complete ft per sq cm,382567000335,Complete FT,16.0,1,16.0,1141.337,1076.733,N
 Q4271,Complete ft per sq cm,382567000342,Complete FT,18.0,1,18.0,1141.337,1076.733,N
 Q4271,Complete ft per sq cm,382567000359,Complete FT,32.0,1,32.0,1141.337,1076.733,N
-Q4271,Complete ft per sq cm,382567000687,Complete FT ,6.0,1,6.0,1141.337,1076.733,N
-Q4271,Complete ft per sq cm,382567000694,Complete FT ,24.0,1,24.0,1141.337,1076.733,N
+Q4271,Complete ft per sq cm,382567000687,Complete FT,6.0,1,6.0,1141.337,1076.733,N
+Q4271,Complete ft per sq cm,382567000694,Complete FT,24.0,1,24.0,1141.337,1076.733,N
 Q4271,Complete ft per sq cm,382567002209,Complete FT,3.0,1,3.0,1141.337,1076.733,N
-Q4274,"Esano ac, per sq cm",EsanoAC-0101,Esano AC ,1.0,1,1.0,1881.5,1775.0,N
-Q4274,"Esano ac, per sq cm",EsanoAC-0102,Esano AC ,2.0,1,2.0,1881.5,1775.0,N
-Q4274,"Esano ac, per sq cm",EsanoAC-0202,Esano AC ,4.0,1,4.0,1881.5,1775.0,N
-Q4274,"Esano ac, per sq cm",EsanoAC-0203,Esano AC ,6.0,1,6.0,1881.5,1775.0,N
-Q4274,"Esano ac, per sq cm",EsanoAC-0204,Esano AC ,8.0,1,8.0,1881.5,1775.0,N
-Q4274,"Esano ac, per sq cm",EsanoAC-0404,Esano AC ,16.0,1,16.0,1881.5,1775.0,N
-Q4274,"Esano ac, per sq cm",EsanoAC-0406,Esano AC ,24.0,1,24.0,1881.5,1775.0,N
-Q4274,"Esano ac, per sq cm",EsanoAC-0408,Esano AC ,32.0,1,32.0,1881.5,1775.0,N
+Q4274,"Esano ac, per sq cm",EsanoAC-0101,Esano AC,1.0,1,1.0,1881.5,1775.0,N
+Q4274,"Esano ac, per sq cm",EsanoAC-0102,Esano AC,2.0,1,2.0,1881.5,1775.0,N
+Q4274,"Esano ac, per sq cm",EsanoAC-0202,Esano AC,4.0,1,4.0,1881.5,1775.0,N
+Q4274,"Esano ac, per sq cm",EsanoAC-0203,Esano AC,6.0,1,6.0,1881.5,1775.0,N
+Q4274,"Esano ac, per sq cm",EsanoAC-0204,Esano AC,8.0,1,8.0,1881.5,1775.0,N
+Q4274,"Esano ac, per sq cm",EsanoAC-0404,Esano AC,16.0,1,16.0,1881.5,1775.0,N
+Q4274,"Esano ac, per sq cm",EsanoAC-0406,Esano AC,24.0,1,24.0,1881.5,1775.0,N
+Q4274,"Esano ac, per sq cm",EsanoAC-0408,Esano AC,32.0,1,32.0,1881.5,1775.0,N
 Q4274,"Esano ac, per sq cm",EsanoAC-1010,Esano AC,100.0,1,100.0,1881.5,1775.0,N
 Q4274,"Esano ac, per sq cm",EsanoAC-1015,Esano AC,150.0,1,150.0,1881.5,1775.0,N
 Q4274,"Esano ac, per sq cm",EsanoAC-1020,Esano AC,200.0,1,200.0,1881.5,1775.0,N
@@ -7641,14 +7633,14 @@ Q4281,Barrera slor dl per sq cm,382567000182,Barrera,32.0,1,32.0,411.156,387.883
 Q4281,Barrera slor dl per sq cm,382567000199,Barrera,25.0,1,25.0,411.156,387.883,N
 Q4281,Barrera slor dl per sq cm,382567000717,Barrera,2.0,1,2.0,411.156,387.883,N
 Q4281,Barrera slor dl per sq cm,382567002230,Barrera,3.0,1,3.0,411.156,387.883,N
-Q4282,Cygnus dual per sq cm,585-001,Cygnus Dual ,6.0,1,6.0,336.608,317.555,N
-Q4282,Cygnus dual per sq cm,585-002,Cygnus Dual ,16.0,1,16.0,336.608,317.555,N
-Q4282,Cygnus dual per sq cm,585-003,Cygnus Dual ,24.0,1,24.0,336.608,317.555,N
-Q4282,Cygnus dual per sq cm,585-004,Cygnus Dual ,105.0,1,105.0,336.608,317.555,N
-Q4282,Cygnus dual per sq cm,CAD020300S,Cygnus Dual ,6.0,1,6.0,336.608,317.555,N
-Q4282,Cygnus dual per sq cm,CAD040400S,Cygnus Dual ,16.0,1,16.0,336.608,317.555,N
-Q4282,Cygnus dual per sq cm,CAD040600S,Cygnus Dual ,24.0,1,24.0,336.608,317.555,N
-Q4282,Cygnus dual per sq cm,CAD071500S,Cygnus Dual ,105.0,1,105.0,336.608,317.555,N
+Q4282,Cygnus dual per sq cm,585-001,Cygnus Dual,6.0,1,6.0,336.608,317.555,N
+Q4282,Cygnus dual per sq cm,585-002,Cygnus Dual,16.0,1,16.0,336.608,317.555,N
+Q4282,Cygnus dual per sq cm,585-003,Cygnus Dual,24.0,1,24.0,336.608,317.555,N
+Q4282,Cygnus dual per sq cm,585-004,Cygnus Dual,105.0,1,105.0,336.608,317.555,N
+Q4282,Cygnus dual per sq cm,CAD020300S,Cygnus Dual,6.0,1,6.0,336.608,317.555,N
+Q4282,Cygnus dual per sq cm,CAD040400S,Cygnus Dual,16.0,1,16.0,336.608,317.555,N
+Q4282,Cygnus dual per sq cm,CAD040600S,Cygnus Dual,24.0,1,24.0,336.608,317.555,N
+Q4282,Cygnus dual per sq cm,CAD071500S,Cygnus Dual,105.0,1,105.0,336.608,317.555,N
 Q4283,"Biovance tri or 3l, sq cm",DHAM015S,Biovance 3L,2.0,1,2.0,455.736,429.94,N
 Q4283,"Biovance tri or 3l, sq cm",DHAM024S,Biovance 3L,8.0,1,8.0,455.736,429.94,N
 Q4283,"Biovance tri or 3l, sq cm",DHAM025S,Biovance 3L,6.25,1,7.0,455.736,429.94,N
@@ -7662,18 +7654,18 @@ Q4289,"Revoshield+ amnio, per sq cm",MS0204,RevoShield +,8.0,1,8.0,1523.045,1436
 Q4289,"Revoshield+ amnio, per sq cm",MS0404,RevoShield +,16.0,1,16.0,1523.045,1436.835,N
 Q4289,"Revoshield+ amnio, per sq cm",MS0406,RevoShield +,24.0,1,24.0,1523.045,1436.835,N
 Q4289,"Revoshield+ amnio, per sq cm",MS0408,RevoShield +,32.0,1,32.0,1523.045,1436.835,N
-Q4289,"Revoshield+ amnio, per sq cm",NG0101,RevoShield + ,1.0,1,1.0,1523.045,1436.835,N
-Q4289,"Revoshield+ amnio, per sq cm",NG0202,RevoShield + ,4.0,1,4.0,1523.045,1436.835,N
-Q4289,"Revoshield+ amnio, per sq cm",NG0203,RevoShield + ,6.0,1,6.0,1523.045,1436.835,N
-Q4289,"Revoshield+ amnio, per sq cm",NG0204,RevoShield + ,8.0,1,8.0,1523.045,1436.835,N
-Q4289,"Revoshield+ amnio, per sq cm",NG0404,RevoShield + ,16.0,1,16.0,1523.045,1436.835,N
-Q4289,"Revoshield+ amnio, per sq cm",NG0406,RevoShield + ,24.0,1,24.0,1523.045,1436.835,N
-Q4289,"Revoshield+ amnio, per sq cm",NG0408,RevoShield + ,32.0,1,32.0,1523.045,1436.835,N
+Q4289,"Revoshield+ amnio, per sq cm",NG0101,RevoShield +,1.0,1,1.0,1523.045,1436.835,N
+Q4289,"Revoshield+ amnio, per sq cm",NG0202,RevoShield +,4.0,1,4.0,1523.045,1436.835,N
+Q4289,"Revoshield+ amnio, per sq cm",NG0203,RevoShield +,6.0,1,6.0,1523.045,1436.835,N
+Q4289,"Revoshield+ amnio, per sq cm",NG0204,RevoShield +,8.0,1,8.0,1523.045,1436.835,N
+Q4289,"Revoshield+ amnio, per sq cm",NG0404,RevoShield +,16.0,1,16.0,1523.045,1436.835,N
+Q4289,"Revoshield+ amnio, per sq cm",NG0406,RevoShield +,24.0,1,24.0,1523.045,1436.835,N
+Q4289,"Revoshield+ amnio, per sq cm",NG0408,RevoShield +,32.0,1,32.0,1523.045,1436.835,N
 Q4290,Membrane wrap hydr per sq cm,50016-091624,Membrane Wrap - Hydro,32.0,1,32.0,1867.014,1761.334,N
 Q4290,Membrane wrap hydr per sq cm,50016-091625,Membrane Wrap - Hydro,300.0,1,300.0,1867.014,1761.334,N
 Q4290,Membrane wrap hydr per sq cm,50016-091626,Membrane Wrap - Hydro,16.0,1,16.0,1867.014,1761.334,N
 Q4290,Membrane wrap hydr per sq cm,50016-091627,Membrane Wrap - Hydro,6.0,1,6.0,1867.014,1761.334,N
-Q4290,Membrane wrap hydr per sq cm,50016-091628,Membrane Wrap - Hydro ,4.0,1,4.0,1867.014,1761.334,N
+Q4290,Membrane wrap hydr per sq cm,50016-091628,Membrane Wrap - Hydro,4.0,1,4.0,1867.014,1761.334,N
 Q4290,Membrane wrap hydr per sq cm,50016-091629,Membrane Wrap - Hydro,24.0,1,24.0,1867.014,1761.334,N
 Q4290,Membrane wrap hydr per sq cm,50016-091630,Membrane Wrap - Hydro,100.0,1,100.0,1867.014,1761.334,N
 Q4290,Membrane wrap hydr per sq cm,50016-091631,Membrane Wrap - Hydro,480.0,1,480.0,1867.014,1761.334,N
@@ -7715,9 +7707,9 @@ Q4295,"Amnio tri-core, per sq cm",00850021556501,Amnio Tri-Core,180.0,1,180.0,29
 Q4295,"Amnio tri-core, per sq cm",00850060846038,Amnio Tri-Core,8.0,1,8.0,2905.453,2740.993,N
 Q4295,"Amnio tri-core, per sq cm",00850060846106,Amnio Tri-Core,1.0,1,1.0,2905.453,2740.993,N
 Q4295,"Amnio tri-core, per sq cm",00850060846199,Amnio Tri-Core,24.0,1,24.0,2905.453,2740.993,N
-Q4296,"Rebound matrix, per sq cm",REB-27222,Rebound  ,4.0,1,4.0,838.471,791.01,N
+Q4296,"Rebound matrix, per sq cm",REB-27222,Rebound,4.0,1,4.0,838.471,791.01,N
 Q4296,"Rebound matrix, per sq cm",REB-27223,Rebound,6.0,1,6.0,838.471,791.01,N
-Q4296,"Rebound matrix, per sq cm",REB-27224,Rebound  ,8.0,1,8.0,838.471,791.01,N
+Q4296,"Rebound matrix, per sq cm",REB-27224,Rebound,8.0,1,8.0,838.471,791.01,N
 Q4296,"Rebound matrix, per sq cm",REB-27244,Rebound,16.0,1,16.0,838.471,791.01,N
 Q4296,"Rebound matrix, per sq cm",REB-27246,Rebound,24.0,1,24.0,838.471,791.01,N
 Q4296,"Rebound matrix, per sq cm",REB-27248,Rebound,32.0,1,32.0,838.471,791.01,N
@@ -7727,9 +7719,9 @@ Q4297,"Emerge matrix, per sq cm",850046045639,Emerge,24.0,1,24.0,1302.299,1228.5
 Q4297,"Emerge matrix, per sq cm",850046045646,Emerge,8.0,1,8.0,1302.299,1228.584,N
 Q4297,"Emerge matrix, per sq cm",850046045653,Emerge,16.0,1,16.0,1302.299,1228.584,N
 Q4297,"Emerge matrix, per sq cm",850046045660,Emerge,32.0,1,32.0,1302.299,1228.584,N
-Q4297,"Emerge matrix, per sq cm",EME-26222,Emerge ,4.0,1,4.0,1302.299,1228.584,N
+Q4297,"Emerge matrix, per sq cm",EME-26222,Emerge,4.0,1,4.0,1302.299,1228.584,N
 Q4297,"Emerge matrix, per sq cm",EME-26223,Emerge,6.0,1,6.0,1302.299,1228.584,N
-Q4297,"Emerge matrix, per sq cm",EME-26224,Emerge ,8.0,1,8.0,1302.299,1228.584,N
+Q4297,"Emerge matrix, per sq cm",EME-26224,Emerge,8.0,1,8.0,1302.299,1228.584,N
 Q4297,"Emerge matrix, per sq cm",EME-26244,Emerge,16.0,1,16.0,1302.299,1228.584,N
 Q4297,"Emerge matrix, per sq cm",EME-26246,Emerge,24.0,1,24.0,1302.299,1228.584,N
 Q4297,"Emerge matrix, per sq cm",EME-26248,Emerge,32.0,1,32.0,1302.299,1228.584,N
@@ -7790,11 +7782,11 @@ Q4303,"Complete aa, per sq cm",CAA44,Complete AA,16.0,1,16.0,3368.389,3177.725,N
 Q4303,"Complete aa, per sq cm",CAA48,Complete AA,32.0,1,32.0,3368.389,3177.725,N
 Q4304,"Grafix plus, per sq cm",PS16023,Grafix PL,6.0,1,6.0,447.461,422.133,N
 Q4304,"Grafix plus, per sq cm",PS16034,Grafix PL,12.0,1,12.0,447.461,422.133,N
-Q4309,"Via matrix, per sq cm",585-005,VIA Matrix  ,6.0,1,6.0,880.025,830.212,N
-Q4309,"Via matrix, per sq cm",585-006,VIA Matrix  ,16.0,1,16.0,880.025,830.212,N
-Q4309,"Via matrix, per sq cm",585-007,VIA Matrix  ,24.0,1,24.0,880.025,830.212,N
+Q4309,"Via matrix, per sq cm",585-005,VIA Matrix,6.0,1,6.0,880.025,830.212,N
+Q4309,"Via matrix, per sq cm",585-006,VIA Matrix,16.0,1,16.0,880.025,830.212,N
+Q4309,"Via matrix, per sq cm",585-007,VIA Matrix,24.0,1,24.0,880.025,830.212,N
 Q4309,"Via matrix, per sq cm",585-008,VIA Matrix,110.0,1,110.0,880.025,830.212,N
-Q4309,"Via matrix, per sq cm",VMA020300S,VIA Matrix  ,6.0,1,6.0,880.025,830.212,N
+Q4309,"Via matrix, per sq cm",VMA020300S,VIA Matrix,6.0,1,6.0,880.025,830.212,N
 Q4309,"Via matrix, per sq cm",VMA040400S,VIA Matrix,16.0,1,16.0,880.025,830.212,N
 Q4309,"Via matrix, per sq cm",VMA040600S,VIA Matrix,24.0,1,24.0,880.025,830.212,N
 Q4309,"Via matrix, per sq cm",VMA101100S,VIA Matrix,110.0,1,110.0,880.025,830.212,N
@@ -7816,12 +7808,12 @@ Q4314,"Reeva, per sq cm",RVA-020203,Reeva FT Allograft,6.0,1,6.0,2332.0,2200.0,N
 Q4314,"Reeva, per sq cm",RVA-020404,Reeva FT Allograft,16.0,1,16.0,2332.0,2200.0,N
 Q4314,"Reeva, per sq cm",RVA-020406,Reeva FT Allograft,24.0,1,24.0,2332.0,2200.0,N
 Q4314,"Reeva, per sq cm",RVA-020408,Reeva FT Allograft,32.0,1,32.0,2332.0,2200.0,N
-Q4316,"Amchoplast, per sq cm",ACM0014,AmchoPlast ,2.0,1,2.0,4227.966,3988.647,N
-Q4316,"Amchoplast, per sq cm",ACM0305,AmchoPlast ,15.0,1,15.0,4227.966,3988.647,N
-Q4316,"Amchoplast, per sq cm",ACM0407,AmchoPlast ,28.0,1,28.0,4227.966,3988.647,N
-Q4316,"Amchoplast, per sq cm",ACM0505,AmchoPlast ,25.0,1,25.0,4227.966,3988.647,N
-Q4316,"Amchoplast, per sq cm",ACM0612,AmchoPlast ,72.0,1,72.0,4227.966,3988.647,N
-Q4316,"Amchoplast, per sq cm",ACM0707,AmchoPlast ,49.0,1,49.0,4227.966,3988.647,N
+Q4316,"Amchoplast, per sq cm",ACM0014,AmchoPlast,2.0,1,2.0,4227.966,3988.647,N
+Q4316,"Amchoplast, per sq cm",ACM0305,AmchoPlast,15.0,1,15.0,4227.966,3988.647,N
+Q4316,"Amchoplast, per sq cm",ACM0407,AmchoPlast,28.0,1,28.0,4227.966,3988.647,N
+Q4316,"Amchoplast, per sq cm",ACM0505,AmchoPlast,25.0,1,25.0,4227.966,3988.647,N
+Q4316,"Amchoplast, per sq cm",ACM0612,AmchoPlast,72.0,1,72.0,4227.966,3988.647,N
+Q4316,"Amchoplast, per sq cm",ACM0707,AmchoPlast,49.0,1,49.0,4227.966,3988.647,N
 Q4317,"Vitograft, per sq cm",00810167292909,Vitograft,4.0,1,4.0,4770.0,4500.0,N
 Q4317,"Vitograft, per sq cm",00810167292916,Vitograft,6.0,1,6.0,4770.0,4500.0,N
 Q4317,"Vitograft, per sq cm",00810167292923,Vitograft,8.0,1,8.0,4770.0,4500.0,N
@@ -7837,7 +7829,7 @@ Q4320,"Pellograft, per sq cm",00810167292176,Pellograft,2.0,1,2.0,103.026,97.194
 Q4320,"Pellograft, per sq cm",00810167292688,Pellograft,4.0,1,4.0,103.026,97.194,N
 Q4320,"Pellograft, per sq cm",00810167292695,Pellograft,6.0,1,6.0,103.026,97.194,N
 Q4320,"Pellograft, per sq cm",00810167292718,Pellograft,16.0,1,16.0,103.026,97.194,N
-Q4320,"Pellograft, per sq cm",00810167292763,Pellograft ,16.0,1,16.0,103.026,97.194,N
+Q4320,"Pellograft, per sq cm",00810167292763,Pellograft,16.0,1,16.0,103.026,97.194,N
 Q4321,"Renograft, per sq cm",00810167292787,RenoGraft,4.0,1,4.0,3816.0,3600.0,N
 Q4321,"Renograft, per sq cm",00810167292794,RenoGraft,6.0,1,6.0,3816.0,3600.0,N
 Q4321,"Renograft, per sq cm",00810167292800,Renograft,8.0,1,8.0,3816.0,3600.0,N
@@ -7881,12 +7873,12 @@ Q4328,"Most, per sq cm",MOST24,MOST Perforated Multi-Layered Graft,8.0,1,8.0,344
 Q4328,"Most, per sq cm",MOST44,MOST Perforated Multi-Layered Graft,16.0,1,16.0,3440.627,3245.875,N
 Q4328,"Most, per sq cm",MOST48,MOST Perforated Multi-Layered Graft,32.0,1,32.0,3440.627,3245.875,N
 Q4328,"Most, per sq cm",MOST66,MOST Perforated Multi-Layered Graft,36.0,1,36.0,3440.627,3245.875,N
-Q4331,"Axolotl graft, per sq cm",50038-072613,Axolotl SingleGraft ,4.0,1,4.0,1589.715,1499.731,N
-Q4331,"Axolotl graft, per sq cm",50038-072614,Axolotl SingleGraft ,8.0,1,8.0,1589.715,1499.731,N
+Q4331,"Axolotl graft, per sq cm",50038-072613,Axolotl SingleGraft,4.0,1,4.0,1589.715,1499.731,N
+Q4331,"Axolotl graft, per sq cm",50038-072614,Axolotl SingleGraft,8.0,1,8.0,1589.715,1499.731,N
 Q4331,"Axolotl graft, per sq cm",50038-072615,Axolotl Graft,16.0,1,16.0,1589.715,1499.731,N
-Q4331,"Axolotl graft, per sq cm",50038-072616,Axolotl SingleGraft ,24.0,1,24.0,1589.715,1499.731,N
-Q4331,"Axolotl graft, per sq cm",50038-072617,Axolotl SingleGraft ,32.0,1,32.0,1589.715,1499.731,N
-Q4331,"Axolotl graft, per sq cm",50038-072649,Axolotl SingleGraft ,2.0,1,2.0,1589.715,1499.731,N
+Q4331,"Axolotl graft, per sq cm",50038-072616,Axolotl SingleGraft,24.0,1,24.0,1589.715,1499.731,N
+Q4331,"Axolotl graft, per sq cm",50038-072617,Axolotl SingleGraft,32.0,1,32.0,1589.715,1499.731,N
+Q4331,"Axolotl graft, per sq cm",50038-072649,Axolotl SingleGraft,2.0,1,2.0,1589.715,1499.731,N
 Q4332,"Axolotl dualgraft, per sq cm",50038-072607,Axolotl DualGraft,4.0,1,4.0,1681.333,1586.163,N
 Q4332,"Axolotl dualgraft, per sq cm",50038-072608,Axolotl DualGraft,8.0,1,8.0,1681.333,1586.163,N
 Q4332,"Axolotl dualgraft, per sq cm",50038-072609,Axolotl DualGraft,16.0,1,16.0,1681.333,1586.163,N
@@ -7912,11 +7904,11 @@ Q4342,"Theramend, per sq cm",TM33,Theramend DL,9.0,1,9.0,2271.193,2142.635,N
 Q4342,"Theramend, per sq cm",TM356,Theramend DL,21.0,1,21.0,2271.193,2142.635,N
 Q4342,"Theramend, per sq cm",TM44,Theramend DL,16.0,1,16.0,2271.193,2142.635,N
 Q4342,"Theramend, per sq cm",TM77,Theramend DL,49.0,1,49.0,2271.193,2142.635,N
-Q4343,Dermacyte ac matrx per sq cm,MT20022,Dermacyte AC ,4.0,1,4.0,2952.1,2785.0,N
+Q4343,Dermacyte ac matrx per sq cm,MT20022,Dermacyte AC,4.0,1,4.0,2952.1,2785.0,N
 Q4343,Dermacyte ac matrx per sq cm,MT20023,Dermacyte AC Matrix,6.0,1,6.0,2952.1,2785.0,N
-Q4343,Dermacyte ac matrx per sq cm,MT20044,Dermacyte AC ,16.0,1,16.0,2952.1,2785.0,N
-Q4343,Dermacyte ac matrx per sq cm,MT20046,Dermacyte AC ,24.0,1,24.0,2952.1,2785.0,N
-Q4343,Dermacyte ac matrx per sq cm,MT20077,Dermacyte AC ,49.0,1,49.0,2952.1,2785.0,N
+Q4343,Dermacyte ac matrx per sq cm,MT20044,Dermacyte AC,16.0,1,16.0,2952.1,2785.0,N
+Q4343,Dermacyte ac matrx per sq cm,MT20046,Dermacyte AC,24.0,1,24.0,2952.1,2785.0,N
+Q4343,Dermacyte ac matrx per sq cm,MT20077,Dermacyte AC,49.0,1,49.0,2952.1,2785.0,N
 Q4344,"Tri membrane wrap, per sq cm",50016-091633,Tri Membrane Wrap,480.0,1,480.0,3574.386,3372.062,N
 Q4344,"Tri membrane wrap, per sq cm",50016-091634,Tri Membrane Wrap,300.0,1,300.0,3574.386,3372.062,N
 Q4344,"Tri membrane wrap, per sq cm",50016-091635,Tri Membrane Wrap,100.0,1,100.0,3574.386,3372.062,N
@@ -8043,17 +8035,17 @@ Q5106,Inj retacrit non-esrd use,59353-0120-10,Retacrit,1.0,10,200.0,7.851,7.407,
 Q5106,Inj retacrit non-esrd use,59353-0220-10,Retacrit,2.0,10,100.0,7.851,7.407,K
 Q5107,Inj mvasi 10 mg,55513-0206-01,Mvasi,4.0,1,10.0,27.862,26.285,K
 Q5107,Inj mvasi 10 mg,55513-0207-01,Mvasi,16.0,1,40.0,27.862,26.285,K
-Q5108,"Injection, fulphila",67457-0833-06,Fulphila  ,0.6,1,12.0,99.128,93.517,K
-Q5108,"Injection, fulphila",83257-0005-41,Fulphila  ,0.6,1,12.0,99.128,93.517,K
+Q5108,"Injection, fulphila",67457-0833-06,Fulphila,0.6,1,12.0,99.128,93.517,K
+Q5108,"Injection, fulphila",83257-0005-41,Fulphila,0.6,1,12.0,99.128,93.517,K
 Q5110,Nivestym,00069-0291-01,Nivestym,0.5,1,300.0,0.304,0.287,K
 Q5110,Nivestym,00069-0291-10,Nivestym,0.5,10,3000.0,0.304,0.287,K
 Q5110,Nivestym,00069-0292-01,Nivestym,0.8,1,480.0,0.304,0.287,K
 Q5110,Nivestym,00069-0292-10,Nivestym,0.8,10,4800.0,0.304,0.287,K
 Q5110,Nivestym,00069-0293-10,Nivestym,1.0,10,3000.0,0.304,0.287,K
 Q5110,Nivestym,00069-0294-10,Nivestym,1.6,10,4800.0,0.304,0.287,K
-Q5111,"Injection, udenyca 0.5 mg",70114-0101-01,Udenyca  ,0.6,1,12.0,106.334,100.315,K
-Q5111,"Injection, udenyca 0.5 mg",70114-0120-01,Udenyca  ,0.6,1,12.0,106.334,100.315,K
-Q5111,"Injection, udenyca 0.5 mg",70114-0130-01,Udenyca  ,0.6,1,12.0,106.334,100.315,K
+Q5111,"Injection, udenyca 0.5 mg",70114-0101-01,Udenyca,0.6,1,12.0,106.334,100.315,K
+Q5111,"Injection, udenyca 0.5 mg",70114-0120-01,Udenyca,0.6,1,12.0,106.334,100.315,K
+Q5111,"Injection, udenyca 0.5 mg",70114-0130-01,Udenyca,0.6,1,12.0,106.334,100.315,K
 Q5112,Inj ontruzant 10 mg,78206-0147-01,Ontruzant,150.0,1,15.0,19.001,17.925,K
 Q5112,Inj ontruzant 10 mg,78206-0148-01,Ontruzant,420.0,1,42.0,19.001,17.925,K
 Q5113,Inj herzuma 10 mg,63459-0303-43,Herzuma,1.0,1,15.0,69.368,65.442,K
