@@ -11,6 +11,7 @@
 #        -crosswalk_file <path>
 #        -asp_file <path>
 #        -addendum_b_file <path>
+#        -effective_date <YYYY-MM-DD>
 
 import argparse
 import pandas as pd
@@ -74,7 +75,7 @@ def calculate_asp(payment_limit, markup_percentage=0.06):
     return payment_limit / (1 + markup_percentage)
 
 
-def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path):
+def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path, effective_date):
     crosswalk_df = pd.read_csv(
         crosswalk_file_path,
         encoding=FILE_ENCODING,
@@ -123,6 +124,11 @@ def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path):
     # Merge Addendum B DataFrame on HCPCS Code using left join
     merged_df = pd.merge(merged_df, addendum_b_df, on="HCPCS Code", how="left")
 
+    # Add Effective Start Date column
+    merged_df["Effective Start Date"] = pd.to_datetime(effective_date).strftime(
+        "%Y-%m-%d"
+    )
+
     # Validation
     validate_ndc_format(merged_df)
 
@@ -148,6 +154,11 @@ if __name__ == "__main__":
         required=True,
         help="Path to the Addendum B file",
     )
+    parser.add_argument(
+        "-effective_date",
+        required=True,
+        help="Effective date for the pricing data (YYYY-MM-DD)",
+    )
     args = parser.parse_args()
 
-    merge(args.crosswalk_file, args.asp_file, args.addendum_b_file)
+    merge(args.crosswalk_file, args.asp_file, args.addendum_b_file, args.effective_date)
