@@ -29,7 +29,7 @@ ASP_COLUMNS = [
     "Payment Limit",
 ]
 CROSSWALK_COLUMNS = [
-    "_2025_CODE",
+    "_2026_CODE",
     "NDC2",
     "Short Description",
     "Drug Name",
@@ -84,7 +84,7 @@ def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path, effective_da
     )
 
     # Strip whitespace from crosswalk text columns to normalize values
-    crosswalk_df["_2025_CODE"] = crosswalk_df["_2025_CODE"].str.strip()
+    crosswalk_df["_2026_CODE"] = crosswalk_df["_2026_CODE"].str.strip()
     crosswalk_df["NDC2"] = crosswalk_df["NDC2"].str.strip()
     crosswalk_df["Drug Name"] = crosswalk_df["Drug Name"].str.strip()
     crosswalk_df["Short Description"] = crosswalk_df["Short Description"].str.strip()
@@ -92,7 +92,7 @@ def merge(crosswalk_file_path, asp_file_path, addendum_b_file_path, effective_da
     # Rename crosswalk columns for consistency
     crosswalk_df_renamed = crosswalk_df.rename(
         columns={
-            "_2025_CODE": "HCPCS Code",
+            "_2026_CODE": "HCPCS Code",
             "NDC2": "NDC",
             "Short Description": "Description",
             "PKG SIZE": "Pkg Size",
